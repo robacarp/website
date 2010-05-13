@@ -1,8 +1,64 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Layout</title>
-</head>
-<body>
-<%= yield %>
-</body>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Robertcarpenter.net</title>
+    <style type="text/css" media="screen">
+      @import url("stylesheets/styles.css");
+    </style>
+    <script language="javascript" src="javascripts/jquery-1.4.2.min.js"></script>
+  </head>
+  <body class="water">
+  <img id="logo" src="images/name.png" alt="Robert Carpenter < net" title="Signifigance of the < symbol: its a Ruby programming thing.  No 'Rob is less than the internet metaphor' exists there." />
+  <ul id="menu">
+    <li><a href="#">Me</a></li>
+    <li><a href="#">Pictures</a>
+      <ul>
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Writings</a>
+      <ul>
+        <li><a href="#">Recent</a></li>
+        <li><a href="#">Archives</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Projects</a>
+      <ul>
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div id="content">
+  <p>Website migration and redesign in progress....welcome to ruby.</p>
+  <%= yield %>
+  </div>
+  <div id="footer">
+  &copy; 2010 Robert L. Carpenter
+  <div id="pi">
+    &pi;
+  </div>
+  </div>
+  <div id="configuration">
+    <input type="button" id="configuration_shower" value="Configuration" 
+    onclick="$('#configuration .hidden').toggle();"
+    />
+    <div class="hidden">
+      <hr />
+      <input type="button" id="font_sizer" onclick="
+        $('body').css('font-size', 
+          function(i,v) {
+            $(this).css(
+              {'font-size': (parseFloat(v) % 19) + 1 + 'px'}
+            );
+          }
+        );" value="Font Play" /><br />
+      <input type="button" id="background_toggle" onclick="$('body').toggleClass('water');" value="Background" />
+      <br />
+    </div>
+  </div>
+  </body>
 </html>
+<!-- -->
