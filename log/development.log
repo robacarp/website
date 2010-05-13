@@ -2578,3 +2578,1540 @@ Processing IpController#index (for 127.0.0.1 at 2010-05-12 07:08:17) [GET]
 Rendering template within layouts/ip
 Rendering ip/index
 Completed in 4ms (View: 1, DB: 0) | 200 OK [http://mongrel/ip]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/waterfall.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-90.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/black-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-90.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-90.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/black-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-90.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/black-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-75.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/white-90.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-12 23:09:41) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 212ms (View: 51, DB: 0) | 200 OK [http://localhost/ip]
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-12 23:09:42) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/ip]
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-12 23:15:39) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/ip]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:30:56) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:31:14) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-12 23:32:22) [GET]
+
+NameError (uninitialized constant FeedController):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (73.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-12 23:49:22) [GET]
+
+NameError (uninitialized constant FeedController):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (45.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-12 23:56:31) [GET]
+
+NameError (uninitialized constant FeedController):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (296.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (127.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateContents (20100513055803)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateContents (20100513055803)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateContent (20100513055803)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'content' already exists: CREATE TABLE `content` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mContent Load (0.0ms)[0m   [0mMysql::Error: Table 'rcnet.contents' doesn't exist: SELECT * FROM `contents` LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mContent Load (0.8ms)[0m   [0mSELECT * FROM `content` LIMIT 1[0m
+  [4;36;1mContent Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+  [4;35;1mContent Load (1.1ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddTimesToContent (20100513061006)
+  [4;35;1mSQL (7.9ms)[0m   [0mALTER TABLE `content` ADD `created_at` datetime[0m
+  [4;36;1mSQL (234.7ms)[0m   [0;1mALTER TABLE `content` ADD `updated_at` datetime[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100513061006')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mdescribe `addresses`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `addresses`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW FIELDS FROM `authdlconfig`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `authdlconfig`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW KEYS FROM `authdlconfig`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `authdlfiledata`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `authdlfiledata`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `authdlfiledata`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `authdlfiles`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `authdlfiles`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `authdlfiles`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `authdlusers`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `authdlusers`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `authdlusers`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mdescribe `comments`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `comments`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `content`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `content`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `customers`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mdescribe `customers`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `customers`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `httpError`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `httpError`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `httpError`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `sermons`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mdescribe `sermons`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `sermons`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `sitenews`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `sitenews`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW FIELDS FROM `suppPartners`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mdescribe `suppPartners`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `suppPartners`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW FIELDS FROM `suppUsers`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `suppUsers`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `suppUsers`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `tag-links`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `tag-links`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `tag-links`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `txtDocument`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `txtDocument`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `txtDocument`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+  [4;36;1mContent Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-13 00:12:36) [GET]
+
+NameError (uninitialized constant FeedController):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (92.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-13 00:13:22) [GET]
+
+NameError (uninitialized constant FeedController):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-13 00:13:23) [GET]
+
+NameError (uninitialized constant FeedController):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-13 00:13:23) [GET]
+
+NameError (uninitialized constant FeedController):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:14:09) [GET]
+  [4;36;1mContent Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: content: SELECT * FROM "content" ORDER BY content.id DESC LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: content: SELECT * FROM "content"  ORDER BY content.id DESC LIMIT 1):
+  app/controllers/content_controller.rb:3:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (64.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:17:42) [GET]
+  [4;35;1mContent Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: content: SELECT * FROM "content" ORDER BY content.id DESC LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: content: SELECT * FROM "content"  ORDER BY content.id DESC LIMIT 1):
+  app/controllers/content_controller.rb:3:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (68.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:18:56) [GET]
+  [4;35;1mContent Load (0.5ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/show
+Completed in 61ms (View: 56, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:19:47) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:20:02) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:20:15) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:20:41) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+  [4;36;1mContent Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 22ms (View: 13, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mContent Load (0.3ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+  [4;36;1mContent Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:21:32) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+  [4;35;1mContent Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:21:41) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+  [4;36;1mContent Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 17ms (View: 9, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:21:42) [GET]
+  [4;36;1mContent Load (0.5ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+  [4;35;1mContent Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 10ms (View: 2, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:21:43) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+  [4;36;1mContent Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 10ms (View: 2, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:21:43) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+  [4;35;1mContent Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 11ms (View: 2, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:22:01) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+  [4;36;1mContent Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 17ms (View: 9, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:22:27) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+Completed in 55ms (View: 51, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:24:07) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+  [4;35;1mContent Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+
+ActionView::TemplateError (undefined method `content' for #<Content:0x0000010338c2b0>) on line #1 of app/views/content/show.html.erb:
+1: <%= @content.content %>
+
+    app/views/content/show.html.erb:1
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (68.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mContent Load (0.3ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+  [4;36;1mContent Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:24:51) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/show
+  [4;36;1mContent Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 21ms (View: 12, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:27:30) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template content/last.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:27:58) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template content/last.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:28:20) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/last
+  [4;35;1mContent Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 22ms (View: 14, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:28:29) [GET]
+  Parameters: {"id"=>"111"}
+  [4;35;1mContent Columns (4.4ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` WHERE (`content`.`id` = '--- :id\n') [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Content with ID=id):
+  app/controllers/content_controller.rb:3:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:28:44) [GET]
+  Parameters: {"id"=>"129"}
+  [4;36;1mContent Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+  [4;35;1mContent Load (0.3ms)[0m   [0mSELECT * FROM `content` WHERE (`content`.`id` = '--- :id\n') [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Content with ID=id):
+  app/controllers/content_controller.rb:3:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (55.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mContent Load (0.5ms)[0m   [0mSELECT * FROM `content` WHERE (`content`.`id` = 129) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:29:41) [GET]
+  Parameters: {"id"=>"129"}
+  [4;35;1mContent Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+  [4;36;1mContent Load (0.5ms)[0m   [0;1mSELECT * FROM `content` WHERE (`content`.`id` = 129) [0m
+Rendering template within layouts/content
+Rendering content/show
+Completed in 14ms (View: 5, DB: 5) | 200 OK [http://localhost/129]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-13 00:29:41) [GET]
+  Parameters: {"id"=>"129"}
+
+ArgumentError (invalid byte sequence in UTF-8):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (44.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:29:56) [GET]
+  Parameters: {"id"=>"111"}
+  [4;36;1mContent Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` WHERE (`content`.`id` = 111) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Content with ID=111):
+  app/controllers/content_controller.rb:3:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (98.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 00:30:08) [GET]
+  Parameters: {"id"=>"142"}
+  [4;35;1mContent Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+  [4;36;1mContent Load (2.3ms)[0m   [0;1mSELECT * FROM `content` WHERE (`content`.`id` = 142) [0m
+Rendering template within layouts/content
+Rendering content/show
+Completed in 16ms (View: 5, DB: 7) | 200 OK [http://localhost/142]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-13 00:30:08) [GET]
+  Parameters: {"id"=>"142"}
+
+ArgumentError (invalid byte sequence in UTF-8):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (45.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:30:27) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/last
+  [4;35;1mContent Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:30:46) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/last
+  [4;36;1mContent Columns (4.8ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 14ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:30:58) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/last
+  [4;35;1mContent Columns (4.4ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:31:09) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/content
+Rendering content/last
+  [4;36;1mContent Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:31:28) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 15ms (View: 7, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:32:39) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 20ms (View: 12, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:33:23) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:33:34) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:33:48) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:33:56) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:34:23) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 53ms (View: 12, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:34:37) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:35:36) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:36:03) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:36:21) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 45ms (View: 6, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:36:41) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:36:54) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 44ms (View: 36, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:37:05) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 14ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:37:22) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (177.9ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 188ms (View: 7, DB: 178) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:37:38) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:37:45) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:38:26) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:38:28) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:40:48) [GET]
+  [4;35;1mContent Load (0.5ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:41:11) [GET]
+  [4;36;1mContent Load (2.8ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 17ms (View: 6, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:42:33) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 14ms (View: 7, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:42:59) [GET]
+  [4;36;1mContent Load (0.5ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:43:05) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:43:14) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:43:17) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 46ms (View: 38, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:43:36) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (156.7ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 167ms (View: 6, DB: 157) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:45:12) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:45:26) [GET]
+  [4;36;1mContent Load (0.5ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:45:29) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:45:38) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:45:42) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:45:46) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:48:26) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:48:46) [GET]
+  [4;36;1mContent Load (0.3ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 45ms (View: 38, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:49:10) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:49:21) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 10ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:50:08) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 20ms (View: 12, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:50:33) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 19ms (View: 12, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:50:55) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:51:11) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (80.5ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 91ms (View: 7, DB: 81) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:51:16) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:51:50) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.4ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:52:13) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.2ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:52:51) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 19ms (View: 12, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:53:30) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:53:41) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:53:49) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:54:04) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.4ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 14ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:54:13) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 11ms (View: 5, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:54:29) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:54:44) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 19ms (View: 12, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:54:55) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:55:05) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:55:19) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:55:28) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 14ms (View: 6, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:55:43) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:56:02) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 14ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:56:08) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.7ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:56:17) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:56:40) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:56:50) [GET]
+  [4;35;1mContent Load (0.5ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:57:06) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:57:13) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:57:21) [GET]
+  [4;36;1mContent Load (0.5ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:57:35) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:57:40) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:57:59) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:58:07) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:58:39) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:58:48) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:58:55) [GET]
+  [4;35;1mContent Load (1.0ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (14.4ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 27ms (View: 6, DB: 15) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:59:00) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 49ms (View: 42, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:59:08) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:59:33) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 00:59:53) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 6, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 01:00:10) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 01:00:19) [GET]
+  [4;35;1mContent Load (0.4ms)[0m   [0mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;36;1mContent Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 01:00:32) [GET]
+  Parameters: {"id"=>"142"}
+  [4;36;1mContent Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+  [4;35;1mContent Load (0.3ms)[0m   [0mSELECT * FROM `content` WHERE (`content`.`id` = 142) [0m
+Rendering template within layouts/application
+Rendering content/show
+Completed in 19ms (View: 11, DB: 4) | 200 OK [http://localhost/142]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 01:00:38) [GET]
+  Parameters: {"id"=>"129"}
+  [4;35;1mContent Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+  [4;36;1mContent Load (0.3ms)[0m   [0;1mSELECT * FROM `content` WHERE (`content`.`id` = 129) [0m
+Rendering template within layouts/application
+Rendering content/show
+Completed in 12ms (View: 4, DB: 4) | 200 OK [http://localhost/129]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 01:00:54) [GET]
+  Parameters: {"id"=>"129"}
+  [4;36;1mContent Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `content`[0m
+  [4;35;1mContent Load (0.3ms)[0m   [0mSELECT * FROM `content` WHERE (`content`.`id` = 129) [0m
+Rendering template within layouts/application
+Rendering content/show
+Completed in 19ms (View: 11, DB: 4) | 200 OK [http://localhost/129]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-13 01:00:54) [GET]
+  Parameters: {"id"=>"129"}
+
+ArgumentError (invalid byte sequence in UTF-8):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-13 01:04:59) [GET]
+  Parameters: {"id"=>"129"}
+  [4;35;1mContent Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+  [4;36;1mContent Load (0.3ms)[0m   [0;1mSELECT * FROM `content` WHERE (`content`.`id` = 129) [0m
+Rendering template within layouts/application
+Rendering content/show
+Completed in 60ms (View: 51, DB: 5) | 200 OK [http://localhost/129]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-05-13 01:04:59) [GET]
+  Parameters: {"id"=>"129"}
+
+ArgumentError (invalid byte sequence in UTF-8):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContentController#last (for 127.0.0.1 at 2010-05-13 01:05:01) [GET]
+  [4;36;1mContent Load (0.4ms)[0m   [0;1mSELECT * FROM `content` ORDER BY content.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering content/last
+  [4;35;1mContent Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `content`[0m
+Completed in 13ms (View: 5, DB: 4) | 200 OK [http://localhost/]

@@ -1,0 +1,121 @@
+
+body {
+  margin:0 auto;
+  width:768px;
+  padding:0;
+  font-size:1em;
+}
+
+.water {
+  background:url('/images/waterfall.png');
+}
+
+#content {
+  background:url('/images/white-75.png');;
+  font-family:'Helvetica Neue';
+  text-align:justify;
+  margin-top:1.9em;
+  padding:0 1.9em;
+  border:1px solid #fff;
+  min-height:3em;
+  clear:both;
+}
+
+#configuration {
+  position:absolute;
+  top:0;
+  left:0;
+  background:url('/images/white-75.png');
+  font-family:'Helvetica Neue';
+  border:1px solid #fff;
+  text-align:center;
+}
+  #configuration .hidden {
+    display:none;
+  }
+
+#footer {
+  margin-top:3px;
+  background:url('/images/white-75.png');
+  border:1px solid #fff;
+  min-height:3em;
+  font-family:'Helvetica Neue';
+  font-size:0.7em;
+  text-align:center;
+}
+
+#logo {
+  padding:0;
+  margin:0;
+  border-size:0;
+  border:1px solid #fff;
+}
+
+#menu {
+  padding:0;
+  margin:0;
+  list-style:none;
+  display:inline;
+  font-size:1.4em;
+}
+
+  #menu li {
+    display:inline;
+    float:left;
+    padding:0;
+    margin:0;
+  }
+
+  #menu li a {
+    background:url('/images/white-90.png');
+    padding:0 2em;
+    margin:0 0 10px 0;
+    color:#000;
+    font-family:'Helvetica Neue';
+    text-decoration:none;
+    border:1px solid #fff;
+  }
+
+  #menu li a:hover {
+    background:url('/images/black-75.png');
+    color:#f00;
+  }
+
+  #menu li ul {
+    position:absolute;
+    left:-100px;
+    top:4.5em;
+    display:none;
+  }
+
+  #menu li ul li {
+    clear:left;
+    width:10em;
+    text-align:left;
+  }
+
+  #menu li:hover ul {
+    left:auto;
+    display:inline;
+  }
+
+  #menu li ul li a {
+    display:block;
+    width:5em;
+    overflow:hidden;
+    padding:0 0 0 0.5em;
+    margin:0;
+  }
+
+
+
+
+#pi {
+  float:right;
+  font-size:1.3em;
+  margin:0.5em;
+  display:none;
+}
+
+  #footer:hover #pi{
+  }
