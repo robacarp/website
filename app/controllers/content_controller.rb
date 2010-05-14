@@ -1,8 +1,8 @@
 class ContentController < ApplicationController
   def show
-    @content = Content.find params[:id]
+    @content = Content.new #params[:id]
   end
   def last
-    @content = Content.find :last
+#    @content = Content.find :last
   end
 end
