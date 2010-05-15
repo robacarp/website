@@ -5,4 +5,7 @@ class ContentController < ApplicationController
   def last
     @content = Content.find :last
   end
+  def index
+    @content = Content.find :all
+  end
 end
