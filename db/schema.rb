@@ -49,6 +49,13 @@ ActiveRecord::Schema.define(:version => 20100513061006) do
     t.binary "filePermissions",                               :null => false
   end
 
+  create_table "checkins", :force => true do |t|
+    t.integer  "device_id"
+    t.integer  "uptime"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "comments", :force => true do |t|
     t.string   "userId",          :limit => 32,                                  :null => false
     t.string   "name",            :limit => 65,                                  :null => false
@@ -89,6 +96,12 @@ ActiveRecord::Schema.define(:version => 20100513061006) do
   end
 
   add_index "customers", ["phone"], :name => "phone", :unique => true
+
+  create_table "devices", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "httpError", :force => true do |t|
     t.string   "status",    :limit => 3,   :default => "000",     :null => false
