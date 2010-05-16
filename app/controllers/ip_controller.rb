@@ -5,4 +5,8 @@ class IpController < ApplicationController
     ip.count += 1
     ip.save
   end
+
+  def list
+    @ips = IpAddress.find :all
+  end
 end

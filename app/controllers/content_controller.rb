@@ -18,7 +18,6 @@ class ContentController < ApplicationController
       @archive[c.created_at.year][c.created_at.month] = c
     end
 
-    debugger
 
   end
 end

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100516075326) do
+ActiveRecord::Schema.define(:version => 20100516082353) do
 
   create_table "#mysql50#tag-links", :id => false, :force => true do |t|
     t.string  "content_uid", :limit => 32,                :null => false
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(:version => 20100516075326) do
     t.integer  "uptime"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "method"
   end
 
   create_table "comments", :force => true do |t|
