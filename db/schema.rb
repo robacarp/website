@@ -9,7 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100513061006) do
+ActiveRecord::Schema.define(:version => 20100516075326) do
+
+  create_table "#mysql50#tag-links", :id => false, :force => true do |t|
+    t.string  "content_uid", :limit => 32,                :null => false
+    t.integer "tag_id",                    :default => 0, :null => false
+  end
 
   create_table "addresses", :force => true do |t|
     t.string "owner",   :limit => 32,  :default => "", :null => false
@@ -113,6 +118,13 @@ ActiveRecord::Schema.define(:version => 20100513061006) do
     t.string   "httpPost",  :limit => 200, :default => "",        :null => false
   end
 
+  create_table "ip_addresses", :force => true do |t|
+    t.string   "address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "count",      :default => 0
+  end
+
   create_table "sermons", :id => false, :force => true do |t|
     t.string   "title",        :limit => 200, :null => false
     t.date     "publishDate",                 :null => false
@@ -149,11 +161,6 @@ ActiveRecord::Schema.define(:version => 20100513061006) do
     t.string "email",          :limit => 100, :default => "", :null => false
     t.string "supportGoal",    :limit => 6,   :default => "", :null => false
     t.string "supportCurrent", :limit => 6,   :default => "", :null => false
-  end
-
-  create_table "tag-links", :id => false, :force => true do |t|
-    t.string  "content_uid", :limit => 32,                :null => false
-    t.integer "tag_id",                    :default => 0, :null => false
   end
 
   create_table "tags", :force => true do |t|
