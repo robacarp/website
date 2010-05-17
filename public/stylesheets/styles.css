@@ -1,9 +1,16 @@
 
 body {
-  margin:0 auto;
+  margin:0;
   width:768px;
   padding:0;
   font-size:1em;
+}
+
+.bracket {
+  font-size:10em;
+  position:absolute;
+  top:0px;
+  left:0px;
 }
 
 .water {
@@ -22,6 +29,7 @@ body {
 }
 
 #configuration {
+  display:none;
   position:absolute;
   top:0;
   left:0;
@@ -45,10 +53,11 @@ body {
 }
 
 #logo {
-  padding:0;
   margin:0;
+  padding:0;
   border-size:0;
-  border:1px solid #fff;
+  border:1px solid #000;
+  font-size:4em;
 }
 
 #menu {
@@ -57,13 +66,14 @@ body {
   list-style:none;
   display:inline;
   font-size:1.4em;
+  border:1px solid red;
+  width:100%;
 }
 
   #menu li {
+    border:1px solid #00ff00;;
     display:inline;
-    float:left;
     padding:0;
-    margin:0;
   }
 
   #menu li a {
