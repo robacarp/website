@@ -1,13 +1,20 @@
 <% @devices.each do |device| 
-time = device.checkins.last.uptime
-minutes = time/60
-seconds = time - (minutes * 60)
-hours = minutes / 60
-minutes-=hours * 60
-days = hours / 24
-hours-=days * 24
-
-%>
-<%= device.name %> => <%= device.checkins.last.uptime %>: <%=days%> Days, <%=hours%> hours, <%=minutes%> Minutes and <%= seconds %> seconds (checked in at: <%= device.checkins.last.created_at %>, with <%= device.checkins.count %> total heartbeats).
+  if device.checkins.count > 0 then
+    time = device.checkins.last.uptime
+    minutes = time/60
+    seconds = time - (minutes * 60)
+    hours = minutes / 60
+    minutes-=hours * 60
+    days = hours / 24
+    hours-=days * 24
+  %>
+    <%= device.name %> => 
+    <%= device.checkins.last.uptime %> 
+    (<%=days%>:<%=hours%>:<%=minutes%>:<%= seconds %>)
+    @ <%= device.checkins.last.created_at %>, 
+    <%= device.checkins.count %> total heartbeats.
+  <% else %>
+    <%= device.name %> => has not checked in.
+  <% end %>
 <br />
 <% end %>

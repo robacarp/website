@@ -3,7 +3,7 @@ class CheckinsController < ApplicationController
     checkin = Checkin.new
     checkin.device = Device.find_or_create_by_name params[:name] 
     checkin.uptime = params[:uptime]
-    checkin.type = params[:type] || 'manual'
+    checkin.method = params[:type] || 'manual'
     checkin.save
   end
 
