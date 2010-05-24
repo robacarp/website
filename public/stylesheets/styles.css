@@ -1,9 +1,12 @@
 
 body {
-  margin:0;
+  margin:0 auto;
   width:768px;
   padding:0;
   font-size:1em;
+  border:1px solid #aeaeae;
+  border-width:0 1px;
+  text-align:center;
 }
 
 .bracket {
@@ -23,7 +26,7 @@ body {
   text-align:justify;
   margin-top:1.9em;
   padding:0 1.9em;
-  border:1px solid #fff;
+  border:0px solid #fff;
   min-height:3em;
   clear:both;
 }
@@ -35,7 +38,7 @@ body {
   left:0;
   background:url('/images/white-75.png');
   font-family:'Helvetica Neue';
-  border:1px solid #fff;
+  border:0px solid #fff;
   text-align:center;
 }
   #configuration .hidden {
@@ -45,7 +48,7 @@ body {
 #footer {
   margin-top:3px;
   background:url('/images/white-75.png');
-  border:1px solid #fff;
+  border:0px solid #fff;
   min-height:3em;
   font-family:'Helvetica Neue';
   font-size:0.7em;
@@ -55,8 +58,7 @@ body {
 #logo {
   margin:0;
   padding:0;
-  border-size:0;
-  border:1px solid #000;
+  border:0px solid #000;
   font-size:4em;
 }
 
@@ -66,12 +68,12 @@ body {
   list-style:none;
   display:inline;
   font-size:1.4em;
-  border:1px solid red;
+  border:0px solid red;
   width:100%;
 }
 
   #menu li {
-    border:1px solid #00ff00;;
+    border:0px solid #00ff00;;
     display:inline;
     padding:0;
   }
@@ -83,7 +85,7 @@ body {
     color:#000;
     font-family:'Helvetica Neue';
     text-decoration:none;
-    border:1px solid #fff;
+    border:0px solid #fff;
   }
 
   #menu li a:hover {
