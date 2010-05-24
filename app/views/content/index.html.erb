@@ -1,13 +1,3 @@
-<ul>
 <% @archive.each do |y| %>
-<li><%= y %><ul>
-  <% y.each do |m| %>
-    <li><%= m %><ul>
-    <% m.each do |c| %>
-      <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
-    <% end %>
-    </ul></li>
-  <% end %>
-  </ul></li>
+<%= y %>
 <% end %>
-</ul>

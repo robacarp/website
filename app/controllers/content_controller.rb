@@ -17,7 +17,5 @@ class ContentController < ApplicationController
       end
       @archive[c.created_at.year][c.created_at.month] = c
     end
-
-
   end
 end
