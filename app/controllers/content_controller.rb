@@ -7,17 +7,15 @@ class ContentController < ApplicationController
   end
   def index
     content = Content.find :all
-    @archive = []
+    @archive = {}
     content.each do |c|
       if !@archive[c.created_at.year] then
-        @archive[c.created_at.year] = []
+        @archive[c.created_at.year] = {}
       end
       if !@archive[c.created_at.year][c.created_at.month] then
-        @archive[c.created_at.year][c.created_at.month] = []
+        @archive[c.created_at.year][c.created_at.month] = {}
       end
       @archive[c.created_at.year][c.created_at.month] = c
     end
-
-
   end
 end
