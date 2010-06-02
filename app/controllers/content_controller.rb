@@ -10,12 +10,13 @@ class ContentController < ApplicationController
     content = Content.find :all
     @archive = {}
     content.each do |c|
-      if !@archive["#{c.created_at.year}"] then
-        @archive["#{c.created_at.year}"] = {}
+      if !@archive[c.created_at.year] then
+        @archive[c.created_at.year] = {}
       end
-      if !@archive["#{c.created_at.year}"]["#{c.created_at.month}"] then
-        @archive["#{c.created_at.year}"]["#{c.created_at.month}"] = {}
+      if !@archive[c.created_at.year][c.created_at.month] then
+        @archive[c.created_at.year][c.created_at.month] = {}
       end
+      #what the ....?!!?
       @archive["#{c.created_at.year}"]["#{c.created_at.month}"] = c
     end
   end

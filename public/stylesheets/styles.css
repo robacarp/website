@@ -1,9 +1,15 @@
 
 body {
-  margin:0;
-  width:768px;
-  padding:0;
   font-size:1em;
+  text-align:center;
+  background-color:#CBE8C3;
+  padding:0;
+  margin:0;
+}
+
+hr {
+  clear:both;
+  visibility:hidden;
 }
 
 .bracket {
@@ -13,17 +19,13 @@ body {
   left:0px;
 }
 
-.water {
-  background:url('/images/waterfall.png');
-}
-
 #content {
-  background:url('/images/white-75.png');;
+  background:url('/images/white-65.png');
   font-family:'Helvetica Neue';
   text-align:justify;
   margin-top:1.9em;
   padding:0 1.9em;
-  border:1px solid #fff;
+  border:0px solid #fff;
   min-height:3em;
   clear:both;
 }
@@ -35,7 +37,7 @@ body {
   left:0;
   background:url('/images/white-75.png');
   font-family:'Helvetica Neue';
-  border:1px solid #fff;
+  border:0px solid #fff;
   text-align:center;
 }
   #configuration .hidden {
@@ -45,7 +47,7 @@ body {
 #footer {
   margin-top:3px;
   background:url('/images/white-75.png');
-  border:1px solid #fff;
+  border:0px solid #fff;
   min-height:3em;
   font-family:'Helvetica Neue';
   font-size:0.7em;
@@ -55,67 +57,60 @@ body {
 #logo {
   margin:0;
   padding:0;
-  border-size:0;
-  border:1px solid #000;
   font-size:4em;
 }
 
-#menu {
+#menu, #menu>ul {
   padding:0;
   margin:0;
   list-style:none;
-  display:inline;
   font-size:1.4em;
   border:1px solid red;
   width:100%;
 }
 
-  #menu li {
-    border:1px solid #00ff00;;
-    display:inline;
-    padding:0;
+  #menu>li {
+    float:left;
   }
 
+  #menu li {
+    display:block;
+    padding:0;
+    width:150px;
+  }
 
-  #menu li a {
+  #menu>li>a {
+    padding:0 2em;
+  }
+
+  #menu li>a {
     background:url('/images/white-90.png');
     padding:0 2em;
-    margin:0 0 10px 0;
     color:#000;
-    font-family:'Helvetica Neue';
+    font-family:'Helvetica Neue', Helvetica, Verdana;
     text-decoration:none;
-    border:1px solid #fff;
+    display:block;
   }
 
-  #menu li a:hover {
+  #menu li>a:hover {
     background:url('/images/black-75.png');
     color:#f00;
   }
 
-  #menu li ul {
+  #menu>li>ul {
     position:absolute;
-    left:-100px;
-    top:4.5em;
-    display:none;
+    left:-50em;
+    padding:0 0 1em;
   }
 
-  #menu li ul li {
-    clear:left;
-    width:10em;
-    text-align:left;
-  }
-
-  #menu li:hover ul {
+  #menu>li:hover>ul {
     left:auto;
-    display:inline;
   }
 
-  #menu li ul li a {
-    display:block;
-    width:5em;
-    overflow:hidden;
-    padding:0 0 0 0.5em;
-    margin:0;
+  #menu>li>ul>li {
+  }
+
+  #menu li>ul>li>a {
   }
 
 
@@ -130,3 +125,14 @@ body {
 
   #footer:hover #pi{
   }
+
+
+#wrap {
+  margin:0 auto;
+  padding:0;
+  width:768px;
+  border:1px solid #aeaeae;
+  border-width:0 1px;
+  background-color:#ccc;
+}
+
