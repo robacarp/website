@@ -1,0 +1,343 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 05:14:04) [GET]
+
+ActionController::RoutingError (No route matches "/51" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContentController#show (for 127.0.0.1 at 2010-05-18 05:14:12) [GET]
+  Parameters: {"id"=>"77"}
+Rendering template within layouts/application
+Rendering content/show
+
+ActionView::TemplateError (uninitialized constant ActionView::Helpers::TextHelper::Markdown) on line #1 of app/views/content/show.html.erb:
+1: <%= if @content.parseMarkdown then; markdown(@content.text); else; @content.text end %>
+
+    app/views/content/show.html.erb:1
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContentController#index (for 127.0.0.1 at 2010-05-18 05:14:28) [GET]
+Rendering template within layouts/application
+Rendering content/index
+
+ActionView::TemplateError (undefined method `each' for nil:NilClass) on line #4 of app/views/content/index.html.erb:
+1: <ul>
+2: <% @archive.each do |y| %>
+3: <li><%= y %><ul>
+4:   <% y.each do |m| %>
+5:     <li><%= m %><ul>
+6:     <% m.each do |c| %>
+7:       <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
+
+    app/views/content/index.html.erb:4
+    app/views/content/index.html.erb:2:in `each'
+    app/views/content/index.html.erb:2
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-18 05:14:40) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 22ms (View: 2, DB: 2) | 200 OK [http://mongrel/ip]
+
+
+Processing ContentController#index (for 127.0.0.1 at 2010-05-18 05:22:31) [GET]
+Rendering template within layouts/application
+Rendering content/index
+
+ActionView::TemplateError (undefined method `each' for nil:NilClass) on line #4 of app/views/content/index.html.erb:
+1: <ul>
+2: <% @archive.each do |y| %>
+3: <li><%= y %><ul>
+4:   <% y.each do |m| %>
+5:     <li><%= m %><ul>
+6:     <% m.each do |c| %>
+7:       <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
+
+    app/views/content/index.html.erb:4
+    app/views/content/index.html.erb:2:in `each'
+    app/views/content/index.html.erb:2
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-18 05:22:40) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 24ms (View: 2, DB: 3) | 200 OK [http://mongrel/ip]
+
+
+Processing ContentController#index (for 127.0.0.1 at 2010-05-18 05:23:29) [GET]
+Rendering template within layouts/application
+Rendering content/index
+
+ActionView::TemplateError (undefined method `each' for nil:NilClass) on line #4 of app/views/content/index.html.erb:
+1: <ul>
+2: <% @archive.each do |y| %>
+3: <li><%= y %><ul>
+4:   <% y.each do |m| %>
+5:     <li><%= m %><ul>
+6:     <% m.each do |c| %>
+7:       <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
+
+    app/views/content/index.html.erb:4
+    app/views/content/index.html.erb:2:in `each'
+    app/views/content/index.html.erb:2
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-18 05:23:41) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 22ms (View: 2, DB: 3) | 200 OK [http://mongrel/ip]
+
+
+Processing CheckinsController#checkin (for 127.0.0.1 at 2010-05-18 05:24:37) [GET]
+  Parameters: {"name"=>"server", "method"=>"cron", "uptime"=>"744969"}
+Rendering template within layouts/checkins
+Rendering checkins/checkin
+Completed in 23ms (View: 2, DB: 8) | 200 OK [http://mongrel/uptime/server/checkin/744969/cron]
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-18 05:24:41) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://mongrel/ip]
+
+
+Processing ContentController#index (for 127.0.0.1 at 2010-05-18 05:24:53) [GET]
+Rendering template within layouts/application
+Rendering content/index
+
+ActionView::TemplateError (undefined method `each' for nil:NilClass) on line #4 of app/views/content/index.html.erb:
+1: <ul>
+2: <% @archive.each do |y| %>
+3: <li><%= y %><ul>
+4:   <% y.each do |m| %>
+5:     <li><%= m %><ul>
+6:     <% m.each do |c| %>
+7:       <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
+
+    app/views/content/index.html.erb:4
+    app/views/content/index.html.erb:2:in `each'
+    app/views/content/index.html.erb:2
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-18 05:25:40) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 20ms (View: 1, DB: 2) | 200 OK [http://mongrel/ip]
+
+
+Processing ContentController#index (for 127.0.0.1 at 2010-05-18 05:26:36) [GET]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering content/index
+
+ActionView::TemplateError (undefined method `each' for nil:NilClass) on line #4 of app/views/content/index.html.erb:
+1: <ul>
+2: <% @archive.each do |y| %>
+3: <li><%= y %><ul>
+4:   <% y.each do |m| %>
+5:     <li><%= m %><ul>
+6:     <% m.each do |c| %>
+7:       <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
+
+    app/views/content/index.html.erb:4
+    app/views/content/index.html.erb:2:in `each'
+    app/views/content/index.html.erb:2
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-18 05:26:40) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 5ms (View: 1, DB: 2) | 200 OK [http://mongrel/ip]
+
+
+Processing ContentController#index (for 127.0.0.1 at 2010-05-18 05:27:39) [GET]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering content/index
+
+ActionView::TemplateError (undefined method `each' for nil:NilClass) on line #4 of app/views/content/index.html.erb:
+1: <ul>
+2: <% @archive.each do |y| %>
+3: <li><%= y %><ul>
+4:   <% y.each do |m| %>
+5:     <li><%= m %><ul>
+6:     <% m.each do |c| %>
+7:       <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
+
+    app/views/content/index.html.erb:4
+    app/views/content/index.html.erb:2:in `each'
+    app/views/content/index.html.erb:2
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-18 05:27:40) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 355ms (View: 1, DB: 351) | 200 OK [http://mongrel/ip]
+
+
+Processing ContentController#index (for 127.0.0.1 at 2010-05-18 05:28:22) [GET]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering content/index
+
+ActionView::TemplateError (undefined method `each' for nil:NilClass) on line #4 of app/views/content/index.html.erb:
+1: <ul>
+2: <% @archive.each do |y| %>
+3: <li><%= y %><ul>
+4:   <% y.each do |m| %>
+5:     <li><%= m %><ul>
+6:     <% m.each do |c| %>
+7:       <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
+
+    app/views/content/index.html.erb:4
+    app/views/content/index.html.erb:2:in `each'
+    app/views/content/index.html.erb:2
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContentController#index (for 127.0.0.1 at 2010-05-18 05:28:41) [GET]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering content/index
+
+ActionView::TemplateError (undefined method `each' for nil:NilClass) on line #4 of app/views/content/index.html.erb:
+1: <ul>
+2: <% @archive.each do |y| %>
+3: <li><%= y %><ul>
+4:   <% y.each do |m| %>
+5:     <li><%= m %><ul>
+6:     <% m.each do |c| %>
+7:       <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
+
+    app/views/content/index.html.erb:4
+    app/views/content/index.html.erb:2:in `each'
+    app/views/content/index.html.erb:2
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IpController#index (for 127.0.0.1 at 2010-05-18 05:28:41) [GET]
+Rendering template within layouts/ip
+Rendering ip/index
+Completed in 57ms (View: 1, DB: 53) | 200 OK [http://mongrel/ip]
