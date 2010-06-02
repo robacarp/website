@@ -57,7 +57,7 @@ hr {
 #logo {
   margin:0;
   padding:0;
-  font-size:35px;
+  font-size:55px;
 }
 
 #menu, #menu>ul {
@@ -65,8 +65,11 @@ hr {
   margin:0;
   list-style:none;
   font-size:1.4em;
-  border:1px solid red;
   width:100%;
+}
+
+#menu {
+  padding-top:1em;
 }
 
   #menu>li {
