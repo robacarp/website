@@ -9,57 +9,45 @@
     <script language="javascript" src="/javascripts/jquery-1.4.2.min.js"></script>
   </head>
   <body> 
+  <div id="wrap">
   <div id="logo">
   { Robert Carpenter < net }
   </div>
   <ul id="menu">
     <li><a href="/writings/77">Me</a></li>
     <li><a href="#">Pictures</a>
-      <ul>
+      <ul id="pictures_menu">
         <li><a href="http://flickr.com/photos/robacarp">Flickr</a></li>
         <li><a href="#">Link</a></li>
       </ul>
     </li>
     <li><a href="#">Writings</a>
-      <ul>
+      <ul id="writings_menu">
         <li><a href="/">Recent</a></li>
         <li><a href="/archive">Archives</a></li>
       </ul>
     </li>
     <li><a href="#">Projects</a>
-      <ul>
+      <ul id="projects_menu">
         <li><a href="#">link</a></li>
         <li><a href="#">link</a></li>
       </ul>
     </li>
   </ul>
+  <hr />
   <div id="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, erat eu hendrerit viverra, lectus purus rutrum lectus, sodales rutrum dui eros sed erat. Vestibulum faucibus imperdiet laoreet. In hac habitasse platea dictumst. Aenean sit amet lacus et mauris iaculis congue. Sed blandit orci at tellus adipiscing quis pellentesque magna tristique. Integer suscipit justo in felis egestas in commodo lacus dictum. Cras libero enim, congue vel faucibus non, egestas vel quam. Nulla rutrum blandit leo, eu mollis neque pellentesque vel. Cras sed volutpat ante. Quisque sollicitudin pharetra felis, eget dictum lacus accumsan eu. Etiam ac libero facilisis diam tincidunt mollis in vitae orci. Fusce neque nibh, cursus sit amet porta aliquet, ultricies at diam. Sed eleifend, sapien sit amet iaculis vehicula, elit ligula eleifend ipsum, id laoreet mi est ut nunc. Morbi ultricies leo ut est tempor posuere. Donec vel mi turpis, in vulputate lacus. Sed facilisis gravida arcu, vulputate laoreet lorem rutrum id.</p>
+
+
   <%= yield %>
-  </div>
+  </div><!--id=content-->
   <div id="footer">
   &copy; 2010 Robert L. Carpenter
   <div id="pi">
     &pi;
-  </div>
-  </div>
-  <div id="configuration">
-    <input type="button" id="configuration_shower" value="Configuration" 
-    onclick="$('#configuration .hidden').toggle();"
-    />
-    <div class="hidden">
-      <hr />
-      <input type="button" id="font_sizer" onclick="
-        $('body').css('font-size', 
-          function(i,v) {
-            $(this).css(
-              {'font-size': (parseFloat(v) % 19) + 1 + 'px'}
-            );
-          }
-        );" value="Font Play" /><br />
-      <input type="button" id="background_toggle" onclick="$('body').toggleClass('water');" value="Background" />
-      <br />
-    </div>
-  </div>
+  </div><!--id=pi-->
+  </div><!--id=footer-->
+  </div><!--wrap-->
   </body>
 </html>
 <!-- -->
