@@ -23,6 +23,6 @@ development:
   database: rcnet
   pool: 5
   timeout: 5000
-  username: web_live
-  password: "AllIwantForChristmasIsMyTwoFrontTeeth1224"
+  username: root
+  password: ""
   host: 127.0.0.1

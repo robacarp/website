@@ -6,19 +6,19 @@
     <style type="text/css" media="screen">
       @import url("/stylesheets/styles.css");
     </style>
-    <script language="javascript" src="/javascripts/jquery-1.4.2.min.js"></script>
+    <%= javascript_include_tag :defaults %>
   </head>
   <body> 
   <div id="wrap">
   <div id="logo">
-  { Robert Carpenter < net }
+  { Robert Carpenter &lt; net }
   </div>
   <ul id="menu">
     <li><a href="/writings/77">Me</a></li>
     <li><a href="#">Pictures</a>
       <ul id="pictures_menu">
         <li><a href="http://flickr.com/photos/robacarp">Flickr</a></li>
-        <li><a href="#">Link</a></li>
+        <!--li><a href="#">Link</a></li-->
       </ul>
     </li>
     <li><a href="#">Writings</a>
@@ -36,9 +36,6 @@
   </ul>
   <hr />
   <div id="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, erat eu hendrerit viverra, lectus purus rutrum lectus, sodales rutrum dui eros sed erat. Vestibulum faucibus imperdiet laoreet. In hac habitasse platea dictumst. Aenean sit amet lacus et mauris iaculis congue. Sed blandit orci at tellus adipiscing quis pellentesque magna tristique. Integer suscipit justo in felis egestas in commodo lacus dictum. Cras libero enim, congue vel faucibus non, egestas vel quam. Nulla rutrum blandit leo, eu mollis neque pellentesque vel. Cras sed volutpat ante. Quisque sollicitudin pharetra felis, eget dictum lacus accumsan eu. Etiam ac libero facilisis diam tincidunt mollis in vitae orci. Fusce neque nibh, cursus sit amet porta aliquet, ultricies at diam. Sed eleifend, sapien sit amet iaculis vehicula, elit ligula eleifend ipsum, id laoreet mi est ut nunc. Morbi ultricies leo ut est tempor posuere. Donec vel mi turpis, in vulputate lacus. Sed facilisis gravida arcu, vulputate laoreet lorem rutrum id.</p>
-
-
   <%= yield %>
   </div><!--id=content-->
   <div id="footer">

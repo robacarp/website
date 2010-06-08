@@ -1,9 +1,36 @@
-<ul>
-<% @archive.each_key do |y| %>
+<script>
+document.observe('dom:loaded', function(){
+  $$('#archive ul').each(function (e){
+    e.setStyle({
+      display: 'none',
+      cursor: 'pointer'
+    });
+  });
+  $$('#archive li').each(function (li){
+    li.observe('click', function (event){
+      this.down('ul').setStyle({
+        display: ''
+      });
+    });
+  });
+});
+
+</script>
+<ul id="archive">
+<% 
+years = @archive.keys.sort
+years.each do |y|
+%>
 <li><%= y %><ul>
-  <% @archive[y].each_key do |m| %>
+  <% 
+  months = @archive[y].keys.sort
+  months.each do |m| 
+  %>
     <li><%= m %><ul>
-    <% @archive[y][m].each do |c| %>
+    <% 
+    posts = @archive[y][m].sort {|a,b| a.created_at <=> b.created_at}
+    posts.each do |content|
+    %>
       <li><%= content.created_at %> <a href="/writings/<%= content.id %>"><%= content.title %></a></li>
     <% end %>
     </ul></li>
