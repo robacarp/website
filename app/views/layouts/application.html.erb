@@ -14,7 +14,7 @@
   { Robert Carpenter &lt; net }
   </div>
   <ul id="menu">
-    <li><a href="/writings/77">Me</a></li>
+    <li><a href="/writings/show/77">Me</a></li>
     <li><a href="#">Pictures</a>
       <ul id="pictures_menu">
         <li><a href="http://flickr.com/photos/robacarp">Flickr</a></li>
@@ -24,7 +24,7 @@
     <li><a href="#">Writings</a>
       <ul id="writings_menu">
         <li><a href="/">Recent</a></li>
-        <li><a href="/archive">Archives</a></li>
+        <li><a href="/writings/archive">Archives</a></li>
       </ul>
     </li>
     <!--li><a href="#">Projects</a>
@@ -33,28 +33,24 @@
         <li><a href="#">link</a></li>
       </ul-->
     </li>
+  <% if current_user.is_admin? then %>
+    <li><a href="#">Tools</a><%= :controller %>
+      <ul id="tools_menu">
+        
+        <li><a href="/content/edit/77">Edit</a></li>
+        <li><a href="/content/new">New</a></li>
+      </ul>
+    </li>
+  <% end %>
   </ul>
   <hr />
   <div id="content">
-  <pre>
-  <% if current_user.is_admin? then %>
-ADMIN
-  <% elsif current_user.is_guest %>
-GUEST
-  <% else %>
-USER, i guess...
-  <% end %>
-  , id: <%= current_user.id %>
-  </pre>
   <%= yield %>
-  </div><!--id=content-->
+  </div><!--content-->
   <div id="footer">
   &copy; 2010 Robert L. Carpenter
-  <div id="pi">
-    &pi;
-  </div><!--id=pi-->
-  </div><!--id=footer-->
+  <a href="/login" id="pi">&pi;</a>
+  </div><!--footer-->
   </div><!--wrap-->
   </body>
 </html>
-<!-- -->

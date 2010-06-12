@@ -2,8 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   map.home '/', :controller => 'content', :action => 'last'
 
   #spare routes for the content
-  map.content '/writings/:action/:id', :controller=>'content'
-  map.archives '/archive', :controller=>'content', :action => 'index'
+  map.archives '/writings/archive', :controller=>'writings', :action => 'index'
 
   #uptime tracker.  These routse are a bit awkward....
   map.uptime '/uptime/:name/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
