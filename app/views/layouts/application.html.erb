@@ -34,16 +34,22 @@
       </ul-->
     </li>
   <% if current_user.is_admin? then %>
-    <li><a href="#">Tools</a><%= :controller %>
+    <li><a href="#">Tools</a>
       <ul id="tools_menu">
-        
-        <li><a href="/content/edit/77">Edit</a></li>
-        <li><a href="/content/new">New</a></li>
+        <li><a href="/writings/edit/77">Edit</a></li>
+        <li><a href="/writings/new">New</a></li>
       </ul>
     </li>
   <% end %>
   </ul>
   <hr />
+    <% if flash[:notice] %>
+      <p style="color:green"><%= flash[:notice] %></p>
+    <% end %>
+    
+    <% if flash[:error] %>
+      <p style="color:red"><%= flash[:error] %></p>
+    <% end %>
   <div id="content">
   <%= yield %>
   </div><!--content-->

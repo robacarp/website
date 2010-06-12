@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100516082353) do
+ActiveRecord::Schema.define(:version => 20100612181623) do
 
   create_table "addresses", :force => true do |t|
     t.string "owner",   :limit => 32,  :default => "", :null => false
@@ -66,24 +66,6 @@ ActiveRecord::Schema.define(:version => 20100516082353) do
     t.datetime "date",                                                           :null => false
     t.boolean  "deleted",                        :default => false,              :null => false
     t.date     "subscribed_date"
-  end
-
-  create_table "content", :force => true do |t|
-    t.boolean  "deleted",                      :default => false,                              :null => false
-    t.string   "title",         :limit => 150
-    t.string   "author",        :limit => 32,  :default => "-1",                               :null => false
-    t.datetime "date",                                                                         :null => false
-    t.binary   "text"
-    t.boolean  "putInNav",                     :default => false,                              :null => false
-    t.string   "linkText",      :limit => 32,                                                  :null => false
-    t.boolean  "allowCode",                    :default => false,                              :null => false
-    t.boolean  "allowComments",                :default => true,                               :null => false
-    t.string   "uid",           :limit => 32,  :default => "00000000000000000000000000000000", :null => false
-    t.boolean  "parseMarkdown",                :default => false,                              :null => false
-    t.integer  "completed",                    :default => 0,                                  :null => false
-    t.boolean  "putInBlogRoll",                :default => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "customers", :force => true do |t|
@@ -186,6 +168,24 @@ ActiveRecord::Schema.define(:version => 20100516082353) do
     t.datetime "remember_token_expires_at"
     t.boolean  "is_admin",                                :default => false
     t.boolean  "is_guest",                                :default => true
+  end
+
+  create_table "writings", :force => true do |t|
+    t.boolean  "deleted",                      :default => false,                              :null => false
+    t.string   "title",         :limit => 150
+    t.string   "author",        :limit => 32,  :default => "-1",                               :null => false
+    t.datetime "date",                                                                         :null => false
+    t.binary   "text"
+    t.boolean  "putInNav",                     :default => false,                              :null => false
+    t.string   "linkText",      :limit => 32,                                                  :null => false
+    t.boolean  "allowCode",                    :default => false,                              :null => false
+    t.boolean  "allowComments",                :default => true,                               :null => false
+    t.string   "uid",           :limit => 32,  :default => "00000000000000000000000000000000", :null => false
+    t.boolean  "parseMarkdown",                :default => false,                              :null => false
+    t.integer  "completed",                    :default => 0,                                  :null => false
+    t.boolean  "putInBlogRoll",                :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

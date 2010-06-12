@@ -27,4 +27,14 @@ class WritingsController < ApplicationController
     @writing = Writing.find params[:id]
   end
 
+  def update
+    @writing = Writing.find params[:id]
+    if @writing.update_attributes params[:writing] then
+      flash[:notice] = 'Writing saved.'
+      redirect_to @writing
+    else
+      render :action => 'edit'
+    end
+  end
+
 end
