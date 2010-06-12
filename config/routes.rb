@@ -1,22 +1,22 @@
 ActionController::Routing::Routes.draw do |map|
   map.home '/', :controller => 'content', :action => 'last'
-  map.ip '/ip', :controller => 'ip', :action => 'index'
-  map.connect '/ip/list', :controller => 'ip', :action => 'list'
-  map.content '/writings/:id', :controller=>'content', :action => 'show'
+
+  #spare routes for the content
+  map.content '/writings/:action/:id', :controller=>'content'
   map.archives '/archive', :controller=>'content', :action => 'index'
+
+  #uptime tracker.  These routse are a bit awkward....
   map.uptime '/uptime/:name/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
   map.uptime '/uptime/:name/checkin/:uptime', :controller=>'checkins', :action => 'checkin'
-  map.connect '/uptime/list', :controller=>'checkins',:action=>'list'
-  # map.connect ':controller/:action/:id'
-  # map.connect ':controller/:action/:id.:format'
+  map.connect '/uptime/list', :controller=>'checkins', :action=>'list'
 
   #authentication routes
-  map.signup '/signup', :controller => 'users', :action=>'new'
-  map.login '/login', :controller => 'sessions', :action=>'new'
-  map.logout '/logout', :controller => 'sessions', :action=>'destroy'
-
+  map.signup  '/signup', :controller => 'users', :action=>'new'
+  map.login   '/login', :controller => 'sessions', :action=>'new'
+  map.logout  '/logout', :controller => 'sessions', :action=>'destroy'
   map.resources :users
-  map.resource :session
+  map.resource  :session
 
-  
+  #reliably connects most controllers
+  map.connect  ':controller/:action/:id'
 end
