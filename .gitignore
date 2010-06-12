@@ -5,4 +5,5 @@ log/*
 *.pid
 *.sql
 config/environment.rb
+db/schema.rb
 
