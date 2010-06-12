@@ -1,1 +1,5 @@
-<%= @ip %>
+<% if @ip == nil then %>
+  Couldn't reliably determine your ip address
+<% else %>
+  <%= @ip %>
+<% end %>
