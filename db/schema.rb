@@ -11,11 +11,6 @@
 
 ActiveRecord::Schema.define(:version => 20100516082353) do
 
-  create_table "#mysql50#tag-links", :id => false, :force => true do |t|
-    t.string  "content_uid", :limit => 32,                :null => false
-    t.integer "tag_id",                    :default => 0, :null => false
-  end
-
   create_table "addresses", :force => true do |t|
     t.string "owner",   :limit => 32,  :default => "", :null => false
     t.string "name",    :limit => 100, :default => "", :null => false
@@ -164,6 +159,11 @@ ActiveRecord::Schema.define(:version => 20100516082353) do
     t.string "supportCurrent", :limit => 6,   :default => "", :null => false
   end
 
+  create_table "tag-links", :id => false, :force => true do |t|
+    t.string  "content_uid", :limit => 32,                :null => false
+    t.integer "tag_id",                    :default => 0, :null => false
+  end
+
   create_table "tags", :force => true do |t|
     t.string "tag"
   end
@@ -174,7 +174,18 @@ ActiveRecord::Schema.define(:version => 20100516082353) do
     t.binary    "email",    :limit => 2147483647
   end
 
-# Could not dump table "users" because of following StandardError
-#   Unknown type 'set('guest','user','admin')' for column 'access'
+  create_table "users", :force => true do |t|
+    t.string   "login"
+    t.string   "email"
+    t.string   "crypted_password",          :limit => 40
+    t.string   "salt",                      :limit => 40
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "last_accessed_at"
+    t.string   "remember_token"
+    t.datetime "remember_token_expires_at"
+    t.boolean  "is_admin",                                :default => false
+    t.boolean  "is_guest",                                :default => true
+  end
 
 end

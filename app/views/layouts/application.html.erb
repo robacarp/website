@@ -36,6 +36,16 @@
   </ul>
   <hr />
   <div id="content">
+  <pre>
+  <% if current_user.is_admin? then %>
+ADMIN
+  <% elsif current_user.is_guest %>
+GUEST
+  <% else %>
+USER, i guess...
+  <% end %>
+  , id: <%= current_user.id %>
+  </pre>
   <%= yield %>
   </div><!--id=content-->
   <div id="footer">
