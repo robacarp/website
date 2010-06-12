@@ -4,7 +4,8 @@ class ContentController < ApplicationController
   end
 
   def last
-    @content = Content.find :last
+    @content = Content.find_by_id 77
+
   end
 
   def index
