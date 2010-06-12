@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.home '/', :controller => 'writings'
+  map.home '/', :controller => 'writings', :action => 'last'
 
   #spare routes for the content
   map.archives '/writings/archive', :controller=>'writings', :action => 'index'
