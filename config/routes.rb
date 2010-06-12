@@ -9,4 +9,10 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/uptime/list', :controller=>'checkins',:action=>'list'
   # map.connect ':controller/:action/:id'
   # map.connect ':controller/:action/:id.:format'
+
+  #authentication routes
+    map.signup '/signup', :controller => 'users', :action=>'new'
+    map.login '/login', :controller => 'sessions', :action=>'new'
+    map.logout '/logout', :controller => 'sessions', :action=>'destroy'
+  
 end
