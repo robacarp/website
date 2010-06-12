@@ -1,18 +1,17 @@
-class ContentController < ApplicationController
+class WritingsController < ApplicationController
   def show
-    @content = Content.find params[:id]
+    @writing = Writing.find params[:id]
   end
 
   def last
-    @content = Content.find_by_id 77
-
+    @writing = Writing.find_by_id 77
   end
 
   def index
     #organize content by year, then month
-    content = Content.find :all
+    writings = Writing.find :all
     @archive = {}
-    content.each do |c|
+    writings.each do |c|
       if !@archive[c.created_at.year] then
         @archive[c.created_at.year] = {}
       end
@@ -21,8 +20,11 @@ class ContentController < ApplicationController
       end
       @archive[c.created_at.year][c.created_at.month].push c
     end
-
     @archive
+  end
+
+  def edit
+    @writing = Writing.find params[:id]
   end
 
 end
