@@ -6,9 +6,41 @@
     <style type="text/css" media="screen">
       @import url("/stylesheets/styles.css");
     </style>
-    <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag :all %>
   </head>
   <body> 
+
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 250,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#4aed05'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'default'
+  }
+}).render().setUser('robacarp').start();
+</script>
+
   <div id="wrap">
   <div id="logo">
   { Robert Carpenter &lt; net }

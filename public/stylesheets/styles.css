@@ -124,6 +124,10 @@ hr {
   #footer:hover #pi{
   }
 
+#twtr-widget-1 {
+  float:left;
+}
+
 #wrap {
   margin:0 auto;
   padding:0;
