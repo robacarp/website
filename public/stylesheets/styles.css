@@ -18,6 +18,26 @@ hr {
   left:0px;
 }
 
+.flash {
+  border-width:3px;
+  border-style:solid;
+  padding:0;
+  margin:0;
+  font-family:'Helvetica Neue',Helvetica,Verdana;
+  text-align:justify;
+  padding:0 1em;
+  margin:1em 0;
+}
+  .flash.error {
+    background-color:#fbb;
+    border-color:#b44;
+  }
+
+  .flash.notice {
+    background-color:#bbbbf0;
+    border-color:#44b;
+  }
+
 #content {
   background:url('/images/white-65.png');
   font-family:'Helvetica Neue';
@@ -68,7 +88,7 @@ hr {
 }
 
 #menu {
-  padding-top:1em;
+  
 }
 
   #menu>li {
