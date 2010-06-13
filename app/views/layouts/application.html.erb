@@ -43,7 +43,7 @@
 
   <div id="wrap">
     <div id="logo">
-      { Robert Carpenter &lt; net }
+      <a href="/">{ Robert Carpenter &lt; net }</a>
     </div>
     <% if flash[:notice] %>
       <p class="flash notice"><%= flash[:notice] %></p>
@@ -78,10 +78,10 @@
         <ul id="tools_menu">
           <li><a href="/logout">Logout</a></li>
           <% if current_user.is_admin? then %>
-            <% if !!@writing %>
+          <li><a href="/writings/new">New</a></li>
+            <% if !!@writing  && !@writing.draft %>
             <li><%= link_to "Edit", edit_writing_path(@writing) %></li>
             <% end %>
-          <li><a href="/writings/new">New</a></li>
           <% end %>
       <% end %>
         </ul>

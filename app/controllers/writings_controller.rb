@@ -1,8 +1,19 @@
 class WritingsController < ApplicationController
   def show
     @writing = Writing.find params[:id]
-#    flash[:notice] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio eros, sit amet hendrerit elit. Vestibulum placerat sagittis pretium. Etiam ullamcorper mi velit. Ut blandit, urna vitae mattis dictum, nisl felis sodales velit, at varius nulla mauris vel leo. Integer dignissim venenatis fermentum. Integer et quam quis velit interdum porta. Mauris a felis ut dolor ornare pulvinar. Duis a imperdiet neque. Nullam at augue non mi placerat tempus. Cras et laoreet lacus. Pellentesque rutrum vehicula turpis id varius. Sed velit quam, fermentum at viverra quis, posuere sit amet sapien. Aliquam non tortor eu eros semper eleifend eu a libero. In hac habitasse platea dictumst. Ut nisi arcu, rhoncus ut accumsan sit amet, interdum vel nisl."
-#    flash[:error] = "Lorem ipsum dolor sit amet"
+
+    if @writing.draft then
+      if ! logged_in? then
+        flash[:notice] = "That article is not yet published"
+        redirect_to '/'
+      else 
+        flash[:notice] = "This article isn't yet published."
+      end
+    end
+
+    rescue ActiveRecord::RecordNotFound
+      flash[:notice] = "That article is not yet published"
+      redirect_to '/'
   end
 
   def last
@@ -23,6 +34,21 @@ class WritingsController < ApplicationController
       @archive[c.created_at.year][c.created_at.month].push c
     end
     @archive
+  end
+
+  def new 
+    @writing = Writing.new
+  end
+
+  def create
+    @writing = Item.new(params[:writing])
+    if @writing.save then
+      flash[:notice] = "Writing created and saved"
+      redirect_to @writing
+    else
+      flash[:error] = "There was an error creating or saving the writing"
+      render :action => 'new'
+    end
   end
 
   def edit
