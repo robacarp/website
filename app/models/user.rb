@@ -31,7 +31,7 @@ class User < ActiveRecord::Base
     Digest::SHA1.hexdigest("--#{salt}--#{password}--")
   end
 
-#creates an invalid user (guest)
+  #creates an invalid user (guest)
   def self.new_shell
     u = User.new
     u.is_guest = true
@@ -81,29 +81,6 @@ class User < ActiveRecord::Base
     @activated
   end
 
-	#virtual attributes
-	def cart
-		if (self.cart_id == nil)
-			logger.info "Creating new Cart"
-			o = Order.new
-			o.user = self
-			o.save
-			self.cart = o
-			return o
-		end
-		return Order.find_by_id(self.cart_id)
-	end
-
-	def cart=(cart)
-		if cart.is_a? Order
-			self.cart_id = cart.id
-		elsif cart.nil?
-			self.cart_id = nil
-		end
-		self.save!
-		cart
-	end
-
 	def guest?
 		is_guest
 	end
@@ -113,13 +90,6 @@ class User < ActiveRecord::Base
 		(Time.new - created_at.time).round() < 60
 	end
 	
-	def update_access_time
-		self.last_accessed_at = Time.now
-		save
-	end
-
-
-
 	# before filter 
 	def encrypt_password
 		return if password.blank?

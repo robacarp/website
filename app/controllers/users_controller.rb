@@ -11,9 +11,9 @@ class UsersController < ApplicationController
   end
 
   def create
+		# robert: no clue what this does 
     # protects against session fixation attacks, wreaks havoc with 
     # request forgery protection.
-		# robert: no clue what this does 
     # uncomment at your own risk
     # reset_session
 
