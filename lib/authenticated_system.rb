@@ -15,7 +15,7 @@ module AuthenticatedSystem
 		def restore_or_create_user
 			update = @current_user.nil?
       @current_user ||= (login_from_session || login_from_basic_auth || login_from_cookie || login_as_guest ) unless @current_user == false
-			@current_user.update_access_time if @current_user && update
+			#@current_user.update_access_time if @current_user && update
 			@current_user
 		end
   
