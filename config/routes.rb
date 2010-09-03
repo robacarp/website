@@ -5,7 +5,9 @@ ActionController::Routing::Routes.draw do |map|
   map.archives '/writings/archive', :controller=>'writings', :action => 'index'
 
   #uptime tracker.  These routse are a bit awkward....
+  map.uptime '/uptime/:name/:passkey/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
   map.uptime '/uptime/:name/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
+  map.uptime '/uptime/:name/:passkey/checkin/:uptime/', :controller=>'checkins', :action => 'checkin'
   map.uptime '/uptime/:name/checkin/:uptime', :controller=>'checkins', :action => 'checkin'
   map.connect '/uptime/list', :controller=>'checkins', :action=>'list'
 
