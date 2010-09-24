@@ -4,3 +4,4 @@ log/*.log
 *.pid
 *.sql
 db/schema.rb
+_site/*
