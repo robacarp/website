@@ -1,1 +1,21 @@
-exclude: [rails_site]
+exclude: [
+'.git',
+'.gitignore',
+'README',
+'Rakefile',
+'app',
+'config',
+'db',
+'doc',
+'flickr-key',
+'images',
+'posts',
+'robert_main.sql',
+'script',
+'test',
+'tmp',
+'vendor'
+]
+
+source:      .
+destination: ./public
