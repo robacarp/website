@@ -8,7 +8,7 @@ exclude: [
 'db',
 'doc',
 'flickr-key',
-'images',
+'images.bak',
 'posts',
 'robert_main.sql',
 'script',

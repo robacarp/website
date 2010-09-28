@@ -1,8 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
-  map.home '/', :controller => 'writings', :action => 'last'
+  #map.home '/', :controller => 'writings', :action => 'last'
 
   #spare routes for the content
-  map.archives '/writings/archive', :controller=>'writings', :action => 'index'
+  #map.archives '/writings/archive', :controller=>'writings', :action => 'index'
 
   #uptime tracker.  These routse are a bit awkward....
   map.uptime '/uptime/:name/:passkey/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
