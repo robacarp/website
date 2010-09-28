@@ -5,3 +5,5 @@ log/*.log
 *.sql
 db/schema.rb
 _site/*
+public
+public/*
