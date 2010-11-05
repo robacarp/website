@@ -1,25 +1,86 @@
-ActionController::Routing::Routes.draw do |map|
-  map.home '/', :controller => 'writings', :action => 'last'
+Rcnet::Application.routes.draw do
 
-  #spare routes for the content
-  map.archives '/writings/archive', :controller=>'writings', :action => 'index'
+  # The priority is based upon order of creation:
+  # first created -> highest priority.
+#From Rails 2 version
+#ActionController::Routing::Routes.draw do |map|
+#  map.home '/', :controller => 'writings', :action => 'last'
+#
+#  #spare routes for the content
+#  map.archives '/writings/archive', :controller=>'writings', :action => 'index'
+#
+#  #uptime tracker.  These routse are a bit awkward....
+#  map.uptime '/uptime/:name/:passkey/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
+#  map.uptime '/uptime/:name/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
+#  map.uptime '/uptime/:name/:passkey/checkin/:uptime/', :controller=>'checkins', :action => 'checkin'
+#  map.uptime '/uptime/:name/checkin/:uptime', :controller=>'checkins', :action => 'checkin'
+#  map.connect '/uptime/list', :controller=>'checkins', :action=>'list'
+#
+#  #authentication routes
+#  map.signup  '/signup', :controller => 'users', :action=>'new'
+#  map.login   '/login', :controller => 'sessions', :action=>'new'
+#  map.logout  '/logout', :controller => 'sessions', :action=>'destroy'
+#
+#  map.resources :writings
+#  map.resources :users
+#  map.resource  :session
+#
+#  #reliably connects most controllers
+#  map.connect  ':controller/:action/:id'
+#end
+  # 
 
-  #uptime tracker.  These routse are a bit awkward....
-  map.uptime '/uptime/:name/:passkey/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
-  map.uptime '/uptime/:name/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
-  map.uptime '/uptime/:name/:passkey/checkin/:uptime/', :controller=>'checkins', :action => 'checkin'
-  map.uptime '/uptime/:name/checkin/:uptime', :controller=>'checkins', :action => 'checkin'
-  map.connect '/uptime/list', :controller=>'checkins', :action=>'list'
+  # Sample of regular route:
+  #   match 'products/:id' => 'catalog#view'
+  # Keep in mind you can assign values other than :controller and :action
 
-  #authentication routes
-  map.signup  '/signup', :controller => 'users', :action=>'new'
-  map.login   '/login', :controller => 'sessions', :action=>'new'
-  map.logout  '/logout', :controller => 'sessions', :action=>'destroy'
+  # Sample of named route:
+  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  # This route can be invoked with purchase_url(:id => product.id)
 
-  map.resources :writings
-  map.resources :users
-  map.resource  :session
+  # Sample resource route (maps HTTP verbs to controller actions automatically):
+  #   resources :products
 
-  #reliably connects most controllers
-  map.connect  ':controller/:action/:id'
+  # Sample resource route with options:
+  #   resources :products do
+  #     member do
+  #       get 'short'
+  #       post 'toggle'
+  #     end
+  #
+  #     collection do
+  #       get 'sold'
+  #     end
+  #   end
+
+  # Sample resource route with sub-resources:
+  #   resources :products do
+  #     resources :comments, :sales
+  #     resource :seller
+  #   end
+
+  # Sample resource route with more complex sub-resources
+  #   resources :products do
+  #     resources :comments
+  #     resources :sales do
+  #       get 'recent', :on => :collection
+  #     end
+  #   end
+
+  # Sample resource route within a namespace:
+  #   namespace :admin do
+  #     # Directs /admin/products/* to Admin::ProductsController
+  #     # (app/controllers/admin/products_controller.rb)
+  #     resources :products
+  #   end
+
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  # root :to => "welcome#index"
+
+  # See how all your routes lay out with "rake routes"
+
+  # This is a legacy wild controller route that's not recommended for RESTful applications.
+  # Note: This route will make all actions in every controller accessible via GET requests.
+  # match ':controller(/:action(/:id(.:format)))'
 end
