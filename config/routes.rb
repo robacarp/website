@@ -16,9 +16,9 @@ Rcnet::Application.routes.draw do
   match   '/login'=> 'sessions#new'
   match  '/logout'=> 'sessions#destroy'
 
-  map.resources :writings
-  map.resources :users
-  map.resource  :session
+  resources :writings
+  resources :users
+  resource  :session
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
