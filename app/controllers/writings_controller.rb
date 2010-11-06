@@ -18,6 +18,7 @@ class WritingsController < ApplicationController
 
   def last
     @writing = Writing.find_by_id 77
+    render :show
   end
 
   def index

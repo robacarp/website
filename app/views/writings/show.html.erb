@@ -1,1 +1,5 @@
-<%= if @writing.parseMarkdown then; markdown(@writing.text); else; @writing.text end %>
+<%- if @writing.parseMarkdown -%>
+  <%= raw markdown(@writing.text) %>
+<%- else  -%>
+  <%= raw @writing.text %>
+<%- end -%>
