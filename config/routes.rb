@@ -1,34 +1,24 @@
 Rcnet::Application.routes.draw do
+  root :to => 'writings#last'
 
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-#From Rails 2 version
-#ActionController::Routing::Routes.draw do |map|
-#  map.home '/', :controller => 'writings', :action => 'last'
-#
-#  #spare routes for the content
-#  map.archives '/writings/archive', :controller=>'writings', :action => 'index'
-#
-#  #uptime tracker.  These routse are a bit awkward....
-#  map.uptime '/uptime/:name/:passkey/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
-#  map.uptime '/uptime/:name/checkin/:uptime/:method', :controller=>'checkins', :action => 'checkin'
-#  map.uptime '/uptime/:name/:passkey/checkin/:uptime/', :controller=>'checkins', :action => 'checkin'
-#  map.uptime '/uptime/:name/checkin/:uptime', :controller=>'checkins', :action => 'checkin'
-#  map.connect '/uptime/list', :controller=>'checkins', :action=>'list'
-#
-#  #authentication routes
-#  map.signup  '/signup', :controller => 'users', :action=>'new'
-#  map.login   '/login', :controller => 'sessions', :action=>'new'
-#  map.logout  '/logout', :controller => 'sessions', :action=>'destroy'
-#
-#  map.resources :writings
-#  map.resources :users
-#  map.resource  :session
-#
-#  #reliably connects most controllers
-#  map.connect  ':controller/:action/:id'
-#end
-  # 
+  #spare routes for the content
+  match '/writings/archive'=>'writings#index'
+
+  #uptime tracker.  These routse are a bit awkward....
+  match '/uptime/:name/:passkey/checkin/:uptime/:method' => 'checkins#checkin'
+  match '/uptime/:name/checkin/:uptime/:method'          => 'checkins#checkin'
+  match '/uptime/:name/:passkey/checkin/:uptime/'        => 'checkins#checkin'
+  match '/uptime/:name/checkin/:uptime'                  => 'checkins#checkin'
+  match '/uptime/list'                                   => 'checkins#list'
+
+  #authentication routes
+  match  '/signup'=> 'users#new'
+  match   '/login'=> 'sessions#new'
+  match  '/logout'=> 'sessions#destroy'
+
+  map.resources :writings
+  map.resources :users
+  map.resource  :session
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
