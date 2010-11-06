@@ -2,18 +2,11 @@ class WritingsController < ApplicationController
   def show
     @writing = Writing.find params[:id]
 
-    if @writing.draft then
-      if ! logged_in? then
-        flash[:notice] = "That article is not yet published"
-        redirect_to '/'
-      else 
-        flash[:notice] = "This article isn't yet published."
-      end
-    end
+    raise ActiveRecord::RecordNotFound if @writing.nil?
 
-    rescue ActiveRecord::RecordNotFound
-      flash[:notice] = "That article is not yet published"
-      redirect_to '/'
+  rescue ActiveRecord::RecordNotFound
+    flash[:notice] = "That article is not yet published"
+    redirect_to '/'
   end
 
   def last
@@ -42,7 +35,9 @@ class WritingsController < ApplicationController
   end
 
   def create
-    @writing = Item.new(params[:writing])
+    @writing = Writing.new(params[:writing])
+    @writing.date = '2010-01-01'
+
     if @writing.save then
       flash[:notice] = "Writing created and saved"
       redirect_to @writing

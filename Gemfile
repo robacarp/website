@@ -7,4 +7,5 @@ gem 'ruby-debug'
 gem 'bluecloth', '>= 2.0.0'
 gem 'devise', '1.1.2'
 gem 'haml'
+gem 'formtastic', '~> 1.1.0'
 

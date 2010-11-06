@@ -1,0 +1,12 @@
+%h1 Write something
+= form_for @writing do |f|
+  = f.label :title
+  = f.text_field :title
+  %br
+  = f.label :date
+  = f.text_field :date
+  %br
+  = f.label :content
+  = f.text_area :content
+  %br
+  = f.submit "Save"
