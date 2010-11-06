@@ -37,7 +37,7 @@ class WritingsController < ApplicationController
     @archive
   end
 
-  def new 
+  def new
     @writing = Writing.new
   end
 
