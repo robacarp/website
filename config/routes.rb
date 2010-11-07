@@ -2,6 +2,7 @@ Rcnet::Application.routes.draw do
   devise_for :users
 
   root :to => 'writings#show', :id=>1
+  match 'ip/(:action)', :controller => :ip
   match '/session/new.user', :to => redirect('users/login')
 
   #spare routes for the content
@@ -16,5 +17,4 @@ Rcnet::Application.routes.draw do
 
   resources :writings
   resources :users
-  resource  :session
 end

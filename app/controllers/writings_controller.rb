@@ -6,7 +6,7 @@ class WritingsController < ApplicationController
 
   rescue ActiveRecord::RecordNotFound
     flash[:notice] = "That article is not yet published"
-    redirect_to '/'
+#    redirect_to '/'
   end
 
   def last
