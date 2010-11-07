@@ -1,0 +1,84 @@
+/* line 3, ../../app/stylesheets/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  background: url("/images/tartan2.png") #e6e9ed fixed;
+}
+
+/* line 10, ../../app/stylesheets/screen.scss */
+#content {
+  text-align: justify;
+  border-top: 1px solid black;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 17, ../../app/stylesheets/screen.scss */
+#content div {
+  margin: 1em;
+}
+/* line 18, ../../app/stylesheets/screen.scss */
+#content p {
+  text-indent: 2em;
+}
+
+/* line 21, ../../app/stylesheets/screen.scss */
+#footer {
+  position: fixed;
+  bottom: 0;
+  padding-top: 1.5em;
+  width: 650px;
+  text-align: center;
+  font-size: 0.6em;
+  background: url("/images/white-80.png");
+}
+
+/* line 32, ../../app/stylesheets/screen.scss */
+#header {
+  font-size: 3em;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+/* line 39, ../../app/stylesheets/screen.scss */
+#menu {
+  margin: 0;
+  padding: 0 0 0 1em;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 44, ../../app/stylesheets/screen.scss */
+#menu li {
+  list-style-type: none;
+  display: inline;
+  float: left;
+  padding-right: 1em;
+  font-size: 1.4em;
+}
+/* line 51, ../../app/stylesheets/screen.scss */
+#menu li a {
+  color: #888;
+  text-decoration: none;
+}
+/* line 56, ../../app/stylesheets/screen.scss */
+#menu li:hover {
+  outline: none;
+  color: #000;
+}
+
+/* line 63, ../../app/stylesheets/screen.scss */
+#pi {
+  float: right;
+  color: #000;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+/* line 70, ../../app/stylesheets/screen.scss */
+#wrap {
+  margin: 0 auto;
+  width: 650px;
+  min-height: 1024px;
+  background: url("/images/white-60.png");
+}

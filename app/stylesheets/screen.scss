@@ -1,0 +1,75 @@
+@mixin clearfix { overflow:hidden; width:100%; }
+
+body {
+  margin      : 0;
+  padding     : 0;
+  font-family : 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  background  : url('/images/tartan2.png') #E6E9ED fixed;
+}
+
+#content {
+  text-align : justify;
+  border-top : 1px solid black;
+
+
+  @include clearfix;
+
+  div { margin    : 1em; }
+  p { text-indent : 2em; }
+}
+
+#footer {
+  position    : fixed;
+  bottom      : 0;
+  padding-top : 1.5em;
+  width       : 650px;
+
+  text-align : center;
+  font-size  : 0.6em;
+  background : url('/images/white-80.png');
+}
+
+#header {
+  font-size     : 3em;
+  text-align    : center;
+  border-bottom : 1px solid black;
+  padding       : 8px;
+}
+
+#menu {
+  margin  : 0;
+  padding : 0 0 0 1em;
+  @include clearfix;
+
+  li {
+    list-style-type : none;
+    display         : inline;
+    float           : left;
+    padding-right   : 1em;
+    font-size:1.4em;
+
+    a {
+      color           : #888;
+      text-decoration : none;
+    }
+
+    &:hover {
+      outline : none;
+      color   : #000;
+    }
+  }
+}
+
+#pi {
+  float           : right;
+  color           : #000;
+  text-decoration : none;
+  margin-right    : 1em;
+}
+
+#wrap {
+  margin     : 0 auto;
+  width      : 650px;
+  min-height : 1024px;
+  background : url('/images/white-60.png');
+}

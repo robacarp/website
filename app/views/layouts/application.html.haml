@@ -3,7 +3,7 @@
   %head
     %meta(http-equiv="Content-type" content="text/html; charset=utf-8")
     %title Robertcarpenter.net
-    = stylesheet_link_tag 'styles.css'
+    = stylesheet_link_tag 'screen.css'
     = javascript_include_tag :all
   %body
   #wrap
@@ -12,8 +12,8 @@
     <!--script type="text/javascript"> google_ad_client = "pub-0872522376167995"; google_ad_slot = "8802068889"; google_ad_width = 468; google_ad_height = 15; </script> <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script-->
     #menu
       %li
-        %a(href="/writings/show/77")
-        About
+        %a(href="/writings/1")
+          About
       %li
         %a(href="http://flickr.com/photos/robacarp")
           Pictures
@@ -22,7 +22,8 @@
           Code
     %div
     #content
-      = yield
+      %div
+        = yield
     <!--content-->
     #footer
       %a(href="/login" id="pi")
