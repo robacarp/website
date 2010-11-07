@@ -1,2 +1,7 @@
-:markdown
-  #{@writing.content}
+-if @writing.nil?
+  %h4 404
+  %p
+    That page does not exist.
+-else
+  :markdown
+    #{@writing.content}
