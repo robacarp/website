@@ -1,8 +1,8 @@
 class WritingsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:show, :index, :last]
+
   def show
     @writing = Writing.find params[:id]
-
-    raise ActiveRecord::RecordNotFound if @writing.nil?
 
   rescue ActiveRecord::RecordNotFound
     flash[:notice] = "That article is not yet published"

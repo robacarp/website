@@ -1,21 +1,21 @@
 require 'digest/sha1'
 class User < ActiveRecord::Base
-	has_many :orders
-	has_one :order, :foreign_key => 'cart_id'
+  # Include default devise modules. Others available are:
+  # :token_authenticatable, :confirmable, :lockable and :timeoutable
+  devise :database_authenticatable, :lockable, :timeoutable, :registerable
 
   # Virtual attribute for the unencrypted password
   attr_accessor :password
 
   validates_presence_of     :login, :email
-  validates_presence_of     :password,                   :if => :password_required? 
-  validates_presence_of     :password_confirmation,      :if => :password_required? 
-  validates_length_of       :password, :within => 4..40, :if => :password_required? 
-  validates_confirmation_of :password,                   :if => :password_required? 
-  validates_length_of       :login,    :within => 3..40
-  validates_length_of       :email,    :within => 3..100
+  validates_presence_of     :password,                   :if => :password_required?
+  validates_presence_of     :password_confirmation,      :if => :password_required?
+  validates_length_of       :password, :within => 4..40, :if => :password_required?
+  validates_confirmation_of :password,                   :if => :password_required?
   validates_uniqueness_of   :login, :email, :case_sensitive => false
+
   before_save :encrypt_password
-  
+
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
   attr_accessible :login, :email, :password, :password_confirmation, :is_guest, :last_accessed_at
@@ -35,11 +35,11 @@ class User < ActiveRecord::Base
   def self.new_shell
     u = User.new
     u.is_guest = true
-		u.save(false)
-		u.login = "guest"+u.id.to_s
-		u.email = "guest"+u.id.to_s
-		u.save(false)
-		u
+    u.save(false)
+    u.login = "guest"+u.id.to_s
+    u.email = "guest"+u.id.to_s
+    u.save(false)
+    u
   end
 
   # Encrypts the password with the user salt
@@ -81,30 +81,29 @@ class User < ActiveRecord::Base
     @activated
   end
 
-	def guest?
-		is_guest
-	end
+  def guest?
+    is_guest
+  end
 
-	def old?
-		#in the math is calculated in SECONDS
-		(Time.new - created_at.time).round() < 60
-	end
-	
-	# before filter 
-	def encrypt_password
-		return if password.blank?
-		self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
-		self.crypted_password = encrypt(password)
-	end
-      
+  def old?
+    #in the math is calculated in SECONDS
+    (Time.new - created_at.time).round() < 60
+  end
+
+  # before filter
+  def encrypt_password
+    return if password.blank?
+    self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
+    self.crypted_password = encrypt(password)
+  end
+
   protected
     def password_required?
-			#for guest accounts, a password is not required
+      #for guest accounts, a password is not required
       return false if is_guest?
-			#if crypted_password is blank, the account is new and a password *is* required
-			#if password is not blank, the password is being changed or established.
+
+      #if crypted_password is blank, the account is new and a password *is* required
+      #if password is not blank, the password is being changed or established.
       crypted_password.blank? || !password.blank? 
     end
-
-
 end
