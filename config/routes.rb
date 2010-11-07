@@ -2,6 +2,7 @@ Rcnet::Application.routes.draw do
   devise_for :users
 
   root :to => 'writings#show', :id=>1
+  match '/session/new.user', :to => redirect('users/login')
 
   #spare routes for the content
   match '/writings/archive'=>'writings#index'

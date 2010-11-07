@@ -73,9 +73,11 @@ body {
   color: #000;
   text-decoration: none;
   margin-right: 1em;
+  padding: 0 1em;
+  display: block;
 }
 
-/* line 70, ../../app/stylesheets/screen.scss */
+/* line 72, ../../app/stylesheets/screen.scss */
 #wrap {
   margin: 0 auto;
   width: 650px;

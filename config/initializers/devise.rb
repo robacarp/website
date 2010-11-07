@@ -28,7 +28,34 @@ Devise.setup do |config|
 
   config.encryptor = :bcrypt
 
-  config.pepper = "b347513913401a3f04ebd6a83e2963fc19abdbdd6974f0cef7e6277ea5be93734bed09a9d37002451b067bc1c638295ca1fdd95e38d1bf2e76950125ac212d31"
+  # Setup a pepper to generate the encrypted password.
+  config.pepper = "b9c1c77f4702a3caef7bbaae44ac87f5e9912c70bda8ddedb07be862cae85fac3cd2a8ae4949c50a7ecc06347568536036dfc98faf6065e1ae5a29f6ee670dfa"
+
+  # ==> Configuration for :confirmable
+  # The time you want to give your user to confirm his account. During this time
+  # he will be able to access your application without confirming. Default is nil.
+  # When confirm_within is zero, the user won't be able to sign in without confirming. 
+  # You can use this to let your user access some features of your application 
+  # without confirming the account, but blocking it after a certain period 
+  # (ie 2 days). 
+  # config.confirm_within = 2.days
+
+  # ==> Configuration for :rememberable
+  # The time the user will be remembered without asking for credentials again.
+  # config.remember_for = 2.weeks
+
+  # If true, a valid remember token can be re-used between multiple browsers.
+  # config.remember_across_browsers = true
+
+  # If true, extends the user's remember period when remembered via cookie.
+  # config.extend_remember_period = false
+
+  # ==> Configuration for :validatable
+  # Range for password length
+  # config.password_length = 6..20
+
+  # Regex to use to validate the email address
+  # config.email_regexp = /^([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})$/i
 
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this
