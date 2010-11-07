@@ -4,9 +4,9 @@ class User < ActiveRecord::Base
 
   # interestingly, this works...if you restart the rails server ....
   #if User.all.count == 0
-    devise :database_authenticatable, :registerable, :recoverable, :lockable
+  # devise :database_authenticatable, :registerable, :recoverable, :lockable
   #else
-  #  devise :database_authenticatable, :recoverable, :lockable
+    devise :database_authenticatable, :recoverable, :lockable
   #end
 
   # Setup accessible (or protected) attributes for your model
