@@ -1,4 +1,6 @@
 Rcnet::Application.routes.draw do
+  devise_for :users
+
   root :to => 'writings#last'
 
   #spare routes for the content
