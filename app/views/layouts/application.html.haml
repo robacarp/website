@@ -12,21 +12,18 @@
     <!--script type="text/javascript"> google_ad_client = "pub-0872522376167995"; google_ad_slot = "8802068889"; google_ad_width = 468; google_ad_height = 15; </script> <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script-->
     #menu
       %li
-        %a(href="/writings/1")
-          About
+        %a(href="/writings") Writings
       %li
-        %a(href="http://flickr.com/photos/robacarp")
-          Pictures
+        %a(href="/writings/1") About
       %li
-        %a(href="http://github.com/robacarp")
-          Code
+        %a(href="http://flickr.com/photos/robacarp") Pictures
+      %li
+        %a(href="http://github.com/robacarp") Code
     %div
       -flash.each do |type,msg|
-        .flash{:class=>[type]}
-          =msg
+        .flash{:class=>[type]}= msg
     #content
-      %div
-        = yield
+      %div= yield
     <!--content-->
     #footer
       - if user_signed_in?
