@@ -21,6 +21,9 @@
         %a(href="http://github.com/robacarp")
           Code
     %div
+      -flash.each do |type,msg|
+        .flash{:class=>[type]}
+          =msg
     #content
       %div
         = yield

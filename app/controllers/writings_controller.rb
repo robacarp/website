@@ -2,11 +2,18 @@ class WritingsController < ApplicationController
   before_filter :authenticate_user!, :except => [:show, :index, :last]
 
   def show
-    @writing = Writing.find params[:id]
+    @writing = nil
+    if !params[:id].nil?
+      #flash[:style] = "searching by id"
+      @writing = Writing.find params[:id]
+    elsif !params[:slug].nil?
+      #flash[:style] = "searching by title"
+      @writing = Writing.where('title like ? or id = ?',params[:slug],params[:slug]).first
+    end
 
-  rescue ActiveRecord::RecordNotFound
-    flash[:notice] = "That article is not yet published"
-#    redirect_to '/'
+    if @writing.nil?
+      flash[:notice] = "That is not yet written."
+    end
   end
 
   def last
