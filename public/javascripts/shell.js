@@ -64,6 +64,8 @@ function preload_shell(){
   $('pi')
     .observe('dblclick',function(evt){ load_shell(); Event.stop(evt); return false;})
     .observe('click',function(evt){ Event.stop(evt); });
+  if (document.location.href.indexOf('shell')>0)
+    load_shell();
 }
 
 function load_shell(){
