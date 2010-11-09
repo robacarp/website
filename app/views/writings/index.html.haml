@@ -1,19 +1,20 @@
-:javascript
-  document.observe('dom:loaded', function(){
-    $$('#archive ul').each(function (e){
-      e.setStyle({
-        display: 'none',
-        cursor: 'pointer'
+-#
+  :javascript
+    document.observe('dom:loaded', function(){
+      $$('#archive ul').each(function (e){
+        e.setStyle({
+          display: 'none',
+          cursor: 'pointer'
+        });
       });
-    });
-    $$('#archive li').each(function (li){
-      li.observe('click', function (event){
-        this.down('ul').setStyle({
-          display: ''
+      $$('#archive li').each(function (li){
+        li.observe('click', function (event){
+          this.down('ul').setStyle({
+            display: ''
+          });
         });
       });
     });
-  });
 
 #archive
   -years = @archive.keys.sort
