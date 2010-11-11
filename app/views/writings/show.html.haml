@@ -1,3 +1,9 @@
+-if !current_user.nil?
+  %ul#admin_tools
+    %li= link_to 'Destroy', @writing, :confirm => 'Are you sure?', :method => :delete
+    %li= link_to 'Edit', edit_writing_path
+    %li Admin Tools:
+
 -if @writing.nil?
   %h4 404
   %p

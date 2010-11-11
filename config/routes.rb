@@ -1,16 +1,9 @@
 Rcnet::Application.routes.draw do
-  get "tag/index"
-
-  get "tag/show"
-
   devise_for :users
 
   root :to => 'writings#show', :id=>1
   match 'ip/(:action)', :controller => :ip
   match '/session/new.user', :to => redirect('users/login')
-
-  #spare routes for the content
-  match '/writings/archive'=>'writings#index'
 
   #uptime tracker.  These routse are a bit awkward....
   match '/uptime/:name/:passkey/checkin/:uptime/:method' => 'checkins#checkin'
@@ -20,11 +13,15 @@ Rcnet::Application.routes.draw do
   match '/uptime/list'                                   => 'checkins#list'
 
   #tags, and the writings associated
+  get "tag/index"
+  get "tag/show"
+  resources :tag
   match '/tag/:tag' => 'tags#show'
-  match '/writings/:slug' => 'writings#show'
-  match '/writings/:writing/tags' => 'tags#by_writing'
 
   resources :writings
-  resources :tag
+  get 'writing/index'
+  get '/writings/archive'=>'writings#index'
+  get '/writings/:slug' => 'writings#show'
+  get '/writings/:writing/tags' => 'tags#by_writing'
   #resources :users
 end

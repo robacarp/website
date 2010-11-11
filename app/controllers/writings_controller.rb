@@ -23,18 +23,7 @@ class WritingsController < ApplicationController
 
   def index
     #organize content by year, then month
-    writings = Writing.find :all
-    @archive = {}
-    writings.each do |c|
-      if !@archive[c.created_at.year] then
-        @archive[c.created_at.year] = {}
-      end
-      if !@archive[c.created_at.year][c.created_at.month] then
-        @archive[c.created_at.year][c.created_at.month] = []
-      end
-      @archive[c.created_at.year][c.created_at.month].push c
-    end
-    @archive
+    @writings = Writing.find :all
   end
 
   def new
@@ -67,5 +56,13 @@ class WritingsController < ApplicationController
       render :action => 'edit'
     end
   end
+
+  def destroy
+    writing = Writing.find params[:id]
+    writing.delete
+    flash[:notice] = "Writing deleted."
+    redirect_to 'writings#index'
+  end
+
 
 end

@@ -1,34 +1,15 @@
--#
-  :javascript
-    document.observe('dom:loaded', function(){
-      $$('#archive ul').each(function (e){
-        e.setStyle({
-          display: 'none',
-          cursor: 'pointer'
-        });
-      });
-      $$('#archive li').each(function (li){
-        li.observe('click', function (event){
-          this.down('ul').setStyle({
-            display: ''
-          });
-        });
-      });
-    });
+- if !current_user.nil?
+  %ul#admin_tools
+    %li= link_to 'New', new_writing_path
+    %li Admin Tools:
 
-#archive
-  -years = @archive.keys.sort
-  -years.each do |y|
-    %li
-      =y
-      %ul
-        -months = @archive[y].keys.sort
-        -months.each do |m|
-          %li
-            =m
-            %ul
-              -posts = @archive[y][m].sort {|a,b| a.created_at <=> b.created_at}
-              -posts.each do |content|
-                %li
-                  = content.created_at
-                  = link_to content.title, content
+%table#archive
+  - @writings.inject(true) do |odd, writing|
+    %tr{:class=>(odd)?'odd':'even'}
+      %td= link_to writing.title, writing
+      %td= "#{writing.date.year}-#{writing.date.month}-#{writing.date.day}"
+      %td= writing.draft? ? 'draft' : ''
+      - if current_user
+        %td{:class=>'admin'}= link_to 'Edit', edit_writing_path(writing)
+        %td{:class=>'admin'}= link_to 'Delete', writing, :confirm => 'Are you sure?', :method => :delete
+    - !odd

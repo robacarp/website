@@ -1,4 +1,14 @@
 /* line 3, ../../app/stylesheets/screen.scss */
+a {
+  text-decoration: none;
+  color: #07e;
+}
+/* line 6, ../../app/stylesheets/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 11, ../../app/stylesheets/screen.scss */
 body {
   margin: 0;
   padding: 0;
@@ -6,28 +16,67 @@ body {
   background: url("/images/tartan2.png") #e6e9ed fixed;
 }
 
-/* line 10, ../../app/stylesheets/screen.scss */
+/* line 18, ../../app/stylesheets/screen.scss */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* line 21, ../../app/stylesheets/screen.scss */
+table tr {
+  border-bottom: 1px solid #000;
+  margin: 0;
+  padding: 0;
+}
+/* line 26, ../../app/stylesheets/screen.scss */
+table tr.odd {
+  background-color: #888;
+}
+/* line 27, ../../app/stylesheets/screen.scss */
+table tr.even {
+  background-color: #eee;
+}
+/* line 28, ../../app/stylesheets/screen.scss */
+table tr td {
+  margin: 0;
+  padding: 3px;
+}
+
+/* line 36, ../../app/stylesheets/screen.scss */
 .flash {
   background-color: #AA6A5C;
 }
 
-/* line 14, ../../app/stylesheets/screen.scss */
+/* line 40, ../../app/stylesheets/screen.scss */
+#admin_tools {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 45, ../../app/stylesheets/screen.scss */
+#admin_tools li {
+  float: right;
+  padding-left: 5px;
+}
+
+/* line 53, ../../app/stylesheets/screen.scss */
 #content {
   text-align: justify;
   border-top: 1px solid black;
   overflow: hidden;
   width: 100%;
 }
-/* line 21, ../../app/stylesheets/screen.scss */
+/* line 60, ../../app/stylesheets/screen.scss */
 #content div {
   margin: 1em;
 }
-/* line 22, ../../app/stylesheets/screen.scss */
+/* line 61, ../../app/stylesheets/screen.scss */
 #content p {
   text-indent: 2em;
 }
 
-/* line 25, ../../app/stylesheets/screen.scss */
+/* line 64, ../../app/stylesheets/screen.scss */
 #footer {
   position: fixed;
   bottom: 0;
@@ -38,7 +87,7 @@ body {
   background: url("/images/white-80.png");
 }
 
-/* line 36, ../../app/stylesheets/screen.scss */
+/* line 75, ../../app/stylesheets/screen.scss */
 #header {
   font-size: 3em;
   text-align: center;
@@ -46,14 +95,14 @@ body {
   padding: 8px;
 }
 
-/* line 43, ../../app/stylesheets/screen.scss */
+/* line 82, ../../app/stylesheets/screen.scss */
 #menu {
   margin: 0;
   padding: 0 0 0 1em;
   overflow: hidden;
   width: 100%;
 }
-/* line 48, ../../app/stylesheets/screen.scss */
+/* line 87, ../../app/stylesheets/screen.scss */
 #menu li {
   list-style-type: none;
   display: inline;
@@ -61,18 +110,18 @@ body {
   padding-right: 1em;
   font-size: 1.4em;
 }
-/* line 55, ../../app/stylesheets/screen.scss */
+/* line 94, ../../app/stylesheets/screen.scss */
 #menu li a {
   color: #888;
   text-decoration: none;
 }
-/* line 60, ../../app/stylesheets/screen.scss */
+/* line 99, ../../app/stylesheets/screen.scss */
 #menu li:hover {
   outline: none;
   color: #000;
 }
 
-/* line 67, ../../app/stylesheets/screen.scss */
+/* line 106, ../../app/stylesheets/screen.scss */
 #pi {
   float: right;
   color: #000;
@@ -82,7 +131,7 @@ body {
   display: block;
 }
 
-/* line 76, ../../app/stylesheets/screen.scss */
+/* line 115, ../../app/stylesheets/screen.scss */
 #wrap {
   margin: 0 auto;
   width: 650px;

@@ -1,5 +1,13 @@
 @mixin clearfix { overflow:hidden; width:100%; }
 
+a {
+  text-decoration:none;
+  color:#07e;
+  &:hover {
+    text-decoration:underline;
+  }
+}
+
 body {
   margin      : 0;
   padding     : 0;
@@ -7,8 +15,39 @@ body {
   background  : url('/images/tartan2.png') #E6E9ED fixed;
 }
 
+table {
+  width:100%;
+  border-collapse:collapse;
+  tr {
+    border-bottom:1px solid #000;
+    margin:0;
+    padding:0;
+
+    &.odd { background-color:#888; }
+    &.even { background-color:#eee; }
+    td {
+      margin:0;
+      padding:3px;
+    }
+  }
+}
+
+
 .flash {
   background-color:#AA6A5C;
+}
+
+#admin_tools {
+  padding:0;
+  margin:0;
+  list-style-type:none;
+
+  li {
+    float:right;
+    padding-left:5px;
+  }
+
+  @include clearfix;
 }
 
 #content {
