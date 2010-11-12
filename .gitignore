@@ -8,4 +8,5 @@ tmp/restart.txt
 *.pid
 *.sql
 db/schema.rb
+public/stylesheets/screen.css
 
