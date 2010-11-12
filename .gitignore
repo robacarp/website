@@ -7,6 +7,5 @@ tmp/restart.txt
 *.psd
 *.pid
 *.sql
-db/schema.rb
 public/stylesheets/screen.css
 
