@@ -8,9 +8,9 @@
   - @writings.inject(true) do |odd, writing|
     %tr{:class=>(odd)?'odd':'even'}
       %td= link_to writing.title, writing
-      %td= "#{writing.date.year}-#{writing.date.month}-#{writing.date.day}"
-      %td= writing.draft? ? 'draft' : ''
+      %td= writing.date.strftime("%B %e, %Y")
       - if current_user
+        %td= writing.draft? ? 'draft' : ''
         %td{:class=>'admin'}= link_to 'Edit', edit_writing_path(writing)
         %td{:class=>'admin'}= link_to 'Delete', writing, :confirm => 'Are you sure?', :method => :delete
     - !odd

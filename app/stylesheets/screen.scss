@@ -1,5 +1,6 @@
 @mixin clearfix { overflow:hidden; width:100%; }
 
+
 a {
   text-decoration:none;
   color:#07e;
@@ -23,11 +24,12 @@ table {
     margin:0;
     padding:0;
 
-    &.odd { background-color:#888; }
+    &.odd { background-color:#ddd; }
     &.even { background-color:#eee; }
     td {
       margin:0;
       padding:3px;
+      border-left:1px solid #aaa;
     }
   }
 }
