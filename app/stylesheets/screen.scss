@@ -1,6 +1,5 @@
 @mixin clearfix { overflow:hidden; width:100%; }
 
-
 a {
   text-decoration:none;
   color:#07e;
@@ -14,6 +13,10 @@ body {
   padding     : 0;
   font-family : 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   background  : url('/images/tartan2.png') #E6E9ED fixed;
+}
+
+hr {
+  border:1px solid #999;
 }
 
 table {
@@ -118,5 +121,6 @@ table {
   margin     : 0 auto;
   width      : 650px;
   min-height : 1024px;
+  padding-bottom: 5em;
   background : url('/images/white-60.png');
 }
