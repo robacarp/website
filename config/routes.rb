@@ -19,7 +19,6 @@ Rcnet::Application.routes.draw do
   match '/tag/:tag' => 'tags#show'
 
   resources :writings
-  get 'writing/index'
   get '/writings/archive'=>'writings#index'
   get '/writings/:slug' => 'writings#show'
   get '/writings/:writing/tags' => 'tags#by_writing'

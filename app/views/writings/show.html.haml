@@ -13,6 +13,7 @@
   :markdown
     #{@writing.content}
   %hr
-  %p Written By: #{@writing.user.name}
+  -if !@writing.user.nil?
+    %p Written By: #{@writing.user.name}
   %p Published: #{@writing.date.strftime('%B %e, %Y')}
 

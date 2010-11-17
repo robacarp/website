@@ -11,8 +11,9 @@ class WritingsController < ApplicationController
       @writing = Writing.where('title like ? or id = ?',params[:slug],params[:slug]).first
     end
 
-    if @writing.nil?
+    if @writing.nil? || (@writing.hidden && current_user.nil?)
       flash[:notice] = "That is not yet written."
+      redirect_to writings_path
     end
   end
 
@@ -23,7 +24,11 @@ class WritingsController < ApplicationController
 
   def index
     #organize content by year, then month
-    @writings = Writing.find :all
+    if current_user
+      @writings = Writing.all
+    else
+      @writings = Writing.where :hidden=>false
+    end
   end
 
   def new
