@@ -49,6 +49,8 @@ class WritingsController < ApplicationController
 
   def update
     @writing = Writing.find params[:id]
+    @writing.user = User.first
+    @writing.save
     if @writing.update_attributes params[:writing] then
       flash[:notice] = 'Writing saved.'
       redirect_to @writing

@@ -12,14 +12,11 @@
       { Robert Carpenter &lt; net }
     <!--script type="text/javascript"> google_ad_client = "pub-0872522376167995"; google_ad_slot = "8802068889"; google_ad_width = 468; google_ad_height = 15; </script> <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script-->
     #menu
-      %li
-        %a(href="/writings/1") About
-      %li
-        %a(href="/writings") Writings
-      %li
-        %a(href="http://flickr.com/photos/robacarp") Pictures
-      %li
-        %a(href="http://github.com/robacarp") Code
+      -w = Writing.find_by_title '__nav'
+      -if !w.nil?
+        = Haml::Engine.new(w.content).render
+      -else
+        %li=link_to '##',new_writing_path
     %div
       -flash.each do |type,msg|
         .flash{:class=>[type]}= msg
