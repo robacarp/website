@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101117065246) do
+ActiveRecord::Schema.define(:version => 20101119061815) do
 
   create_table "addresses", :force => true do |t|
     t.string "owner",   :limit => 32,  :default => "", :null => false
@@ -104,6 +104,7 @@ ActiveRecord::Schema.define(:version => 20101117065246) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "passkey"
   end
 
   create_table "httpError", :force => true do |t|
