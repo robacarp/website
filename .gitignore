@@ -4,6 +4,7 @@ log/*.log
 tmp/**/*
 tmp/restart.txt
 *.swp
+*.swo
 *.psd
 *.pid
 *.sql

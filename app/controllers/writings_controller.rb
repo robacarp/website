@@ -37,7 +37,6 @@ class WritingsController < ApplicationController
 
   def create
     @writing = Writing.new(params[:writing])
-    @writing.date = '2010-01-01'
 
     if @writing.save then
       flash[:notice] = "Writing created and saved"
@@ -68,7 +67,7 @@ class WritingsController < ApplicationController
     writing = Writing.find params[:id]
     writing.delete
     flash[:notice] = "Writing deleted."
-    redirect_to 'writings#index'
+    redirect_to writings_path
   end
 
 
