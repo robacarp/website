@@ -24,10 +24,11 @@ class WritingsController < ApplicationController
 
   def index
     #organize content by year, then month
+    @writings = Writing.order 'writings.date DESC'
     if current_user
-      @writings = Writing.all
+      @writings = @writings.where '1=1'
     else
-      @writings = Writing.where :hidden=>false
+      @writings = @writings.where :hidden=>false
     end
   end
 
