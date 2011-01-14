@@ -21,9 +21,4 @@ module ApplicationHelper
     content_for(:head) { stylesheet_link_tag(*files) }
   end
 
-  def logged_in?
-    authenticate_or_request_with_http_basic do |user,password|
-      user=='robert' && password=='doom'
-    end
-  end
 end
