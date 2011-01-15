@@ -17,17 +17,15 @@ class WritingsController < ApplicationController
     end
   end
 
-  def last
-    @writing = Writing.find_by_id 77
-    render :show
+  def recent
+    @writing = Writing.find(:all, :order => 'date DESC', :limit => 1)[0]
+    render :action => 'show'
   end
 
   def index
     #organize content by year, then month
     @writings = Writing.order 'writings.date DESC'
-    if current_user
-      @writings = @writings.where '1=1'
-    else
+    if !current_user
       @writings = @writings.where :hidden=>false
     end
   end
@@ -70,6 +68,5 @@ class WritingsController < ApplicationController
     flash[:notice] = "Writing deleted."
     redirect_to writings_path
   end
-
 
 end

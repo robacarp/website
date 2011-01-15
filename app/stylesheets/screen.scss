@@ -15,9 +15,7 @@ body {
   background  : url('/images/tartan2.png') #E6E9ED fixed;
 }
 
-hr {
-  border:1px solid #999;
-}
+hr { border:1px solid #999; }
 
 table {
   width:100%;
@@ -64,6 +62,7 @@ table {
 
   div { margin    : 1em; }
   p { text-indent : 2em; }
+  p.noindent { text-indent: 0; }
 }
 
 #footer {
