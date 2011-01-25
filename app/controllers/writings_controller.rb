@@ -1,5 +1,5 @@
 class WritingsController < ApplicationController
-  before_filter :authenticate_user!, :except => [:show, :index, :last]
+  before_filter :authenticate_user!, :except => [:show, :index, :recent]
 
   def show
     @writing = nil
