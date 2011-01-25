@@ -1,7 +1,7 @@
 -if !current_user.nil?
   %ul#admin_tools
     %li= link_to 'Destroy', @writing, :confirm => 'Are you sure?', :method => :delete
-    %li= link_to 'Edit', edit_writing_path
+    %li= link_to 'Edit', edit_writing_path(@writing)
     %li Admin Tools:
 
 -if @writing.nil?
@@ -13,7 +13,10 @@
   :markdown
     #{@writing.content}
   %hr
-  -if !@writing.user.nil?
-    %p Written By: #{@writing.user.name}
-  %p Published: #{@writing.date.strftime('%B %e, %Y')}
+  %div(style="font-size:0.8em;")
+    %p.noindent
+      -if !@writing.user.nil?
+        Written By: #{@writing.user.name}
+        %br
+      Published: #{@writing.date.strftime('%B %e, %Y')}
 

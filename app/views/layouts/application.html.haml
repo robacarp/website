@@ -2,43 +2,44 @@
 %html
   %head
     %meta(http-equiv="Content-type" content="text/html; charset=utf-8")
-      %title= "Robertcarpenter.net#{yield :title}"
+    %title= "Robertcarpenter.net#{yield :title}"
     = stylesheet_link_tag 'screen.css'
     = javascript_include_tag :all
     = csrf_meta_tag
   %body
-  #wrap
-    #header
-      %a{:href=>'/'} { Robert Carpenter &lt; net }
-    <!--script type="text/javascript"> google_ad_client = "pub-0872522376167995"; google_ad_slot = "8802068889"; google_ad_width = 468; google_ad_height = 15; </script> <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script-->
-    #menu
-      -w = Writing.find_by_title '__nav'
-      -if !w.nil?
-        = Haml::Engine.new(w.content).render
-      -else
-        %li=link_to '##',new_writing_path
-    %div
-      -flash.each do |type,msg|
-        .flash{:class=>[type]}= msg
-    #content
-      %div= yield
-    <!--content-->
-    #footer
-      - if user_signed_in?
-        %a{:href=>destroy_user_session_path, :id=>'pi'}
-          Logout
-      - else
-        %a{:href=>new_user_session_path, :id=>'pi'}
-          &pi;
-      %a(rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/")
-        %img(alt="Creative Commons License" style="border-width:0" src="/images/creativecommons.80x15.png")
-        :javascript
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-149107-1']);
-          _gaq.push(['_trackPageview']);
-          (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
-    <!--footer-->
-  <!--wrap-->
+    #wrap
+      #header
+        %a{:href=>'/'} { Robert Carpenter &lt; net }
+      <!--script type="text/javascript"> google_ad_client = "pub-0872522376167995"; google_ad_slot = "8802068889"; google_ad_width = 468; google_ad_height = 15; </script> <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script-->
+      #menu
+        %li
+          %a(href="/writings/1") About
+        %li
+          %a(href="/writings") Writings
+        %li
+          %a(href="/writings/5") Social
+      %div
+        -flash.each do |type,msg|
+          .flash{:class=>[type]}= msg
+      #content
+        %div= yield
+      <!--content-->
+      #footer
+        - if user_signed_in?
+          %a{:href=>destroy_user_session_path, :id=>'pi'}
+            Logout
+        - else
+          %a{:href=>new_user_session_path, :id=>'pi'}
+            &pi;
+        %a(rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/")
+          %img(alt="Creative Commons License" style="border-width:0" src="/images/creativecommons.80x15.png")
+          :javascript
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-149107-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+      <!--footer-->
+    <!--wrap-->
