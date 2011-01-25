@@ -15,6 +15,12 @@ body {
   background  : url('/images/tartan2.png') #E6E9ED fixed;
 }
 
+blockquote {
+  background-color:#ddd;
+  border-left:1px solid #bbb;
+  text-indent:none;
+}
+
 hr {
   border:1px solid #999;
 }
