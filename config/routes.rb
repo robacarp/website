@@ -1,7 +1,7 @@
 Rcnet::Application.routes.draw do
   devise_for :users
 
-  root :to => 'writings#recent'
+  root :to => 'writings#index'
   match 'ip/(:action)', :controller => :ip
   match '/session/new.user', :to => redirect('users/login')
 

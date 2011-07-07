@@ -1,6 +1,5 @@
 class WritingsController < ApplicationController
   before_filter :authenticate_user!, :except => [:show, :index, :recent]
-
   def show
     @writing = nil
     if !params[:id].nil?
@@ -18,11 +17,18 @@ class WritingsController < ApplicationController
   end
 
   def recent
-    @writing = Writing.find(:all, :order => 'date DESC', :limit => 1)[0]
+    if (current_user.nil?)
+      Rails.logger.info "nil'd"
+      @writing = Writing.find(:all, :order => 'date DESC', :limit => 1)[0]
+    else
+      Rails.logger.info "not nil'd"
+      @writing = Writing.find :hidden => false, :draft => false
+      @writing.find(:all, :order => 'date DESC', :limit => 1)[0]
+    end
     render :action => 'show'
   end
 
-  def index
+  def list
     #organize content by year, then month
     @writings = Writing.order 'writings.date DESC'
     if !current_user

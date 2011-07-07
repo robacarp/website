@@ -1,16 +1,62 @@
-- title "The Archives"
-- if !current_user.nil?
-  %ul#admin_tools
-    %li= link_to 'New', new_writing_path
-    %li Admin Tools:
+%h3 Brief:
+%p
+  I make the internet.  No, really. I do web design and programming work full time and have for several years now.  I wrote my first HTML page way back in 1997, and published on the now defunct geocities for several years.  My first foray into professional website development happened almost seven years later in 2004 with
+  %a(href="http://cliffsideski.com") Cliffside Ski & Bike Rentals
+%h3 Code:
+%p
+  I regularly write code in PHP, HTML, CSS, jQuery, prototypejs, Ruby, Rails, bash, Arduino, C++, and SQL.
+  I've been so far as to dabble in too many languages to mention in good conscience, but a Bachelors degree in Computer Science will do that to you.
+  I enjoy coding with a version control system and my preference is git.  As a result, where possible, much of my coding work is published
+  %a(href="http://github.com/robacarp") on github.
+%h3 Work:
+%p
+  I ran my own web design and IT service company for 3 years while living in Durango, CO.  While testing out the waters of the mountain entrepreneurship 
+  I helped design and build several small business networks for reliability, forward compatibility, and ease of use.  I also took on a few website design
+  clients, most of which are still with me today.
+%p
+  These days I work full time at
+  %a(href="http://sparkfun.com") SparkFun Electronics
+  as a PHP and Rails hacker.  I'm part of an 12 man IT team working to solve problems I didn't know existed back in 1997.
+%p
+  I also do a smattering of independent development, mostly centered around Ruby on Rails web framework.  If you'd like to hire me drop a note to
+  %a(href="mailto:work@robacarp.com?subject=Lets talk about your work") work@robacarp.com.
+%h3 Digital Life:
+%p
+  I try and take pictures whenever I see the opportunity and I post them
+  %a(href="http://flickr.com/photos/robacarp") on flickr.
+  I spend time every now and again on
+  %a(href="http://reddit.com/user/robacarp")reddit.
+  I regularly
+  %a(href="http://twitter.com/robacarp") tweet
+  about happenings in my life and events thereabout.
+  I'm robacarp 
+  %a(href="http://www.google.com/search?q=robacarp")just about everywhere
+  including:
+  %a(href="http://about.me/robacarp") About.me,
+  %a(href="http://facebook.com/robacarp")facebook,
+  and too many more.
+%h3 Analog Life:
+%p
+  I'm a regular attendee at a Christian church in Boulder.  I believe in the God of the Bible and my world is structured around this belief system.
+  To encourage my faith I attend a life group with people my age, go on 
+  %a(href="")mission trips
+  whenever I can get time off, enjoy leading a weekly Bible study, and spend time as often as possible reading the Bible.  Some of my favorite authors and preachers are
+  %a(href="http://en.wikipedia.org/wiki/Charles_Spurgeon")C.S. Lewis,
+  %a(href="http://en.wikipedia.org/wiki/Charles_Spurgeon")C.H. Spurgeon,
+  %a(href="http://en.wikipedia.org/wiki/John_Calvin")John Calvin,
+  %a(href="http://en.wikipedia.org/wiki/John_Piper_(theologian)")John Piper,
+  %a(href="http://en.wikipedia.org/wiki/R_C_Sproul")R.C. Sproul,
+  %a(href="http://en.wikipedia.org/wiki/Ravi_Zacharias")Ravi Zacharias,
+  and
+  %a(href="http://en.wikipedia.org/wiki/Mark_Driscoll")Mark Driscoll,
+  among others.
+%p
+  I love to play music.  I've been a drummer for something around 15 years.  I'm now actively learning piano and have been known at one time or another to play
+  violin, flute, any manner of percussion instruments, and the few and far between song on guitar.
+%p
+  I occasionally 
+  %a(href="http://www.flickr.com/photos/robacarp/392457233")rock climb
+  and boulder around indoors and out.  I've been known to ride a bike, and I enjoy hiking and backpacking.
+%p
 
-%table#archive
-  - @writings.inject(true) do |odd, writing|
-    %tr{:class=>(odd)?'odd':'even'}
-      %td= link_to writing.title, writing
-      %td= writing.date.strftime("%B %e, %Y")
-      - if current_user
-        %td= writing.draft? ? 'draft' : ''
-        %td{:class=>'admin'}= link_to 'Edit', edit_writing_path(writing)
-        %td{:class=>'admin'}= link_to 'Delete', writing, :confirm => 'Are you sure?', :method => :delete
-    - !odd
+%hr
