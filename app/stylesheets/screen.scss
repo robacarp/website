@@ -1,4 +1,31 @@
 @mixin clearfix { overflow:hidden; width:100%; }
+@mixin rounded-top($r:5px) {
+  border-top-right-radius: #{$r}; border-top-left-radius: #{$r};
+  -moz-border-radius-topright: #{$r}; -moz-border-radius-topleft: #{$r};
+  -webkit-border-top-right-radius: #{$r}; -webkit-border-top-left-radius: #{$r};
+}
+
+@mixin rounded-bottom($r:5px) {
+  border-bottom-right-radius: #{$r}; border-bottom-left-radius: #{$r};
+  -moz-border-radius-bottomright: #{$r}; -moz-border-radius-bottomleft: #{$r};
+  -webkit-border-bottom-right-radius: #{$r}; -webkit-border-bottom-left-radius: #{$r};
+}
+
+@mixin inset-shadow($color:#888, $distance:5px, $blur:0, $spread:0) {
+  -moz-box-shadow   : inset $distance $distance $blur $spread $color;
+  -webkit-box-shadow: inset $distance $distance $blur $spread $color;
+  box-shadow        : inset $distance $distance $blur $spread $color;
+}
+
+@mixin shadow($color:#888, $distance:5px, $blur:0, $spread:0) {
+  -moz-box-shadow   : $distance $distance $blur $spread $color;
+  -webkit-box-shadow: $distance $distance $blur $spread $color;
+  box-shadow        : $distance $distance $blur $spread $color;
+}
+
+@mixin rounded($r:5px) { @include rounded-top($r); @include rounded-bottom($r); }
+
+
 
 a {
   text-decoration:none;
@@ -12,7 +39,9 @@ body {
   margin      : 0;
   padding     : 0;
   font-family : 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  line-height :1.2em;
   background  : url('/images/tartan2.png') #E6E9ED fixed;
+
 }
 
 blockquote {
@@ -65,17 +94,17 @@ table {
 
 
   @include clearfix;
-
   div { margin    : 1em; }
   p { text-indent : 2em; }
   p.noindent { text-indent: 0; }
 }
 
 #footer {
-  position    : fixed;
+  /* position    : fixed;
   bottom      : 0;
+  */
   padding-top : 1.5em;
-  width       : 650px;
+  width       : 100%;
 
   text-align : center;
   font-size  : 0.6em;
@@ -84,6 +113,7 @@ table {
 
 #header {
   font-size     : 3em;
+  line-height   : 1em;
   text-align    : center;
   border-bottom : 1px solid black;
   padding       : 8px;
@@ -129,6 +159,8 @@ table {
 }
 
 #wrap {
+  @include shadow(#666, 0px, 10px, 0);
+
   margin     : 0 auto;
   width      : 650px;
   min-height : 1024px;
