@@ -1,2 +1,11 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(
+    function (){
+      // =?  is an odd syntax, but it works...
+      jQuery.getJSON("http://twitter.com/statuses/user_timeline/robacarp.json?callback=?",
+        function(data){
+          $('#tweet').html( data[0].text );
+          $('#social').slideDown();
+        });
+    }
+);
+

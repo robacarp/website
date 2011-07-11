@@ -9,4 +9,5 @@ gem 'devise', '1.1.2'
 gem 'haml'
 gem 'formtastic', '~> 1.1.0'
 gem 'compass'
+gem 'jquery-rails'
 
