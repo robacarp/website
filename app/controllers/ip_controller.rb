@@ -1,4 +1,7 @@
 class IpController < ApplicationController
+  layout 'x_content', :only => :index
+  layout 'application', :only => :list
+
   def index
     @ip = request.remote_ip
     if @ip == '' then

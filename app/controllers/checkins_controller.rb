@@ -1,4 +1,6 @@
 class CheckinsController < ApplicationController
+  layout 'application', :only => 'list'
+
   def checkin
     checkin = Checkin.new
     checkin.device = Device.find_or_create_by_name_and_passkey params[:name], params[:passkey]

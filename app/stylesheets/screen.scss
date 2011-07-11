@@ -95,7 +95,7 @@ table {
 
   @include clearfix;
   div { margin    : 1em; }
-  p { text-indent : 2em; }
+  p { margin-left : 2em; }
   p.noindent { text-indent: 0; }
 }
 
@@ -156,6 +156,23 @@ table {
   margin-right    : 1em;
   padding:0 1em;
   display:block;
+}
+
+#social {
+  border-bottom:1px solid black;
+  display:none;
+
+  #twitter {
+    margin-left:6em;
+    font-style:italic;
+    text-indent:none;
+  }
+
+  #tweet {
+    font-style:normal;
+    margin-left:1em;
+    font-family:Courier;
+  }
 }
 
 #wrap {
