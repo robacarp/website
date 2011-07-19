@@ -9,10 +9,9 @@
     - hours-=days * 24
     #{device.name} => #{device.checkins.last.uptime}
     (#{days}:#{hours}:#{minutes}:#{seconds})
-    @ #{ device.checkins.last.created_at }, 
-    #{ device.checkins.count } total heartbeats.
+    @ #{ device.checkins.last.created_at }, from #{ device.checkins.last.ip } (#{ device.checkins.count } total heartbeats).
   - else
     #{ device.name } => has not checked in.
   %br
 %hr
-%b This is uptime data for a handful of servers.  To add your server to this list, simply create a cron job that visits http://robertcarpenter.net/uptime/&lt;computer-name&gt;/[&lt;passkey&gt;/]checkin/&lt;seconds-alive&gt;[/&lt;checkin-method&gt;]
+-# %b This is uptime data for a handful of servers.  To add your server to this list, simply create a cron job that visits http://robertcarpenter.net/uptime/&lt;computer-name&gt;/[&lt;passkey&gt;/]checkin/&lt;seconds-alive&gt;[/&lt;checkin-method&gt;]
