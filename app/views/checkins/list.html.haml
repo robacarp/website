@@ -14,4 +14,8 @@
     #{ device.name } => has not checked in.
   %br
 %hr
--# %b This is uptime data for a handful of servers.  To add your server to this list, simply create a cron job that visits http://robertcarpenter.net/uptime/&lt;computer-name&gt;/[&lt;passkey&gt;/]checkin/&lt;seconds-alive&gt;[/&lt;checkin-method&gt;]
+%b This is uptime data for a handful of servers.  To add your server to this list, simply add something like this cron job :
+%pre
+  */5 * * * * time=`cat /proc/uptime | sed 's/\.[0-9 .]*//'`; \
+  curl --silent http://robacarp.com/uptime/yrekah/checkin/$time/cron \
+  > /dev/null
