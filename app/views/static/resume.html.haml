@@ -1,16 +1,28 @@
-%h2 Development <a href="http://xkcd.com/503/" style="color:#000; border-bottom:1px #000 dashed" title="East and West">Environment</a>
+- content_for :title, "Resume"
+#center(style="margin:2em auto; text-align:center;")
+  Sections:
+  %a(href="#development")Development
+  ,
+  %a(href="#computing")Computing
+  ,
+  %a(href="#language")Language
+  ,
+  %a(href="#education")Education
+  ,
+  %a(href="#hobbies")Hobbies
+%h2#development Development <a href="http://xkcd.com/503/" style="color:#000; border-bottom:1px #000 dashed" title="East and West">Environment</a>
 %ul(style="list-style-type:square")
   %li Needs: Text editor. Keyboard. Some sort of processor on which to run my codes.
   %li Wants: Vim. POSIX environment. Closed driver headphones, the occasional Pandora song.
   %li Niceities: MacOS. Modern web browser. irssi. Space and time enough to pick up random hobbies.
-%h2 General Computing
+%h2#computing General Computing
 %ul(style="list-style-type:square")
   %li Debianoids.  General computing and server maintenance.
   %li Mac OSX.  Desktop and mobile computing platform.
   %li Android.  Tablet and phone.
   %li Server management.  Apache, nginx, BIND9, nsd3.  Debian, Ubuntu, Suse.  <span title=":-(" style="border-bottom:1px #000 dotted;">Mail</span>.
   %li Windows computers.  Unfortunately, they're everywhere.
-%h2 Language Experience
+%h2#language Language Experience
 %ul(style="list-style-type:square")
   %li
     Ruby
@@ -59,11 +71,12 @@
       %li <b> Purely academic :</b> cLisp, xslt, python, Alice, C#, java
       %li <b> Recreational    :</b> C/C++, opengl, TI-Basic(!), Arduino, Processing, Objective-C, Android, R, make, LaTeX
 
-%h2 Education
+%h2#education Education
 %ul(style="list-style-type:square")
-  %li Bachelor of Arts in Computer Science, 2007, 3.0.  Research focus in Embedded development.
+  %li Bachelor of Arts in Computer Science, 2007, 3.0.
+  %li Research focus in Embedded development.
 
-%h2 Hobbies
+%h2#hobbies Hobbies
 %ul
   %li
     %b General Hacking:
