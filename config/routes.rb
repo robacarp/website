@@ -23,4 +23,6 @@ Rcnet::Application.routes.draw do
   get '/writings/:writing/tags' => 'tags#by_writing'
   #resources :users
 
+  get 'resume' => 'static#resume'
+
 end
