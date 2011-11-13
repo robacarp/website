@@ -52,6 +52,19 @@ blockquote {
 
 hr { border:1px solid #999; }
 
+img.left {
+  float:left;
+  margin-right:1em;
+  border:1px solid #000;
+}
+
+img.right {
+  float:right;
+  margin-left:1em;
+  border:1px solid #000;
+}
+
+
 table {
   width:100%;
   border-collapse:collapse;
@@ -89,14 +102,13 @@ table {
 }
 
 #content {
-  text-align : justify;
-  /* border-top : 1px solid black; */
 
+  text-align: justify;
+  padding: 1em 1em ;
 
-  @include clearfix;
-  div { margin    : 1em; }
-  p { margin-left : 2em; }
-  p.noindent { text-indent: 0; }
+  p          { margin-left : 0.5em; }
+  p.noindent { text-indent: 0;      }
+
 }
 
 #footer {

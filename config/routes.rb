@@ -24,5 +24,6 @@ Rcnet::Application.routes.draw do
   #resources :users
 
   get 'resume' => 'static#resume'
+  get 'portfolio' => 'static#portfolio'
 
 end
