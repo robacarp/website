@@ -1,13 +1,8 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'rails', '3.0.1'
-gem 'sqlite3-ruby'
-gem 'mysql'
-gem 'ruby-debug19', :require => 'ruby-debug'
-gem 'rdiscount'
-gem 'devise', '1.1.2'
+ruby '2.4.0'
+
 gem 'haml'
-gem 'formtastic'
-gem 'compass'
-gem 'jquery-rails'
-
+gem 'jekyll', '~> 3.4.0'
+gem 'puma'
+gem 'rack-jekyll'
