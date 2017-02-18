@@ -1,0 +1,11 @@
+title: Robacarp
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://robacarp.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - vendor
+ - bin
