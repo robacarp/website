@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/robacarp/static_serve
-  revision: d3822e686366bbff4a644312c66562f7eb707632
+  revision: 9b0e6a5fe6d37aeed6423b77b19a094a4aaf6e5b
   specs:
     static_serve (0.0.1)
       rack
