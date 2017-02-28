@@ -9,3 +9,5 @@ exclude:
  - Gemfile.lock
  - vendor
  - bin
+ - config.ru
+ - Procfile

@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/robacarp/static_serve
+  revision: d3822e686366bbff4a644312c66562f7eb707632
+  specs:
+    static_serve (0.0.1)
+      rack
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -33,11 +40,7 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
     puma (3.7.0)
-    rack (1.6.5)
-    rack-jekyll (0.5.0)
-      jekyll (>= 1.3)
-      listen (>= 1.3)
-      rack (~> 1.5)
+    rack (2.0.1)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
@@ -53,10 +56,10 @@ DEPENDENCIES
   haml
   jekyll (~> 3.4.0)
   puma
-  rack-jekyll
+  static_serve!
 
 RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.14.3
+   1.14.4
