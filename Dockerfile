@@ -1,3 +1,4 @@
-FROM nginx
-EXPOSE 80
-COPY _site /usr/share/nginx/html
+FROM robacarp/server:testing
+COPY . /root
+RUN cd /root && bundle install && jekyll build
+RUN cp -r /root/_site/* /usr/share/nginx/html
