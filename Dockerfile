@@ -1,4 +1,4 @@
-FROM robacarp/server:testing
+FROM robacarp/server:master
 COPY . /root
 RUN cd /root && bundle install && jekyll build
-RUN cp -r /root/_site/* /usr/share/nginx/html
+RUN cp -r /root/_site/* /app
