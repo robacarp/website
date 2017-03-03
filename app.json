@@ -1,9 +1,0 @@
-{
-  "name": "Robacarp.com",
-  "description": "",
-  "scripts": {
-    "dokku": {
-      "predeploy": "jekyll build"
-    }
-  }
-}
