@@ -1,6 +1,7 @@
 title: Robacarp
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://robacarp.io" # the base hostname & protocol for your site
+permalink: "/posts/:year/:month/:day/:title.html"
 
 # Build settings
 markdown: kramdown

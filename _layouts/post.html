@@ -1,0 +1,20 @@
+---
+---
+
+{% include header.html %}
+<div id='content'>
+  {{ content }}
+</div>
+
+<hr>
+
+<div id='post-footer'>
+  Date: {{ page.date | date: "%Y-%h-%d" }}<br>
+  Tags: {{ page.tags | join: ", " }}<br>
+
+  {% if page.previous %}
+  Previous: <a href="{{ page.previous.url | relative }}" >{{ page.previous.title }}</a>
+  {% endif %}
+</div>
+
+{% include footer.html %}

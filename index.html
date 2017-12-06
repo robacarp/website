@@ -2,9 +2,22 @@
 layout: default
 ---
 
-<div>
-  <h3>Brief:</h3>
-  <p>
-    My name is Robert Carpenter.  I like to say that I make the internet.  I build web applications, automate servers, compile and analyze data, and query databases en masse. I wrote my first HTML page way back in 1997, and "published" on the now defunct geocities for several years.  I've been working professionally as a Software Engineer since 2007.
-  </p>
-</div>
+<h3>Recent Posts:</h3>
+<ul>
+  {% for post in site.posts limit: 3 %}
+    <li>
+      {{ post.date | date: "%Y-%h-%d" }} <a href="{{ post.url }}">{{ post.title }}</a> <em>{{ post.tags | join: ", " }}</em>
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Brief:</h3>
+<p>
+My name is Robert Carpenter.  I build web applications, automate servers, compile and analyze data, and query databases en masse. I wrote my first HTML page way back in 1997, and "published" on the now defunct geocities for several years.
+</p>
+
+<h3>Further Info:</h3>
+<p>
+<a href="http://resume.robacarp.com">Resume.</a> <br>
+<a href="https://github.com/robacarp">Github.</a>
+</p>
