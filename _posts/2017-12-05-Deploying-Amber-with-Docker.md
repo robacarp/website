@@ -2,6 +2,7 @@
 layout: post
 title: Deploying Amber with Docker
 tags: crystal amber docker
+category: devops
 ---
 
 Deploying an Amber site seems like it might be really straightforward because it comes with a Dockerfile right out of the generator, but that Dockerfile is designed for use as a development environment.
