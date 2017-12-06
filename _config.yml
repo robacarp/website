@@ -12,3 +12,6 @@ exclude:
  - bin
  - config.ru
  - Procfile
+
+include:
+  - .well-known

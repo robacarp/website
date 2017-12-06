@@ -1,0 +1,52 @@
+https://keybase.io/robacarp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://robacarp.com
+  * I am robacarp (https://keybase.io/robacarp) on keybase.
+  * I have a public key ASAW13IwdtxWWOB4IS_hN0kYdVQVFP7PrS67uKnJC4Cshwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012016d7723076dc5658e078212fe137491875541514fecfad2ebbb8a9c90b80ac870a",
+      "host": "keybase.io",
+      "kid": "012016d7723076dc5658e078212fe137491875541514fecfad2ebbb8a9c90b80ac870a",
+      "uid": "292384fd813accb9b26a888dd9701600",
+      "username": "robacarp"
+    },
+    "merkle_root": {
+      "ctime": 1512594686,
+      "hash": "3422b759f0f62246fea27a474269829508b6c484b17982d734c7fa2baa8bc285c498f192fac9ebd6b40125ebd257bcc70ca01b596b1b7cebf9a6256f59160eea",
+      "hash_meta": "6ab6913daf073c4f6631518133cd41c75ae02b1d3784a0fa712b243624768b59",
+      "seqno": 1785764
+    },
+    "service": {
+      "hostname": "robacarp.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.36"
+  },
+  "ctime": 1512594729,
+  "expire_in": 504576000,
+  "prev": "b4c3366ad29993b197dd347f82d36779c48d76d165979072c75510d1140e66e8",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgFtdyMHbcVljgeCEv4TdJGHVUFRT+z60uu7ipyQuArIcKp3BheWxvYWTFA0V7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMTZkNzcyMzA3NmRjNTY1OGUwNzgyMTJmZTEzNzQ5MTg3NTU0MTUxNGZlY2ZhZDJlYmJiOGE5YzkwYjgwYWM4NzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMTZkNzcyMzA3NmRjNTY1OGUwNzgyMTJmZTEzNzQ5MTg3NTU0MTUxNGZlY2ZhZDJlYmJiOGE5YzkwYjgwYWM4NzBhIiwidWlkIjoiMjkyMzg0ZmQ4MTNhY2NiOWIyNmE4ODhkZDk3MDE2MDAiLCJ1c2VybmFtZSI6InJvYmFjYXJwIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTEyNTk0Njg2LCJoYXNoIjoiMzQyMmI3NTlmMGY2MjI0NmZlYTI3YTQ3NDI2OTgyOTUwOGI2YzQ4NGIxNzk4MmQ3MzRjN2ZhMmJhYThiYzI4NWM0OThmMTkyZmFjOWViZDZiNDAxMjVlYmQyNTdiY2M3MGNhMDFiNTk2YjFiN2NlYmY5YTYyNTZmNTkxNjBlZWEiLCJoYXNoX21ldGEiOiI2YWI2OTEzZGFmMDczYzRmNjYzMTUxODEzM2NkNDFjNzVhZTAyYjFkMzc4NGEwZmE3MTJiMjQzNjI0NzY4YjU5Iiwic2Vxbm8iOjE3ODU3NjR9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoicm9iYWNhcnAuY29tIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzYifSwiY3RpbWUiOjE1MTI1OTQ3MjksImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiYjRjMzM2NmFkMjk5OTNiMTk3ZGQzNDdmODJkMzY3NzljNDhkNzZkMTY1OTc5MDcyYzc1NTEwZDExNDBlNjZlOCIsInNlcW5vIjoxMywidGFnIjoic2lnbmF0dXJlIn2jc2lnxECJMPvaEMD3i6JuZal+YFrhxdV5R1MHAvkSBHJKRl7vjv+NcSnjVP3B2ESjyPUuA8AtLgw8zQs5JVEYFF8aPHQNqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgIYqDSTgA+hqmdYBNZ6kvJMbyfl6PwJORyP2w/W/dqQWjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/robacarp
