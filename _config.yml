@@ -12,6 +12,8 @@ exclude:
  - bin
  - config.ru
  - Procfile
+ - nginx
+ - Dockerfile
 
 include:
   - .well-known
