@@ -2,7 +2,8 @@
 Title: Internationalization
 Date: 2006-03-16 01:12:36
 tags: travel
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 The internationalization has begun!

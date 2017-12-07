@@ -5,6 +5,7 @@ tags: ruby
 layout: post
 imported-from: gist
 gist-url: https://gist.github.com/robacarp/1705296
+category: dev
 ---
 
 Working with Rails forms is usually a dream. They do the right thing, pretty much always. Similarly, working with Bootstrap is a dream. I don't fancy myself a designer and don't want to fuss with design elements. I just want it to look good enough.

@@ -3,6 +3,7 @@ title: Perl Prime Finder
 date: 2011-12-05 16:24:00 -0700
 imported-from: gist
 gist-url: https://gist.github.com/robacarp/1435885
+category: dev
 tags: perl
 layout: post
 ---

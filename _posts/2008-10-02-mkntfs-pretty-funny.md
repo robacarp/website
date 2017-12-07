@@ -2,7 +2,8 @@
 title: mkntfs - pretty funny
 date: 2008-10-02
 tags: linux
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 

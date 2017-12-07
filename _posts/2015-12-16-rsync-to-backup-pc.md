@@ -2,6 +2,7 @@
 title: rsync script to backup laptop to network storage
 date: 2015-12-16 18:29:00 -0700
 tags: bash backup
+category: dev
 imported-from: gist
 gist-url: https://gist.github.com/robacarp/e0e3040a929aac6b6a5d
 layout: post

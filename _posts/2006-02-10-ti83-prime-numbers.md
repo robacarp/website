@@ -2,7 +2,8 @@
 date: 2006-02-10 23:24:23
 title: ti83 prime numbers
 tags: calculator ti-basic
-category: imported-blog
+category: dev
+imported-from: old-blog
 layout: post
 ---
 

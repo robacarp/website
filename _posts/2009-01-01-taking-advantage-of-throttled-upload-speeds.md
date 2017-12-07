@@ -2,7 +2,8 @@
 title: Taking advantage of throttled upload speeds
 date: 2009-01-01
 tags: linux
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 

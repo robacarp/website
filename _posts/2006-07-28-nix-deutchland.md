@@ -2,7 +2,8 @@
 title: Nix Deutschland
 date: 2006-07-28
 tags: travel
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 Honestly its kind of a long story.

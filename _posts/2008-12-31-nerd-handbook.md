@@ -2,7 +2,8 @@
 title: The Nerd Handbook
 date: 2008-12-31
 tags: life nerd
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 

@@ -2,7 +2,8 @@
 Title: Flash Learning&colon; Line drawing tool
 date: 2008-12-12
 tags: flash
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 

@@ -2,8 +2,9 @@
 title: Three things I learned about linux today
 date: 2008-12-01
 tags: linux
-categories: imported-blog
 layout: post
+category: blog
+imported-from: old-blog
 ---
 
 Hitting ^L is the same as running the clear command

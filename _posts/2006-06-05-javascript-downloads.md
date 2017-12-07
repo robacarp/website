@@ -2,7 +2,8 @@
 Title: Javascript Downloads
 Date: 2006-06-05
 tags: javascript
-categories: imported-blog
+category: dev
+imported-from: old-blog
 layout: post
 ---
 

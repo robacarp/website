@@ -2,6 +2,7 @@
 title: Bash script to rekey a server
 date: 2015-08-29 07:58:00 -0600
 tags: bash ssh security
+category: dev
 imported-from: gist
 gist-url: https://gist.github.com/robacarp/10193438
 layout: post

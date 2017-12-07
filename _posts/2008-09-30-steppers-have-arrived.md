@@ -2,7 +2,8 @@
 title: Steppers have arrived
 date: 2008-09-30
 tags: steppers 3dprinting
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 I received six stepper motors via UPS today. A great e-bay find. I paid $8 each and a total of $9 shipping for the lot! Some digging didn't reveal much as to the actual cost of these steppers, but other, fairly similar steppers on the Oriental Motor Co website are priced at or above $90. The steppers sold by the Reprap Research Foundation store are $25 and have similar specifications.

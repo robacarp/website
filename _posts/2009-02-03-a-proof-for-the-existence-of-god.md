@@ -2,7 +2,8 @@
 title: A proof for the existence of God
 date: 2009-02-03
 tags: faith
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 Recently I had the opportunity to participate in an open worldview forum. There were three panels: Secular Humanists, Philosophy Club, and Christians. We presented our worldview on four subjects: The existence of God, the problem of evil, a basis for morality, and the impact of religion. I presented for the Christian perspective on The existence of God and the basis for morality. What follows is an adapted-for-web version of my speech on the existence of God.

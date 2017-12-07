@@ -3,6 +3,7 @@ title: Ruby threads demonstration, looking up domain names en mass
 date: 2011-12-01 11:28:00 -0700
 tags: ruby
 imported-from: gist
+category: dev
 layout: post
 gist-url: https://gist.github.com/robacarp/1418780
 ---

@@ -2,8 +2,9 @@
 title: JVM's Sledge
 date: 2008-10-01
 tags: 3dprinting jvm
-categories: imported-blog
 layout: post
+category: blog
+imported-from: old-blog
 ---
 A recent forum post about diagnosing Java virtual machine problems stated this:
 

@@ -2,7 +2,8 @@
 title: Lynx browsing
 date: 2006-03-02 04:51:23
 tags: linux
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 

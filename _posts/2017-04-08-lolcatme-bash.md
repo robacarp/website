@@ -2,6 +2,7 @@
 title: Lolcatme
 date: 2017-04-08 08:53:00 -0600
 tags: bash fish prank lolcat
+category: dev
 layout: post
 imported-from: gist
 gist-url: https://gist.github.com/robacarp/d692be38477caf4a3d1048d4e8b8b9ca
@@ -81,3 +82,7 @@ And for ZSH, something like this:
     trap 'lolcatme' DEBUG
 
 I ran into a particular problem with _oh my zsh_ using this. In order to render the prompt, OMZ calls several hundred functions, each in turn calling `lolcatme()`. Unfortunately, this performance hit is substantial and makes the shell almost unusable.
+
+The result is rather glorious:
+
+![Lolcatme in action]({{ "/images/lolcatme.png" | absolute_url }})

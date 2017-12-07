@@ -2,7 +2,8 @@
 title: Google Fixes Microsoft Loophole
 date: 2005-12-05 13:20:58
 tags: security
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 In perusing the daily news headings with google's new personalized home feature I saw a news article titled "Google Fixes Desktop Search Loophole" hosted on CIO Today.  This is a great thing.  I agree that it is a good move for google to fix the problem now as apposed to waiting for Microsoft for a product update to their ever failing-in-popularity Internet Explorer.

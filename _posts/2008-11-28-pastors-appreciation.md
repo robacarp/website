@@ -2,7 +2,8 @@
 title: Thanksgiving pastor's appreciation
 date: 2008-11-28
 tags: faith
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 

@@ -3,7 +3,8 @@ date: 2006-01-19 19:29:01
 title: personalizing googles personalizable
 layout: post
 tags: rss google
-category: imported-blog
+category: blog
+imported-from: old-blog
 ---
 
 

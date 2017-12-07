@@ -2,7 +2,9 @@
 title: Net::HTTP post with ssl
 date: 2012-02-29 10:29 -0700
 tags: ruby
-categories: imported-gist
+category: dev
+imported-from: gist
+gist-url: unknown
 layout: post
 ---
 This code is so atypically verbose for ruby so I can never remember it. Even still, I use it all the time.

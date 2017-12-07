@@ -2,7 +2,8 @@
 title: Senior Sem Project
 date: 2007-02-19
 tags: arduino
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 

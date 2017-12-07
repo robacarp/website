@@ -2,7 +2,8 @@
 title: Reprap Begins!
 date: 2008-09-23
 tags: reprap 3dprinting
-categories: imported-blog
+category: blog
+imported-from: old-blog
 layout: post
 ---
 

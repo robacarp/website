@@ -2,8 +2,9 @@
 title: Here I am&colon; a tweener
 date: 2008-12-08
 tags: life
-categories: imported-blog
 layout: post
+category: blog
+imported-from: old-blog
 ---
 In the old days a 'tweener' was a job. It may still be. A tweener would work in an animation studio as an artist. Think Bugs Bunny style animation. In the studio, the design artist would put together most of the 'keyframes' for the toon sequence. In between the keyframes needed to be added a lot of frames which made the animation smooth and appear to be real motion. The people that drew these filler frames were called tweeners because their frames were just in-between the keyframes.
 

@@ -2,6 +2,7 @@
 title: Ruby 2.2.2 Splat Bug
 date: 2016-12-01 14:41:00 -0700
 tags: ruby
+category: dev
 imported-from: gist
 gist-url: https://gist.github.com/robacarp/11aed78575b7b78db1b718016497f6aa
 layout: post
