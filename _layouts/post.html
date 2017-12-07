@@ -15,11 +15,19 @@
 
   {% if page.previous %}
   Previous: <a href="{{ page.previous.url | relative }}" >{{ page.previous.title }}</a><br>
+  Next: <a href="{{ page.next.url | relative }}">{{ page.next.title }}</a><br>
   {% endif %}
 
   {% if page.imported-from == "gist" %}
-  Imported from a github gist.<br>
-  Original URL <a href="{{ page.gist-url }}">{{ page.gist-url }}</a>
+  This page was originally published as a github gist and was imported in December 2017.<br>
+  <a href="{{ page.gist-url }}">Original Gist here</a>.
+  {% endif %}
+
+  {% if page.imported-from == "old-blog" %}
+  In December 2017 this post was imported from
+  <a href="https://web.archive.org/web/20090430074221/http://www.robertcarpenter.net:80/">an archive of my pre-2009 blog</a>
+  stored by <a href="https://archive.org">archive.org</a>.<br>
+  <a href="https://archive.org/donate/">Consider a donation to archive.org</a> if you find this content valuable.
   {% endif %}
 </div>
 
