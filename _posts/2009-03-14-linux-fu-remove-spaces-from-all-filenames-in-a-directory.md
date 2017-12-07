@@ -1,0 +1,17 @@
+---
+title: Linux-fu&colon; Remove spaces from all filenames in a directory
+date: 2009-03-14
+tags: linux
+categories: imported-blog
+layout: post
+---
+
+I needed to remove spaces from a whole list of files in a directory. A short bash script took care of it easy:
+
+<pre class="code">
+$ for file in *; do 
+> newFile=$(echo $file | tr ' ' _)
+> mv "$file" $newFile
+> done
+</pre>
+
