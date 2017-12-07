@@ -11,7 +11,10 @@
 
 <div id='post-footer'>
   Date: <span title="{{ page.date }}">{{ page.date | date: "%Y-%h-%d" }}</span><br>
-  Tags: {{ page.tags | join: ", " }}<br>
+  Tags: {% for tag in page.tags %}
+  <a href="/tags.html#{{ tag | downcase}}">{{ tag }}</a>
+  {% endfor %}
+  <br>
 
   {% if page.previous %}
   Previous: <a href="{{ page.previous.url | relative }}" >{{ page.previous.title }}</a><br>
@@ -19,11 +22,13 @@
   {% endif %}
 
   {% if page.imported-from == "gist" %}
+  <br>
   This page was originally published as a github gist and was imported in December 2017.<br>
   <a href="{{ page.gist-url }}">Original Gist here</a>.
   {% endif %}
 
   {% if page.imported-from == "old-blog" %}
+  <br>
   In December 2017 this post was imported from
   <a href="https://web.archive.org/web/20090430074221/http://www.robertcarpenter.net:80/">an archive of my pre-2009 blog</a>
   stored by <a href="https://archive.org">archive.org</a>.<br>
