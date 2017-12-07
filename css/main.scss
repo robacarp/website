@@ -62,14 +62,17 @@ table {
   }
 }
 
-.code {
+.code, code {
   background-color: #eff0f1;
   color: #000;
 }
 
-pre.code {
+pre.code, pre code {
   margin-left: 2em;
   padding: 3px;
+  display: block;
+  background-color: #eff0f1;
+  color: #000;
 }
 
 #content {

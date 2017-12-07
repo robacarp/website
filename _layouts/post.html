@@ -10,11 +10,16 @@
 <hr>
 
 <div id='post-footer'>
-  Date: {{ page.date | date: "%Y-%h-%d" }}<br>
+  Date: <span title="{{ page.date }}">{{ page.date | date: "%Y-%h-%d" }}</span><br>
   Tags: {{ page.tags | join: ", " }}<br>
 
   {% if page.previous %}
-  Previous: <a href="{{ page.previous.url | relative }}" >{{ page.previous.title }}</a>
+  Previous: <a href="{{ page.previous.url | relative }}" >{{ page.previous.title }}</a><br>
+  {% endif %}
+
+  {% if page.imported-from == "gist" %}
+  Imported from a github gist.<br>
+  Original URL <a href="{{ page.gist-url }}">{{ page.gist-url }}</a>
   {% endif %}
 </div>
 
