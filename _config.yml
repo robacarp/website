@@ -1,6 +1,6 @@
 title: Robacarp
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://robacarp.io" # the base hostname & protocol for your site
+url: "https://robacarp.io" # the base hostname & protocol for your site
 permalink: "/:categories/:year/:month/:day/:title.html"
 
 # Build settings
