@@ -18,6 +18,9 @@
 
   {% if page.previous %}
   Previous: <a href="{{ page.previous.url | relative }}" >{{ page.previous.title }}</a><br>
+  {% endif %}
+
+  {% if page.next %}
   Next: <a href="{{ page.next.url | relative }}">{{ page.next.title }}</a><br>
   {% endif %}
 
