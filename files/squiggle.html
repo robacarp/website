@@ -1,0 +1,89 @@
+---
+---
+<html>
+  <head>
+    <title> ..~~-- squiggle --~~.. </title>
+    <style type="text/css">
+      .floaters {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        font-family: courier;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: default;
+        z-index: 1;
+      }
+
+      input {
+        z-index: 2;
+      }
+    </style>
+    <script type="text/javascript">
+"use strict";
+var squiggle = "~"
+var squiggles = []
+var maxSquiggles = 100
+var timer = 0
+var offset = 5
+
+function start(){
+  document.addEventListener('mousemove', function(e) {
+      if (e.clientX) {
+        squiggleMe(e.clientX - offset, e.clientY - offset)
+      } else if (e.x) {
+        squiggleMe(e.x - offset, e.y - offset)
+      }
+  })
+
+  document.getElementById('anchor').innerHTML = 'touch me, start a squigglepic'
+}
+
+function squiggleMe(x,y) {
+  var squig = document.createElement('div')
+  squig.innerHTML = squiggle
+  squig.setAttribute('class','floaters')
+  squig.style.top = y + 'px'
+  squig.style.left = x + 'px'
+
+  document.getElementById('anchor').insertBefore(squig, null)
+  // document.getElementById('picker').addEventListener('change',function(e){
+  //       console.log(e)
+  //     })
+
+  squiggles.push( squig )
+  timer = timeOnce( maxSquiggle, timer, 300 )
+}
+
+function timeOnce(fn, timer, delay){
+  clearTimeout(timer)
+  return setTimeout(fn, delay)
+}
+
+function maxSquiggle(){
+  if (squiggles.length < 5) {
+    truncateSquiggles()
+    return
+  }
+  var delay = (maxSquiggles / squiggles.length) * 10
+
+  squiggles.shift().remove()
+
+  timer = timeOnce( maxSquiggle, timer, delay )
+}
+
+function truncateSquiggles(){
+  if (squiggles.length < 1) return
+  squiggles.shift().remove()
+  truncateSquiggles()
+}
+
+document.addEventListener('DOMContentLoaded', start, false)
+    </script>
+  </head>
+  <body>
+    <div id="anchor"> this probably only works in chrome </div>
+    <input type="color" id="picker">
+  </body>
+</html>
+

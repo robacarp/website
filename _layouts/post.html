@@ -37,6 +37,11 @@
   stored by <a href="https://archive.org">archive.org</a>.<br>
   <a href="https://archive.org/donate/">Consider a donation to archive.org</a> if you find this content valuable.
   {% endif %}
+
+  {% if page.imported-from == "squiggle.city" %}
+  This entry was originally <a href="{{ page.squiggle-url }}">written and published</a> on <a href="https://squiggle.city">Squiggle.city</a> and was imported in January 2018.<br>
+  <a href="/files/squiggle.html">This is a neat squiggle.city project</a>
+  {% endif %}
 </div>
 
 
