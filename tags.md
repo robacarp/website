@@ -6,10 +6,10 @@ layout: default
 ### List of posts organized by tag.
 
 {% for tag in site.tags %}
-  {% assign t = tag | first %}
+  {% assign t = tag | first | downcase %}
   {% assign posts = tag | last %}
 
-  <a href="#{{ t | downcase}}" name="{{ t | downcase }}">{{ t | downcase }}</a>
+  <a href="#{{ t }}" name="{{ t }}">{{ t }}</a>
   <ul>
   {% for post in posts %}
     {% if post.tags contains t %}

@@ -1,9 +1,10 @@
 ---
 title: An Arduino test framework
 date: 2015-06-29 14:46:00 -0600
+tags: arduino testing
+category: dev
 imported-from: gist
 gist-url: https://gist.github.com/robacarp/e4cf62bc125d41bcc4e4
-tags: arduino testing
 layout: post
 ---
 
