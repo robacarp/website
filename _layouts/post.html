@@ -3,6 +3,7 @@
 
 {% include header.html %}
 <h3>{{ page.title }}</h3>
+<em>Reading time: {{ page.content | reading_time }}</em>
 <div id='content'>
   {{ content }}
 </div>

@@ -1,0 +1,33 @@
+---
+title: Post Tags
+layout: default
+---
+
+<h3>List of posts organized by tag.</h3>
+
+{% capture tag_words %}
+  {% for tag in site.tags %}
+    {{ tag | first | downcase }}
+    {% unless forloop.last %}
+    ::
+    {% endunless %}
+  {% endfor %}
+{% endcapture %}
+
+{% assign sorted_tags = tag_words | split: " " | join: "" | split: "::" | sort %}
+
+{% for i in (0..site.tags.size) %}
+  {% assign tag = sorted_tags[i] | strip_whitespace %}
+  {% assign posts = site.tags[tag] %}
+  {% assign post_count = posts.size %}
+
+  <a href="#{{ tag }}" name="{{ tag }}">{{ tag }}</a>
+  <ul>
+  {% for post in posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+{% endfor %}

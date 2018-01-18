@@ -2,15 +2,6 @@
 layout: default
 ---
 
-<h3>Recent Posts:</h3>
-<ul>
-  {% for post in site.posts limit: 5 %}
-    <li>
-      {{ post.date | date: "%Y-%h-%d" }} <a href="{{ post.url }}">{{ post.title }}</a> <em>{{ post.tags | join: ", " }}</em>
-    </li>
-  {% endfor %}
-</ul>
-
 <h3>Brief:</h3>
 <p>
 My name is Robert Carpenter.  I build web applications, automate servers, compile and analyze data, and query databases en masse. I wrote my first HTML page way back in 1997, and "published" on the now defunct geocities for several years.
@@ -29,3 +20,11 @@ Public Key: <a href="/files/9D54E693.txt">.txt</a> &middot; <a href="/files/9D54
 <a href="https://keybase.io/robacarp">Keybase.</a>
 </p>
 
+<h3>Recent Posts:</h3>
+<ul>
+  {% for post in site.posts limit: 5 %}
+    <li>
+      {{ post.date | date: "%Y-%h-%d" }} <a href="{{ post.url }}">{{ post.title }}</a> <em>{{ post.tags | join: ", " }}</em>
+    </li>
+  {% endfor %}
+</ul>
