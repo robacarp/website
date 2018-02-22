@@ -28,3 +28,21 @@ Public Key: <a href="/files/9D54E693.txt">.txt</a> &middot; <a href="/files/9D54
     </li>
   {% endfor %}
 </ul>
+
+{% capture tag_counts %}
+  {% for tag in site.tags %}
+    {{ tag[1].size | plus: 1000 }}#{{ tag[0] | downcase }}#{{ tag[1].size }}
+  {% endfor %}
+{% endcapture %}
+
+{% assign sorted_tags = tag_counts | split: " " | sort | reverse %}
+
+<h3>Popular Tags:</h3>
+<ul>
+{% for tag in sorted_tags limit:5 %}
+  {% assign parts = tag | split: "#" %}
+  {% assign name = parts[1] %}
+  {% assign post_count = parts[2] %}
+  <li><a href="/tags.html#{{ name }}">{{ name }}</a> - {{ post_count }} posts
+{% endfor %}
+</ul>
