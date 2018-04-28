@@ -29,6 +29,9 @@ Public Key: <a href="/files/9D54E693.txt">.txt</a> &middot; <a href="/files/9D54
   {% endfor %}
 </ul>
 
+<h3>Post Feed</h3>
+<a href="/atom.xml">ATOM</a>
+
 {% capture tag_counts %}
   {% for tag in site.tags %}
     {{ tag[1].size | plus: 1000 }}#{{ tag[0] | downcase }}#{{ tag[1].size }}
