@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hammerspoon Clipboard Autosuggest
-tags: clipboard hammerspoon automation
+tags: clipboard hammerspoon automation macos productivity
 date: 2018-04-27 17:52:39
 guid: abe77a00-1b1a-44f7-8064-fee39bd889e0
 ---
@@ -14,7 +14,7 @@ https://www.amazon.com/gp/product/B0196I9O3A/ref=s9u_qpp_gw_i4?ie=UTF8&fpl=fresh
 
 When all you really need to _get to the product_ is: `https://www.amazon.com/gp/product/B0196I9O3A`. From over 300 characters down to less than 50. About an 85% reduction in characters, and much less likely to wrap around a terminal window.
 
-<img src="/images/ClipboardWatcher.spoon-2018-04-27 18-02-35.png">
+<img src="/images/posts/2018/ClipboardWatcher.spoon-2018-04-27 18-02-35.png">
 
 I've had hammerspoon installed for years and don't do _much_ with it, partially because I'm just frustrated with Lua for being so minimalistic that I have to [scour a score of string.split implementations](http://lua-users.org/wiki/SplitJoin) to perform simple tasks.
 
