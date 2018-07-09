@@ -20,3 +20,17 @@ exclude:
 
 include:
   - .well-known
+
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - day
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
