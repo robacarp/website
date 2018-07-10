@@ -1,7 +1,7 @@
 title: Robacarp
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://robacarp.io" # the base hostname & protocol for your site
-permalink: "/:categories/:year/:month/:day/:title.html"
+permalink: "/:year/:month/:day/:title.html"
 
 author:
   name: Robert Carpenter
@@ -17,6 +17,7 @@ exclude:
  - Procfile
  - nginx
  - Dockerfile
+ - prod-config-generator.rb
 
 include:
   - .well-known
