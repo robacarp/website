@@ -21,6 +21,7 @@ exclude:
 
 include:
   - .well-known
+  - robots.txt
 
 plugins:
   - jekyll-archives
