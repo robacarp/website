@@ -1,6 +1,9 @@
 ---
-layout: post
 title: keeping your secrets hidden
+date: 2019-06-12 11:43:11
+tags: bash aws secret password
+layout: post
+guid: bfa8fe73-a834-4dd7-a761-7f4cf487fb9f
 ---
 
 There aren't many rules when deploying applications to the cloud, but here's one I think is pretty important:
@@ -121,4 +124,6 @@ Storing credentials in a central repository not only helps prevent leaks, but it
 
 Instead of needing to touch each server and update credentials manually, update everything with an Ansible run, or rebuild containers to update secrets, it's as simple as updating a secret in one place and restarting services. Each service will fetch its own credentials again at boot and connect with the new secrets.
 
+----
 
+This post was originally written for [DailyDrip.com](https://www.dailydrip.com/) and published on 2018-08-01. [Link to the original](https://www.smoothterminal.com/articles/keeping-your-secrets-hidden).
