@@ -1,0 +1,36 @@
+---
+---
+
+{
+  "adjectives": [
+    "acceptable", "beloved", "cheeky",
+    "durable", "energetic", "fire-breathing",
+    "guilty", "hostile", "illogical",
+    "jobless", "kosher", "light",
+    "macho", "negative", "oval",
+    "peppy", "queenly", "random",
+    "safe", "teeny", "upbeat",
+    "valued", "waterproof", "young",
+    "zealous"]
+  ,
+
+  "colors": [
+    "red", "green", "blue",
+    "purple", "grey", "pink",
+    "white", "yellow", "orange",
+    "black", "teal", "golden",
+    "silver", "navy-blue", "jet-black",
+    "blonde", "brunette"
+  ],
+
+  "nouns": [
+    "aardvark", "beaver", "chicken",
+    "dragonfly", "elk", "eel",
+    "fox", "gorilla", "hippo",
+    "jaguar", "kangaroo", "llama",
+    "mouse", "newt", "otter",
+    "pigeon", "pug", "rat",
+    "sheep", "squid", "turtle",
+    "wolf", "yak", "zebra"
+  ]
+}
