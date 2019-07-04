@@ -69,6 +69,19 @@ The documentation for manually installing HKCam on a Raspberry PI are frustratin
     [Install]
     WantedBy=multi-user.target
 
+## Run script
+
+/etc/hkcam
+
+    #!/bin/bash
+
+    # set the video4linux ctl parameters
+    v4l2-ctl --set-fmt-video=width=1280,height=720,pixelformat=YU12
+    v4l2-ctl -c video_bitrate=1000000
+
+    # exec over to hkcam
+    exec /usr/local/bin/hkcam --min_video_bitrate=500
+
 ## Activate the service:
 
     sudo systemctl daemon-reload
