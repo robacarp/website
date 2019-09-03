@@ -15,7 +15,8 @@ jobs:
 
       - checkout
       - run: ./scripts/build
-      - run: ./scripts/deploy
+      - run: ./scripts/upload_image
+      - run: ./scripts/deploy_latest
 
 workflows:
   deploy:
