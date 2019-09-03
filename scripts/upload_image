@@ -2,6 +2,8 @@
 set -euo pipefail
 
 aws_region='us-west-2'
+repo='258231756415.dkr.ecr.us-west-2.amazonaws.com/robacarp-com/alfalfa'
+env='production'
 
 # Login to AWS ECS Container Store
 docker_login=`aws ecr get-login --no-include-email --region "$aws_region"`

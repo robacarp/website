@@ -2,7 +2,9 @@
 
 aws_region='us-west-2'
 cluster='robacarp-com-alfalfa'
-service='Production-alfalfa-robacarp-com'
+service='production-alfalfa-robacarp-com'
+minimum_percent_stable=50
+maximum_percent_stable=200
 
 set -euo pipefail
 
