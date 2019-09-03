@@ -1,0 +1,13 @@
+#!/bin/bash
+set -euo pipefail
+
+aws_region='us-west-2'
+
+# Login to AWS ECS Container Store
+docker_login=`aws ecr get-login --no-include-email --region "$aws_region"`
+eval $docker_login
+
+docker tag "robacarp_com" "$repo:$env"
+
+# Push the tagged image to your the AWS repository
+docker push "$repo:$env"

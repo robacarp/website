@@ -1,0 +1,14 @@
+#!/bin/bash
+
+aws_region='us-west-2'
+cluster=''
+service=''
+
+set -euo pipefail
+
+aws ecs update-service \
+  --region "$aws_region"\
+  --cluster "$cluster" \
+  --service "$service" \
+  --force-new-deployment \
+  --deployment-configuration "maximumPercent=$maximum_percent_stable,minimumHealthyPercent=$minimum_percent_stable"
