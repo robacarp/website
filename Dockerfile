@@ -1,8 +1,5 @@
-FROM robacarp/static-dokku:latest
+FROM ruby:2.6.4 AS jekyll
 RUN apt-get install -y libffi-dev
-
-COPY nginx/drop_location.conf /etc/nginx/locations/
-COPY nginx/passwd /etc/nginx/passwd
 
 WORKDIR /root
 COPY Gemfile Gemfile.lock ./
@@ -16,4 +13,12 @@ ENV MY_SOUL ${MY_SOUL:-}
 RUN ruby prod-config-generator.rb > _prod.yml
 
 ENV JEKYLL_ENV production
-RUN jekyll build --config _config.yml,_prod.yml --destination /app
+RUN mkdir /app && \
+    bundle exec jekyll build --config _config.yml,_prod.yml --destination /app
+
+FROM robacarp/static-dokku:latest
+
+COPY --from=jekyll /app /app
+COPY nginx/drop_location.conf /etc/nginx/locations/
+COPY nginx/passwd /etc/nginx/passwd
+
