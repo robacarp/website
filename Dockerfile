@@ -7,12 +7,6 @@ RUN bundle install --deployment
 
 COPY . /root
 
-# Hack to get a dokku build environment variable into a rendered jekyll page
-ARG MY_SOUL
-ENV MY_SOUL ${MY_SOUL:-}
-RUN ruby prod-config-generator.rb > _prod.yml
-
-ENV JEKYLL_ENV production
 RUN mkdir /app && \
     bundle exec jekyll build --config _config.yml,_prod.yml --destination /app
 
