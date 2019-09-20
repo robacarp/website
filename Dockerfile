@@ -8,7 +8,7 @@ RUN bundle install --deployment
 COPY . /root
 
 RUN mkdir /app && \
-    bundle exec jekyll build --config _config.yml,_prod.yml --destination /app
+    bundle exec jekyll build --config _config.yml --destination /app
 
 FROM robacarp/static-dokku:latest
 

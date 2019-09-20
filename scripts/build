@@ -5,6 +5,9 @@
 set -euo pipefail
 
 build_stats () {
+  echo '---'
+  echo '---'
+
   echo -n '{ "build_timestamp" : "'
   date "+%Y-%m-%d %H:%M:%S" | tr -d '\n'
 
@@ -15,9 +18,9 @@ build_stats () {
 }
 
 function cleanup {
-  rm BUILD_DETAILS
+  rm .well-known/BUILD_DETAILS.json
 }
 trap cleanup EXIT
-build_stats > BUILD_DETAILS
+build_stats > .well-known/BUILD_DETAILS.json
 
 docker build . -t robacarp_com

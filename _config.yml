@@ -12,7 +12,7 @@ exclude:
  - Gemfile
  - Gemfile.lock
  - vendor
- - bin
+ - scripts
  - config.ru
  - Procfile
  - nginx
