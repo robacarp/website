@@ -3,9 +3,9 @@ layout: default
 ---
 
 <h3>Brief:</h3>
-<p>
-My name is Robert Carpenter.  I build web applications, automate servers, compile and analyze data, and query databases en masse. I wrote my first HTML page way back in 1997, and "published" on the now defunct geocities for several years.
-</p>
+<p>My name is Robert Carpenter.</p>
+<p>I build web applications, automate clouds, compile and analyze data, and spend way too much time thinking about software.</p>
+<p>I wrote my first HTML page way back in 1997, and "published" on the now defunct geocities for several years before graduating to writing web applications in Perl, PHP, Ruby, and a smattering of others.</p>
 
 <h3>GPG:</h3>
 <p>
@@ -15,12 +15,12 @@ Public Key: <a href="/files/9D54E693.txt">.txt</a> &middot; <a href="/files/9D54
 
 <h3>Find me:</h3>
 <p>
-<a href="https://resume.robacarp.com">Resume.</a> <br>
-<a href="https://github.com/robacarp">Github.</a> <br>
-<a href="https://keybase.io/robacarp">Keybase.</a> <br>
-<a href="https://twitter.com/robacarp">Twitter.</a> <br>
-<a href="mailto:codemonkey \at/ robacarp \dot/ com">Email.</a> <br>
-<a href="https://instagram.com/robacarp">Instagram.</a>
+<a href="https://resume.robacarp.com">Resume</a> &middot;
+<a href="https://github.com/robacarp">Github</a> &middot;
+<a href="https://keybase.io/robacarp">Keybase</a> &middot;
+<a href="https://twitter.com/robacarp">Twitter</a> &middot;
+<a href="mailto:codemonkey \at/ robacarp \dot/ com">Email</a> &middot;
+<a href="https://instagram.com/robacarp">Instagram</a>
 </p>
 
 <h3>Recent Posts:</h3>
@@ -35,6 +35,24 @@ Public Key: <a href="/files/9D54E693.txt">.txt</a> &middot; <a href="/files/9D54
 <h3>Post Feed</h3>
 <a href="/atom.xml">ATOM</a>
 
+{% capture post_years %}
+  {% for post in site.posts %}
+  {{ post.date | date: '%Y' }}
+  {% endfor %}
+{% endcapture %}
+
+{% assign unique_post_years = post_years | split: " " | sort | uniq | reverse %}
+
+<h3>Archives by year</h3>
+<p>
+{% for year in unique_post_years %}
+  <a href="/{{year}}">{{year}}</a>
+  {% if forloop.last != true %}
+  &middot;
+  {% endif %}
+{% endfor %}
+</p>
+
 {% capture tag_counts %}
   {% for tag in site.tags %}
     {{ tag[1].size | plus: 1000 }}#{{ tag[0] | downcase }}#{{ tag[1].size }}
@@ -45,7 +63,7 @@ Public Key: <a href="/files/9D54E693.txt">.txt</a> &middot; <a href="/files/9D54
 
 <h3>Popular Tags:</h3>
 <ul>
-{% for tag in sorted_tags limit:5 %}
+{% for tag in sorted_tags limit:10 %}
   {% assign parts = tag | split: "#" %}
   {% assign name = parts[1] %}
   {% assign post_count = parts[2] %}
