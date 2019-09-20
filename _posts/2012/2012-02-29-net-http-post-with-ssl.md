@@ -10,16 +10,19 @@ guid: 5898861b-8d94-4d3a-aa0a-073adcb1a10f
 ---
 This code is so atypically verbose for ruby so I can never remember it. Even still, I use it all the time.
 
-    def query url, post
-      uri = URI.parse url
-      http = Net::HTTP.new(uri.host, uri.port)
-      http.use_ssl = true
+{% highlight ruby %}
+def query url, post
+  uri = URI.parse url
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = true
 
-      # Don't leave this as verify_none outside of testing/tinkering
-      http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+  # Don't leave this as verify_none outside of testing/tinkering
+  http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
-      request = Net::HTTP::Post.new(uri.request_uri);
-      request.set_form_data post
+  request = Net::HTTP::Post.new(uri.request_uri);
+  request.set_form_data post
 
-      http.request(request)
-    end
+  http.request(request)
+end
+{% endhighlight %}
+

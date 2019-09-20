@@ -14,26 +14,28 @@ Adequate feedback is also really helpful. How do I know the script did the right
 
 One of the functions I think adds a lot to the output of a script is this little gem which prints an &lt;hr&gt; in the console:
 
-    hr() {
-      # Text written into the horizontal rule, left justified
-      text=${1:-}
-      length=$(echo "$text" | wc -m)
+{% highlight bash %}
+hr() {
+  # Text written into the horizontal rule, left justified
+  text=${1:-}
+  length=$(echo "$text" | wc -m)
 
-      echo
+  echo
 
-      # set the color
-      echo -e -n "\033[30;47m"
+  # set the color
+  echo -e -n "\033[30;47m"
 
-      # print the message
-      echo -n "$text"
+  # print the message
+  echo -n "$text"
 
-      # finish the line across the console
-      cols=$(expr "$(tput cols)" - $length)
-      printf " %${cols}s"
+  # finish the line across the console
+  cols=$(expr "$(tput cols)" - $length)
+  printf " %${cols}s"
 
-      # clear the background color and start a new line
-      echo -e "\033[0m"
-    }
+  # clear the background color and start a new line
+  echo -e "\033[0m"
+}
+{% endhighlight %}
 
 It looks like this in the console:
 

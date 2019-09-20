@@ -32,16 +32,18 @@ guid: cc9a004a-3259-4bf5-827a-a1621dce4145
 
 <p>That was yesterday at about 16:45. Now it is today at 23:11. About an hour ago, this finally happened: </p>
 
-    tell application "Contacts"
-            set selectedPeople to the selection
-            repeat with currentPerson in selectedPeople
-                    set oldLastName to the last name of currentPerson
-                    set oldFirstName to the first name of currentPerson
-                    set the first name of currentPerson to oldLastName
-                    set the last name of currentPerson to oldFirstName
-            end repeat
-            save
-    end tell
+{% highlight applescript %}
+tell application "Contacts"
+        set selectedPeople to the selection
+        repeat with currentPerson in selectedPeople
+                set oldLastName to the last name of currentPerson
+                set oldFirstName to the first name of currentPerson
+                set the first name of currentPerson to oldLastName
+                set the last name of currentPerson to oldFirstName
+        end repeat
+        save
+end tell
+{% endhighlight %}
 
 <p><a href="http://www.automatedworkflows.com/2011/05/22/creating-applescript-services-in-mac-os-x/">Install the script as a system service</a> for Contacts.app, select the backwards names, and hit the button. Easy, I thought.</p>
 <p>YMMV</p>

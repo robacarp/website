@@ -18,85 +18,89 @@ So how do you run your app in an environment without storing the secrets _somewh
 
 Example Dockerfile
 
-    FROM alpine:latest
+{% highlight dockerfile %}
+FROM alpine:latest
 
-    ENV POSTGRESQL_URL localhost
+ENV POSTGRESQL_URL localhost
 
-    ENV SECRET 00000000000000000000
-    ENV API_KEY 00000000000000000000
-    ENV API_KEY 00000000000000000000
+ENV SECRET 00000000000000000000
+ENV API_KEY 00000000000000000000
+ENV API_KEY 00000000000000000000
 
-    ARG SERVER_ENV
-    ENV SERVER_ENV ${SERVER_ENV:-development}
+ARG SERVER_ENV
+ENV SERVER_ENV ${SERVER_ENV:-development}
 
-    COPY /src /app
+COPY /src /app
 
-    WORKDIR /app
-    RUN compile_code
+WORKDIR /app
+RUN compile_code
 
-    COPY bin/run_server_in_environment /root/run_server_in_environment
+COPY bin/run_server_in_environment /root/run_server_in_environment
 
-    ENTRYPOINT ["/bin/bash", "/root/run_server_in_environment"]
-
+ENTRYPOINT ["/bin/bash", "/root/run_server_in_environment"]
+{% endhighlight %}
 
 run_server_in_environment.sh wrapper script
 
-    #!/bin/bash
+{% highlight bash %}
+#!/bin/bash
 
-    set -euo pipefail
+set -euo pipefail
 
-    if [[ ! ${SERVER_ENV:-} ]]; then
-      echo No SERVER_ENV present, aborting.
-      exit 1
-    fi
+if [[ ! ${SERVER_ENV:-} ]]; then
+  echo No SERVER_ENV present, aborting.
+  exit 1
+fi
 
-    case "$SERVER_ENV" in
-      testing)
-        echo "Not fetching any credentials for testing"
-        ;;
-      staging)
-        environment_path="/staging/env"
-        ;;
-      production)
-        environment_path="/production/env"
-        ;;
-      *)
-        echo "unknown SERVER_ENV: $SERVER_ENV"
-        exit 1
-    esac
+case "$SERVER_ENV" in
+  testing)
+    echo "Not fetching any credentials for testing"
+    ;;
+  staging)
+    environment_path="/staging/env"
+    ;;
+  production)
+    environment_path="/production/env"
+    ;;
+  *)
+    echo "unknown SERVER_ENV: $SERVER_ENV"
+    exit 1
+esac
 
-    if [[ "$environment_path" ]]; then
-      echo "Fetching environment variables from $environment_path..."
+if [[ "$environment_path" ]]; then
+  echo "Fetching environment variables from $environment_path..."
 
-      environment=$(aws ssm get-parameters-by-path \
-        --region='us-east-1' \
-        --path="$environment_path" \
-        --with-decryption \
-      | jq --exit-status --raw-output \
-        '
-          .Parameters[] |
-          {
-            name: .Name | capture("/(.*/)(?<parsed_name>.*)") | .parsed_name,
-            value: .Value
-          } |
-          "export \(.name)=\"\(.value)\""
-        '
-        )
+  environment=$(aws ssm get-parameters-by-path \
+    --region='us-east-1' \
+    --path="$environment_path" \
+    --with-decryption \
+  | jq --exit-status --raw-output \
+    '
+      .Parameters[] |
+      {
+        name: .Name | capture("/(.*/)(?<parsed_name>.*)") | .parsed_name,
+        value: .Value
+      } |
+      "export \(.name)=\"\(.value)\""
+    '
+    )
 
-      if [[ $? -ne 0 ]]; then
-        echo "Unable to fetch environment variables."
-      else
-        var_count=$(echo "$environment" | wc -l)
-        echo "Exporting $var_count environment variables."
-        eval "$environment"
-      fi
-    fi
+  if [[ $? -ne 0 ]]; then
+    echo "Unable to fetch environment variables."
+  else
+    var_count=$(echo "$environment" | wc -l)
+    echo "Exporting $var_count environment variables."
+    eval "$environment"
+  fi
+fi
 
-    # if a command was passed to this script, run it in the environment
-    if [[ $# -gt 0 ]]; then
-      eval "$@"
+# if a command was passed to this script, run it in the environment
+if [[ $# -gt 0 ]]; then
+  eval "$@"
 
-    # otherwise, start the server
-    else
-      exec server_start
-    fi
+# otherwise, start the server
+else
+  exec server_start
+fi
+{% endhighlight %}
+

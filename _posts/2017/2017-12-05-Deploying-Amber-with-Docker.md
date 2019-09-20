@@ -10,7 +10,7 @@ Deploying an Amber site seems like it might be really straightforward because it
 
 In order to speed up deployments and reuse code across deployments, I built an Amber image which has the amber binary already built, and nodejs pre-installed. [It's available on Docker Hub.](https://hub.docker.com/r/robacarp/amber_build/)
 
-<pre class="code">
+{% highlight dockerfile %}
 FROM crystallang/crystal:0.23.1
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -35,13 +35,13 @@ dependencies: \n\
 ' >> /amber/shard.yml
 RUN shards build amber
 RUN ln -s /amber/bin/amber /usr/local/bin
-</pre>
+{% endhighlight %}
 
 Importantly, this links <code class="code">amber</code> into the path for use with migrations and other tasks.
 
 Then, a Dockerfile for releasing any given Amber site is fairly straightforward:
 
-<pre class="code">
+{% highlight dockerfile %}
 FROM robacarp/amber_build:latest
 
 WORKDIR /app
@@ -70,7 +70,7 @@ EXPOSE 3000
 
 ENTRYPOINT ["/bin/sh","-c"]
 CMD ["bin/my_app"]
-</pre>
+{% endhighlight %}
 
 This Dockerfile is organized specifically with <code class="code">npm install</code> at the top to make it unlikely it'll ever need to be run.
 

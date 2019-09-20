@@ -26,49 +26,52 @@ You might be thinking "Why would you want todo anything so silly as to keep an X
 </ul>
 <h3>Creating the RSS</h3>
 <p>In the creation of RSS feeds there are a few requirements.  RSS feeds, like all XML, follow a standard format that allows for aggregators and other RSS enabled programs to easily display the information contained in the RSS feeds. The standard format for an RSS feed is as follows:</p>
-<pre class="code">
-&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
-&lt;rss version="2.0"&gt;
-&lt;channel&gt;
-  &lt;title&gt;...&lt;/title&gt;
-  &lt;link&gt;...&lt;/link&gt;
-  &lt;description&gt;...&lt;/description&gt;
-  &lt;language&gt;...&lt;/language&gt;
-  &lt;item&gt;
-    &lt;title&gt;...&lt;/title&gt;
-    &lt;link&gt;...&lt;/link&gt;
-    &lt;description&gt;...&lt;/description&gt;
-  &lt;/item&gt;
-  &lt;item&gt;
+
+{% highlight xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+  <title>...</title>
+  <link>...</link>
+  <description>...</description>
+  <language>...</language>
+  <item>
+    <title>...</title>
+    <link>...</link>
+    <description>...</description>
+  </item>
+  <item>
     ....
-  &lt;/item&gt;
-&lt;/channel&gt;
-&lt;/rss&gt;
-</pre>
+  </item>
+</channel>
+</rss>
+{% endhighlight %}
+
 <p>
-        Fill in the <tt>...</tt> and you have the bare minimum RSS feed. There are many optional RSS tags that allow for specifying copyright, author, contact email addresses and a myriad of other informational options.  For the purposes of this todo list I am setting all of the <tt>&lt;link&gt;</tt> tags to point to my website.  These tags are mandantory by the RSS spec but are un-needed for this purpose. Filling the blanks with some a basic todo list we get:
+Fill in the <tt>...</tt> and you have the bare minimum RSS feed. There are many optional RSS tags that allow for specifying copyright, author, contact email addresses and a myriad of other informational options.  For the purposes of this todo list I am setting all of the <tt>&lt;link&gt;</tt> tags to point to my website.  These tags are mandantory by the RSS spec but are un-needed for this purpose. Filling the blanks with some a basic todo list we get:
 </p>
-<pre class="code">
-&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
-  &lt;rss version="2.0"&gt;
-  &lt;channel&gt;
-    &lt;title&gt;todo list :&lt;/title&gt;
-    &lt;link&gt;http://robertcarpenter.net&lt;/link&gt;
-    &lt;description&gt;Robert Carpenters Online, RSS Enabled todo List&lt;/description&gt;
-    &lt;language&gt;en-us&lt;/language&gt;
-    &lt;item&gt;
-      &lt;title&gt;Go to Walmart&lt;/title&gt;
-      &lt;link&gt;http://robertcarpenter.net&lt;/link&gt;
-      &lt;description&gt;Buy ramen noodles, canned soup, pasta, pasta sauce&lt;/description&gt;
-    &lt;/item&gt;
-    &lt;item&gt;
-      &lt;title&gt;Make packing list for trip to denver&lt;/title&gt;
-      &lt;link&gt;http://robertcarpenter.net&lt;/link&gt;
-      &lt;description&gt;&lt;/description&gt;
-    &lt;/item&gt;
-  &lt;/channel&gt;
-&lt;/rss&gt;
-</pre><br>
+{% highlight xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <rss version="2.0">
+  <channel>
+    <title>todo list :</title>
+    <link>http://robertcarpenter.net</link>
+    <description>Robert Carpenters Online, RSS Enabled todo List</description>
+    <language>en-us</language>
+    <item>
+      <title>Go to Walmart</title>
+      <link>http://robertcarpenter.net</link>
+      <description>Buy ramen noodles, canned soup, pasta, pasta sauce</description>
+    </item>
+    <item>
+      <title>Make packing list for trip to denver</title>
+      <link>http://robertcarpenter.net</link>
+      <description></description>
+    </item>
+  </channel>
+</rss>
+{% endhighlight %}
+<br>
 <h3>Getting google to display the RSS</h3>
 <p>First off you will want to make sure that your XML is well formed.  Open up your RSS file in firefox and if it displays you have well formed XML.</p>
 <p>Next upload your RSS file to your webserver by your favorite method.  To make sure that you have the correct RSS implementation you need to validate your RSS.  <a href="http://feedvalidator.org/">Feedvalidator.org</a> is a free web based RSS and ATOM validator and will do just fine.  If you have errors in your RSS file click the help link next to feedvalidator's error message for information on how to correct it.</p>

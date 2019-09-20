@@ -44,47 +44,49 @@ Could I manually go down this list, enter the phone number, and construct a text
 
 several weeks later, this:
 
-    set inviteeList to {}
+{% highlight applescript %}
+set inviteeList to {}
 
-    tell application "Numbers"
-            tell document 1
-                    tell active sheet
-                            tell table 1
-                                    set rowcount to (the number of row)
-                                    set rowcount to rowcount
+tell application "Numbers"
+        tell document 1
+                tell active sheet
+                        tell table 1
+                                set rowcount to (the number of row)
+                                set rowcount to rowcount
 
-                                    repeat with i from 2 to rowcount
-                                            set fname to the value of cell ("a" & i)
-                                            set lname to the value of cell ("b" & i)
-                                            set phone to the value of cell ("f" & i)
-                                            set email to the value of cell ("d" & i)
-                                            set inviteeList to inviteeList & ¬
-                                                    \{\{fname:fname, lname:lname, telephone:phone, emailaddress:email}}
-                                    end repeat
-                            end tell
-                    end tell
-            end tell
-    end tell
+                                repeat with i from 2 to rowcount
+                                        set fname to the value of cell ("a" & i)
+                                        set lname to the value of cell ("b" & i)
+                                        set phone to the value of cell ("f" & i)
+                                        set email to the value of cell ("d" & i)
+                                        set inviteeList to inviteeList & ¬
+                                                \{\{fname:fname, lname:lname, telephone:phone, emailaddress:email}}
+                                end repeat
+                        end tell
+                end tell
+        end tell
+end tell
 
 
-    tell application "Contacts"
-            repeat with i from 1 to count of inviteeList
-                    set invitee to item i of inviteeList
-                    set thePerson to make new person with properties ¬
-                            ¬
-                                    {first name:(the fname of invitee), last name:(the lname of invitee) ¬
-                                            }
-                    add thePerson to the group "grooms chill"
-                    if the telephone of invitee is not missing value then
-                            make new phone at end of phone of thePerson with properties {label:"phone", value:(the telephone of invitee)}
-                    end if
-                    if the emailaddress of invitee is not missing value then
-                            make new email at end of email of thePerson with properties {label:"email", value:(the emailaddress of invitee)}
-                    end if
-            end repeat
+tell application "Contacts"
+        repeat with i from 1 to count of inviteeList
+                set invitee to item i of inviteeList
+                set thePerson to make new person with properties ¬
+                        ¬
+                                {first name:(the fname of invitee), last name:(the lname of invitee) ¬
+                                        }
+                add thePerson to the group "grooms chill"
+                if the telephone of invitee is not missing value then
+                        make new phone at end of phone of thePerson with properties {label:"phone", value:(the telephone of invitee)}
+                end if
+                if the emailaddress of invitee is not missing value then
+                        make new email at end of email of thePerson with properties {label:"email", value:(the emailaddress of invitee)}
+                end if
+        end repeat
 
-            save
-    end tell
+        save
+end tell
+{% endhighlight %}
 
 ### Addendum, 2015-01-15
 I want you to notice something about that text there. At the end of some lines is an extended character set character '¬'. I've had to vim-yank it down to this paragraph because apparently the wonky apple keyboard combination that they've wired up doesn't appropriately forward through and ssh connection into vim as something that is immediately printable. In fact, it seems to instead add a new line.

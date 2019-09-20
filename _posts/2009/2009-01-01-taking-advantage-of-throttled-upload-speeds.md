@@ -12,7 +12,8 @@ The upload speed for the FiOS internet seems to be throttled when the upload siz
 
 Over the holidays I have been away and uploading some rather large files to my home server from the road. Since I have a mac, I use scp to securely transfer my files across the 'net via ssh. In an attempt to take greater advantage of the burst upload at the beginning of an upstream connection I issued the following commands to my Terminal:
 
-<pre class="code">
+
+{% highlight console %}
 Laptop: ~$ ls -lah
 -rw-r--r--    1 username  group   700M Dec 26 20:30 large-file.ext
 
@@ -32,7 +33,7 @@ large-file.ext.part.aa                                                100%   11M
 [....]
 large-file.ext.part.ck                                                100%   11MB 152.2KB/s   01:14    
 large-file.ext.part.cl                                                100% 7164KB 174.7KB/s   00:41
-</pre>
+{% endhighlight %}
 
 The only disadvantage here is the connection latency between file chunks: it takes about 10 seconds to initiate the upstream connection for each file chunk.
 
@@ -40,7 +41,8 @@ However, the result is an overall file upload that is incredibly faster. By spli
 
 After scp completes, I run this sequence to merge the parts and verify the upload:
 
-<pre class="code">
+
+{% highlight console %}
 Laptop: ~$ md5 large-file.ext > file-sig.md5
 Laptop: ~$ scp file-sig.md5 robert@homeserver.net:/mnt/backup/home-movies/
 file-sig.md5                                                          100%   73     0.1KB/s   00:00
@@ -53,7 +55,8 @@ robert@homeserver: /mnt/backup/home-movies$ diff file-sig.md5 file-sig-new.md5
 robert@homeserver: /mnt/backup/home-movies$ rm large-file.ext.part*
 
 robert@homeserver: /mnt/backup/home-movies$ rm file-sig*
-</pre>
+{% endhighlight %}
+
 
 I used the md5 hash program to quickly verify the file data transfer from one end to the other and used the diff command to compare the two hashes.
 

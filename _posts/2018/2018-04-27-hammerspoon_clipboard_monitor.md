@@ -23,39 +23,41 @@ Recently I added a [Spoon]() to my Hammerspoon config which  is a library design
 This autosuggestor will trim an Amazon URL, removing both the querystring tracking parameters as well as any unnecessary URL segments.
 
 
-    hs.loadSpoon('ClipboardWatcher')
+{% highlight lua %}
+hs.loadSpoon('ClipboardWatcher')
 
-    spoon.ClipboardWatcher:watch(
-      -- matcher function. when it returns true, a correction will be suggested via notification
-      function(data)
-        return string.match(data, "https?://www%.amazon%.com")
-      end,
+spoon.ClipboardWatcher:watch(
+  -- matcher function. when it returns true, a correction will be suggested via notification
+  function(data)
+    return string.match(data, "https?://www%.amazon%.com")
+  end,
 
-      -- suggestion function. returned value will be applied if the notification is clicked
-      function(original)
-        local parsed_url = url.parse(original)
-        -- Remove Amazon referral links
-        parsed_url:setQuery({})
+  -- suggestion function. returned value will be applied if the notification is clicked
+  function(original)
+    local parsed_url = url.parse(original)
+    -- Remove Amazon referral links
+    parsed_url:setQuery({})
 
-        local path_parts = split(parsed_url.path, "/")
-        local new_path_parts = {}
+    local path_parts = split(parsed_url.path, "/")
+    local new_path_parts = {}
 
-        -- Remove extra url segments. Need to keep:
-        -- ASIN length = 10
-        -- weird url prefix length = 2 (dp, gp, etc)
-        for i, part in pairs(path_parts) do
-          local length = string.len(part)
-          if length == 10 or length == 2 or part == "product" then
-            table.insert(new_path_parts, part)
-          end
-        end
-
-        parsed_url.path = table.concat(new_path_parts, "/")
-        return parsed_url:build()
+    -- Remove extra url segments. Need to keep:
+    -- ASIN length = 10
+    -- weird url prefix length = 2 (dp, gp, etc)
+    for i, part in pairs(path_parts) do
+      local length = string.len(part)
+      if length == 10 or length == 2 or part == "product" then
+        table.insert(new_path_parts, part)
       end
-    )
+    end
 
-    spoon.ClipboardWatcher:start()
+    parsed_url.path = table.concat(new_path_parts, "/")
+    return parsed_url:build()
+  end
+)
+
+spoon.ClipboardWatcher:start()
+{% endhighlight %}
 
 You can find the Clipboard Autosuggest Spoon [in my dotfiles](https://github.com/robacarp/config_files/blob/master/.hammerspoon/Spoons/ClipboardWatcher.spoon/init.lua).
 

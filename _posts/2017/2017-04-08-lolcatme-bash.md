@@ -13,74 +13,82 @@ For months I mused about a way to funnel everything in a terminal [through lolca
 
 In prep, install lolcat to the system ruby:
 
-    gem install lolcat
+{% highlight console %}
+$ gem install lolcat
+{% endhighlight %}
 
 Drop this into your `.bash_profile`, and watch the rainbows happen.
 
-    function lolcatme() {
-      which -s lolcat
-      if [ $? -ne 0 ]; then
-        echo no lolcat
-        return 0
-      fi
+{% highlight bash %}
+function lolcatme() {
+  which -s lolcat
+  if [ $? -ne 0 ]; then
+    echo no lolcat
+    return 0
+  fi
 
-      if [[ "$BASH_COMMAND" == "$PROMPT_COMMAND" ]]; then
-        return 0
-      fi
+  if [[ "$BASH_COMMAND" == "$PROMPT_COMMAND" ]]; then
+    return 0
+  fi
 
-      if [ -e /etc/bashrc_Apple_Terminal ]; then
-        grep -F --quiet "'$BASH_COMMAND'" /etc/bashrc_Apple_Terminal
-        if [ $? -eq 0 ]; then
-          echo terminal boot sequence
-          return 0
-        fi
-      fi
+  if [ -e /etc/bashrc_Apple_Terminal ]; then
+    grep -F --quiet "'$BASH_COMMAND'" /etc/bashrc_Apple_Terminal
+    if [ $? -eq 0 ]; then
+      echo terminal boot sequence
+      return 0
+    fi
+  fi
 
-      unsafe_commands=('vi' 'vim' 'nano' 'emacs' 'open' 'bash' 'fish' 'zsh' 'man')
-      unsafe_commands+=('shell_session_history_check' 'update_terminal_cwd')
-      for cmd in "${unsafe_commands[@]}"; do
-        if [[ "'"$BASH_COMMAND"'" =~ $cmd.* ]]; then
-          echo unsafe command: $BASH_COMMAND
-          return 0
-        fi
-      done
+  unsafe_commands=('vi' 'vim' 'nano' 'emacs' 'open' 'bash' 'fish' 'zsh' 'man')
+  unsafe_commands+=('shell_session_history_check' 'update_terminal_cwd')
+  for cmd in "${unsafe_commands[@]}"; do
+    if [[ "'"$BASH_COMMAND"'" =~ $cmd.* ]]; then
+      echo unsafe command: $BASH_COMMAND
+      return 0
+    fi
+  done
 
-      $BASH_COMMAND | lolcat
-      return 2
-    }
+  $BASH_COMMAND | lolcat
+  return 2
+}
 
-    shopt -s extdebug
+shopt -s extdebug
 
-    trap 'lolcatme' DEBUG
+trap 'lolcatme' DEBUG
+{% endhighlight %}
 
 
 Similarly, for [Fish Shell](https://fishshell.com/), place this in your `~/.config/fish/config.fish`:
 
-    function fish_user_key_bindings
-      bind \r 'lolcatme'
-    end
+{% highlight fish %}
+function fish_user_key_bindings
+  bind \r 'lolcatme'
+end
 
-    function lolcatme
-      set -l cmd (commandline)
-      set -l first (commandline --tokenize)[1]
+function lolcatme
+  set -l cmd (commandline)
+  set -l first (commandline --tokenize)[1]
 
-      if not contains $first vi vim emacs nano open bash fish zsh
-        commandline --append ' | lolcat'
-      end
+  if not contains $first vi vim emacs nano open bash fish zsh
+    commandline --append ' | lolcat'
+  end
 
-      commandline -f execute
-    end
+  commandline -f execute
+end
+{% endhighlight %}
 
 And for ZSH, something like this:
 
-    setopt DEBUG_BEFORE_CMD
+{% highlight zsh %}
+setopt DEBUG_BEFORE_CMD
 
-    function lolcatme() {
-      eval ${ZSH_DEBUG_CMD} | lolcat
-      setopt ERR_EXIT
-    }
+function lolcatme() {
+  eval ${ZSH_DEBUG_CMD} | lolcat
+  setopt ERR_EXIT
+}
 
-    trap 'lolcatme' DEBUG
+trap 'lolcatme' DEBUG
+{% endhighlight %}
 
 I ran into a particular problem with _oh my zsh_ using this. In order to render the prompt, OMZ calls several hundred functions, each in turn calling `lolcatme()`. Unfortunately, this performance hit is substantial and makes the shell almost unusable.
 

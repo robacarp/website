@@ -10,10 +10,11 @@ guid: 14cb59ba-6303-4134-b609-6361e6f209ea
 
 I needed to remove spaces from a whole list of files in a directory. A short bash script took care of it easy:
 
-<pre class="code">
+
+{% highlight console %}
 $ for file in *; do 
 > newFile=$(echo $file | tr ' ' _)
 > mv "$file" $newFile
 > done
-</pre>
+{% endhighlight %}
 

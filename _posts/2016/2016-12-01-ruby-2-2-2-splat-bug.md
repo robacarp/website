@@ -13,54 +13,57 @@ Ruby 2.2.2 contains a nasty bug around passing a hash with keys that are symboli
 
 The essence of the bug is that when you start with a hash which has string keys, symbolize those keys, and splat that hash into a method parameter, the receiver will not always get all the intended parameters.
 
-    # require 'byebug'
-    puts "ruby -v is #{RUBY_VERSION} but should be '2.2.2'" unless RUBY_VERSION == '2.2.2'
+{% highlight ruby %}
+# require 'byebug'
+puts "ruby -v is #{RUBY_VERSION} but should be '2.2.2'" unless RUBY_VERSION == '2.2.2'
 
-    class Hash
-      def symbolize_keys
-        dup = self.class.new
+class Hash
+  def symbolize_keys
+    dup = self.class.new
 
-        each_key do |key|
-          dup[ key.to_sym ] = self[key]
-        end
-
-        dup
-      end
+    each_key do |key|
+      dup[ key.to_sym ] = self[key]
     end
 
-    class MagicDance
-      def initialize
-        @rolled_back = false
-      end
+    dup
+  end
+end
 
-      def dance(one:, two:, **splat)
-        puts "#{two} #{one}"
-        puts splat
-      end
+class MagicDance
+  def initialize
+    @rolled_back = false
+  end
 
-      def one
-        # ============================
-        # Buggy, but only when it's by itself in the method:
-        splat = { "three" => :anything }.symbolize_keys
-        GC.start # fixes it
-        dance two: :not, one: :broken, **splat
+  def dance(one:, two:, **splat)
+    puts "#{two} #{one}"
+    puts splat
+  end
 
-        # ============================
+  def one
+    # ============================
+    # Buggy, but only when it's by itself in the method:
+    splat = { "three" => :anything }.symbolize_keys
+    GC.start # fixes it
+    dance two: :not, one: :broken, **splat
 
-        # Uncomment to see above statement succeed
-        # dance two: :not, one: :broken, **{ three: :anything }
+    # ============================
 
-        # ============================
+    # Uncomment to see above statement succeed
+    # dance two: :not, one: :broken, **{ three: :anything }
 
-        # Uncomment to see above statement succeed
-        # dance two: :not, one: :broken, three: :anything
-      end
+    # ============================
 
-      # Even in different methods!
-      # Uncomment to see above statement succeed
-      # def two
-      #   dance two: :not, one: :broken, **{ three: :anything }
-      # end
-    end
+    # Uncomment to see above statement succeed
+    # dance two: :not, one: :broken, three: :anything
+  end
 
-    MagicDance.new.one
+  # Even in different methods!
+  # Uncomment to see above statement succeed
+  # def two
+  #   dance two: :not, one: :broken, **{ three: :anything }
+  # end
+end
+
+MagicDance.new.one
+{% endhighlight %}
+

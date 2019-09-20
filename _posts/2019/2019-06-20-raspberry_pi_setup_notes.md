@@ -16,14 +16,16 @@ On macOS.
 
 Find the dev node for the disk:
 
-    # find disk
-    diskutil list
+{% highlight bash %}
+# find disk
+diskutil list
 
-    # unmount disk (eg disk3)
-    diskutil unmountDisk /dev/rdisk3
+# unmount disk (eg disk3)
+diskutil unmountDisk /dev/rdisk3
 
-    # copy image on disk3
-    sudo dd bs=1m if=~/Downloads/raspbian-stretch-lite-2019-04-08-hkcam-v0.0.8-armv6.img of=/dev/rdisk3 conv=sync
+# copy image on disk3
+sudo dd bs=1m if=~/Downloads/raspbian-stretch-lite-2019-04-08-hkcam-v0.0.8-armv6.img of=/dev/rdisk3 conv=sync
+{% endhighlight %}
 
 ## Pre-first-boot modifications:
 
@@ -35,15 +37,16 @@ On the SD card, before booting it for the first time:
 
 Create a file on the boot partition called `wpa_supplicant.conf` with these contents:
 
-    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-    update_config=1
+{% highlight text %}
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
 
-    network={
-            ssid="network"
-            psk="password"
-            id_str="new"
-    }
-
+network={
+        ssid="network"
+        psk="password"
+        id_str="new"
+}
+{% endhighlight %}
 
 #### Enable SSH
 

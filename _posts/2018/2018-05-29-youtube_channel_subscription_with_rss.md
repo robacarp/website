@@ -10,7 +10,9 @@ The YouTube subscription algorithm has been through some hard times, and it's a 
 
 It took some digging around the internet to find a solution that works with the current generation of software powering YouTube, but I eventually landed on this:
 
-    https://www.youtube.com/feeds/videos.xml?channel_id=<16 character channel id>
+{% highlight text %}
+https://www.youtube.com/feeds/videos.xml?channel_id=<16 character channel id>
+{% endhighlight %}
 
 That results in what appears to be an [Atom](https://en.wikipedia.org/wiki/Atom_(Web_standard)) feed created for a specific channel.
 

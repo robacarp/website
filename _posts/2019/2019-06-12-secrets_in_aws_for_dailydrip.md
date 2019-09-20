@@ -16,17 +16,19 @@ Perhaps even more important:
 
 But your app needs to connect to Services and it surely needs to connect to the database. Many applications follow this pattern, demonstrated by a Rails `config/database.yml` file:
 
-    development:
-      adapter: postgresql
-      database: app_development
+{% highlight yaml %}
+development:
+  adapter: postgresql
+  database: app_development
 
-    test:
-      adapter: postgresql
-      database: app_test
+test:
+  adapter: postgresql
+  database: app_test
 
-    production:
-      adapter: postgresql
-      url: <%= ENV['DATABASE_URL'] %>
+production:
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
+{% endhighlight %}
 
 That's right, in production, this app reads the database connection string from an environment variable. Great! Now the application doesn't need any secret credentials in the source code. But where does this environment config come from?
 
@@ -52,33 +54,39 @@ Amazon EC2 has a small utility allll the way at the bottom of that never-ending 
 
 Create a KMS key:
 
-    $ aws kms create-key --description="production secrets"
+{% highlight console %}
+$ aws kms create-key --description="production secrets"
+{% endhighlight %}
 
 Upload a few secrets to your SSM "keychain":
 
-    $ aws ssm put-parameter --type SecureString --key-id $key_id --name '/production/database_string' --value 'postgresql://user:pass@host:port/db'
-    $ aws ssm put-parameter --type SecureString --key-id $key_id --name '/production/sendgrid_api_secret' --value 'SG.000000000000000000000000000'
+{% highlight console %}
+$ aws ssm put-parameter --type SecureString --key-id $key_id --name '/production/database_string' --value 'postgresql://user:pass@host:port/db'
+$ aws ssm put-parameter --type SecureString --key-id $key_id --name '/production/sendgrid_api_secret' --value 'SG.000000000000000000000000000'
+{% endhighlight %}
 
 Now secrets can be read by API:
 
-    $ aws ssm get-parameters-by-path --region=us-east-1 --path=/production/ --with-decryption
+{% highlight console %}
+$ aws ssm get-parameters-by-path --region=us-east-1 --path=/production/ --with-decryption
 
+{
+  "Parameters": [
     {
-      "Parameters": [
-        {
-          "Version": 1, 
-          "Type": "SecureString", 
-          "Name": "/production/database_string", 
-          "Value": "postgresql://user:pass@host:port/db"
-        }, 
-        {
-          "Version": 1, 
-          "Type": "SecureString", 
-          "Name": "/production/sendgrid_api_secret", 
-          "Value": "SG.000000000000000000000000000"
-        }
-      ]
+      "Version": 1, 
+      "Type": "SecureString", 
+      "Name": "/production/database_string", 
+      "Value": "postgresql://user:pass@host:port/db"
+    }, 
+    {
+      "Version": 1, 
+      "Type": "SecureString", 
+      "Name": "/production/sendgrid_api_secret", 
+      "Value": "SG.000000000000000000000000000"
     }
+  ]
+}
+{% endhighlight %}
 
 ### Application Secret Discovery
 
@@ -86,37 +94,39 @@ It's necessary to configure your EC2 instance or ECS task definition to launch w
 
 After that, assuming your server normally launches with the command `/bin/my_app`, a script like this can be used to wrap the server binary and inject the application secrets into the environment.
 
-    #!/bin/bash
+{% highlight bash %}
+#!/bin/bash
 
-    set -euo pipefail
+set -euo pipefail
 
-    # Fetching environment variables from AWS
-    vars=$(
-      aws ssm get-parameters-by-path \
-        --region='us-east-1' \
-        --path="/production/" \
-        --with-decryption
-    )
+# Fetching environment variables from AWS
+vars=$(
+  aws ssm get-parameters-by-path \
+    --region='us-east-1' \
+    --path="/production/" \
+    --with-decryption
+)
 
-    # Format variables into Bash exports
-    exports=$(
-      echo "$vars" \
-      | jq --exit-status --raw-output \
-        '
-          .Parameters[] |
-          {
-            name: .Name | capture("/(.*/)(?<parsed_name>.*)") | .parsed_name,
-            value: .Value
-          } |
-          "export \(.name)=\"\(.value)\""
-        '
-    )
+# Format variables into Bash exports
+exports=$(
+  echo "$vars" \
+  | jq --exit-status --raw-output \
+    '
+      .Parameters[] |
+      {
+        name: .Name | capture("/(.*/)(?<parsed_name>.*)") | .parsed_name,
+        value: .Value
+      } |
+      "export \(.name)=\"\(.value)\""
+    '
+)
 
-    # eval the exports, including the environment variables into the environment
-    eval "$exports"
+# eval the exports, including the environment variables into the environment
+eval "$exports"
 
-    # hand off this process and the modified environment to the application server
-    exec /bin/my_app
+# hand off this process and the modified environment to the application server
+exec /bin/my_app
+{% endhighlight %}
 
 ### More Benefits
 
