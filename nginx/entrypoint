@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -euo pipefail
+
+# if a command was passed to this script, run it in the environment
+if [ $# -gt 0 ]; then
+  echo "Running command $@"
+  exec sh -c "$@"
+else
+  exec nginx
+fi
