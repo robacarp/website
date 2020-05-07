@@ -14,7 +14,7 @@ FROM crystallang/crystal:0.34.0-alpine
 
 FROM alpine:latest
 
-RUN apk add --no-cache --update nginx && \
+RUN apk add --no-cache --update nginx gettext && \
     ln -sf /dev/stdout /var/log/nginx/access.log && \
     ln -sf /dev/stderr /var/log/nginx/error.log
 
@@ -29,7 +29,7 @@ COPY nginx/locations /etc/nginx/locations/
 COPY nginx/entrypoint /
 
 COPY --from=jekyll /app /app
+ENV PORT 80
 
-EXPOSE 80
 ENTRYPOINT ["/entrypoint"]
 
