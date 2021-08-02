@@ -6,8 +6,11 @@ repo='258231756415.dkr.ecr.us-west-2.amazonaws.com/robacarp-com/alfalfa'
 env='production'
 
 # Login to AWS ECS Container Store
-docker_login=`aws ecr get-login --no-include-email --region "$aws_region"`
-eval $docker_login
+aws ecr get-login-password --region "$aws_region" \
+  | docker login \
+    --username AWS \
+    --password-stdin \
+    '258231756415.dkr.ecr.us-west-2.amazonaws.com'
 
 docker tag "robacarp_com" "$repo:$env"
 
