@@ -1,0 +1,8 @@
+name: dicer
+version: 0.0.1
+
+crystal: ">= 1.0.0"
+
+targets:
+  dicer:
+    main: server.cr

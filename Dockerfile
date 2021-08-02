@@ -10,7 +10,12 @@ COPY blog /root
 RUN mkdir /app && \
     bundle exec jekyll build --config _config.yml --destination /app
 
-FROM crystallang/crystal:0.34.0-alpine
+FROM crystallang/crystal:1.1.1-alpine AS crystal
+COPY dicer /app
+WORKDIR /app
+RUN shards install
+RUN mkdir -p bin
+RUN crystal build --static --release -o bin/dicer ./server.cr
 
 FROM alpine:latest
 
@@ -26,7 +31,9 @@ COPY nginx/nginx.conf /etc/nginx/nginx.conf
 COPY nginx/servers /etc/nginx/servers/
 COPY nginx/locations /etc/nginx/locations/
 
-COPY nginx/entrypoint /
+COPY bin/entrypoint /
+
+COPY --from=crystal /app/bin/dicer /dicer
 
 COPY --from=jekyll /app /app
 ENV PORT 80
