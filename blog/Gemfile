@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
-ruby '2.6.4'
+ruby '3.0.2'
 
 gem 'haml'
-gem 'jekyll', '~> 4.0.0'
-gem 'puma'
+gem 'jekyll', '~> 4.0'
 
 gem 'jekyll-archives'
+
+gem "webrick", "~> 1.7"
