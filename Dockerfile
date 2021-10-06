@@ -1,4 +1,4 @@
-FROM ruby:2.6.4 AS jekyll
+FROM ruby:3.0.2 AS jekyll
 RUN apt-get install -y libffi-dev
 
 WORKDIR /root
