@@ -1,8 +1,18 @@
 #!/bin/bash
 
-# scripts/build
-
 set -euo pipefail
+
+aws_region='us-west-2'
+repo='258231756415.dkr.ecr.us-west-2.amazonaws.com/robacarp-com/alfalfa'
+env='production'
+
+# Login to AWS ECS Container Store
+aws ecr get-login-password --region "$aws_region" \
+  | docker login \
+    --username AWS \
+    --password-stdin \
+    '258231756415.dkr.ecr.us-west-2.amazonaws.com'
+
 
 build_stats () {
   echo '---'
@@ -23,4 +33,7 @@ function cleanup {
 trap cleanup EXIT
 build_stats > .well-known/BUILD_DETAILS.json
 
-docker build . -t robacarp_com
+# Build and push the tagged image to your the AWS repository
+docker buildx build . \
+  --platform linux/amd64,linux/arm64 \
+  --push -t "$repo:$env"

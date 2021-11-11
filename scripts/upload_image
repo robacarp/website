@@ -1,18 +1,4 @@
 #!/bin/bash
 set -euo pipefail
 
-aws_region='us-west-2'
-repo='258231756415.dkr.ecr.us-west-2.amazonaws.com/robacarp-com/alfalfa'
-env='production'
 
-# Login to AWS ECS Container Store
-aws ecr get-login-password --region "$aws_region" \
-  | docker login \
-    --username AWS \
-    --password-stdin \
-    '258231756415.dkr.ecr.us-west-2.amazonaws.com'
-
-docker tag "robacarp_com" "$repo:$env"
-
-# Push the tagged image to your the AWS repository
-docker push "$repo:$env"

@@ -1,6 +1,6 @@
 ---
 title: Managing services on macos with launchctl
-date: 2021-10-05 20:28:01
+date: 2021-11-11 09:28:01
 tags: macos launchd launchctl homebrew
 layout: post
 guid: 742ad5df-cde1-4077-8031-55cfdd0e23a6
