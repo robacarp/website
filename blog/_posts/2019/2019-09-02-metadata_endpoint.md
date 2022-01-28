@@ -6,7 +6,11 @@ layout: post
 guid: 5d4812c7-db2a-49d0-b258-b135a7bf342c
 ---
 
-One of the few problems that comes with a fully automated deployment pipeline is validating which version of code exists in production, and validating that version is in production at all deployment sites. A good automated deployment can be self documenting and provide hooks for api clients to understand what's deployed as well.
+One of the few problems that comes with a fully automated deployment pipeline
+is validating which version of code exists in production, and validating that
+version is in production at all deployment sites. A good automated deployment
+can be self documenting and provide hooks for api clients to understand what's
+deployed as well.
 
 Consider this meta-endpoint:
 
@@ -28,13 +32,22 @@ For devops purposes, the `git_revision` and `build_timestamp` are helpful.
 
 For an api consumer, the `signature` and `version` are helpful.
 
-For the application developer, the `rails_env` (or `mix_env`, etc) is a good sanity check. Some applications inspect the database connection, others check to make sure an external API is stable, etc. For ELB purposes, the `okay: true` is also mirrored in 
+For the application developer, the `rails_env` (or `mix_env`, etc) is a good
+sanity check. Some applications inspect the database connection, others check
+to make sure an external API is stable, etc. For ELB purposes, the `okay: true`
+is also mirrored in 
 
 And whatever self test sanity check desired can be wired up behind `okay: true`.
 
-A simple set of tools is used to automatically generate this document at build time, and some light application hooks serve up the file at runtime.
+A simple set of tools is used to automatically generate this document at build
+time, and some light application hooks serve up the file at runtime.
 
-`scripts/build` generates a JSON file which contains `git_revision`, `version`, and `build_timestamp`. This file is used by developers/CI to do a docker build, so any build time environment declarations or other `docker build` hijinks can be committed to version control here as well. The usage of `trap ... EXIT` ensures that the BUILD_DETAILS file is available to the docker build but doesn't hang around after the build.
+`scripts/build` generates a JSON file which contains `git_revision`, `version`,
+and `build_timestamp`. This file is used by developers/CI to do a docker build,
+so any build time environment declarations or other `docker build` hijinks can
+be committed to version control here as well. The usage of `trap ... EXIT`
+ensures that the BUILD_DETAILS file is available to the docker build but
+doesn't hang around after the build.
 
 {% highlight bash linenos %}
 #!/bin/bash
@@ -71,7 +84,9 @@ build_stats > BUILD_DETAILS
 docker build . -t backend_server
 {% endhighlight %}
 
-For a rails server, `config/application.rb` runs once at application boot, and `Rails.application.config` provides a global scope to stash the metadata. Phoenix and other servers have a similar boot script and global scope config.
+For a rails server, `config/application.rb` runs once at application boot, and
+`Rails.application.config` provides a global scope to stash the metadata.
+Phoenix and other servers have a similar boot script and global scope config.
 
 {% highlight ruby linenos %}
 module Backend
