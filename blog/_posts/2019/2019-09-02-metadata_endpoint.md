@@ -1,7 +1,7 @@
 ---
 title: Automatic build time metadata generator for ELB ping endpoints and other sanity.
 date: 2019-09-02 07:55:09
-tags: bash rails aws elb docker devops
+tags: bash rails aws elb docker devops build_details
 layout: post
 guid: 5d4812c7-db2a-49d0-b258-b135a7bf342c
 ---
