@@ -2,15 +2,13 @@
 
 set -eu
 
-cp /etc/nginx/servers/default_server.conf /etc/nginx/servers/default_server.conf.template
-envsubst '\$PORT' < /etc/nginx/servers/default_server.conf.template > /etc/nginx/servers/default_server.conf
-
 # if a command was passed to this script, run it in the environment
 if [ $# -gt 0 ]; then
   echo "Running command $@"
   exec sh -c "$@"
 else
+  echo "Booting services..."
   ./dicer &
-  echo "Booting nginx, listening on $PORT"
+  echo "Booting nginx..."
   exec nginx
 fi

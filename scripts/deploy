@@ -1,15 +1,9 @@
 #!/bin/bash
 
-set -euo pipefail
-
 source scripts/lib/build_details.sh
 
-# --platform linux/amd64,linux/arm64 \
-
-docker buildx build . \
-  --load \
-  --platform linux/arm64 \
-  -t robacarp_com \
+fly deploy \
+  --remote-only \
   --build-arg build_timestamp="$build_timestamp" \
   --build-arg git_rev="$git_rev" \
   --build-arg git_tag="$git_tag"

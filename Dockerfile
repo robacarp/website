@@ -36,7 +36,7 @@ COPY bin/entrypoint /
 COPY --from=crystal /app/bin/dicer /dicer
 
 COPY --from=jekyll /app /app
-ENV PORT 80
+ENV PORT 8080
 
 ENTRYPOINT ["/entrypoint"]
 
