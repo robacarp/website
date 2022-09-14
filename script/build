@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -euo pipefail
+
+source script/lib/build_details.sh
+
+platform=''
+
+if test ${1:-local} = "deployment" ; then
+  echo "Building for deployment"
+  platform="--platform linux/amd64"
+else
+  echo "Building for local development."
+  echo "To build for deployment, use: $0 deployment "
+fi
+
+docker buildx build . \
+  --load \
+  -t robacarp_com \
+  --build-arg build_timestamp="$build_timestamp" \
+  --build-arg git_rev="$git_rev" \
+  --build-arg git_tag="$git_tag" \
+  $platform
