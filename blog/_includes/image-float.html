@@ -1,0 +1,7 @@
+<div style="display: flex; justify-content: space-between;">
+  <div>
+    {{ include.content }}
+  </div>
+
+  <img style="width: {{ include.image_width | default: '23em' }}" src="{{ include.image_url }}">
+</div>
