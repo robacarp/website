@@ -3,6 +3,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://robacarp.io" # the base hostname & protocol for your site
 permalink: "/:year/:month/:day/:title.html"
 
+port: 3999
+
 author:
   name: Robert Carpenter
 

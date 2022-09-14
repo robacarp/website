@@ -1,0 +1,2 @@
+jekyll: bundle exec jekyll serve
+browsersync: npx -y browser-sync --config=bs-config.json start
