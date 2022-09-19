@@ -1,5 +1,10 @@
 # Notes
 
+## Services
+
+- [Website](https://robacarp.io/new_dice.json), Jekyll/Static HTML, nginx.
+- [Dice generator](https://robacarp.io/new_dice.json), Crystal, deploys on port 3000.
+
 ## Development and Writing
 
 To write blog posts:
