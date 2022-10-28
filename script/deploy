@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source scripts/lib/build_details.sh
+source script/lib/build_details.sh
 
 fly deploy \
   --remote-only \
