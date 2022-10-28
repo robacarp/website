@@ -10,7 +10,7 @@ COPY blog /root
 RUN mkdir /app && \
     bundle exec jekyll build --config _config.yml --destination /app
 
-FROM crystallang/crystal:1.1.1-alpine AS crystal
+FROM crystallang/crystal:1.6.1-alpine AS crystal
 COPY dicer /app
 WORKDIR /app
 RUN shards install
