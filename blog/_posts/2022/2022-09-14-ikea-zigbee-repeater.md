@@ -6,6 +6,8 @@ layout: post
 guid: C8740677-DBFA-407D-82EC-8105991903B1
 ---
 
+{% comment %} XXX This generates a warning because the image-float layout wraps the content in a div {% endcomment %}
+
 {% capture text %}
 <p>This works as a general purpose Zigbee Repeater.</p>
 
