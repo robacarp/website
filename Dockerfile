@@ -1,4 +1,4 @@
-FROM ruby:3.0.2 AS jekyll
+FROM ruby:3.2.3 AS jekyll
 RUN apt-get install -y libffi-dev
 
 WORKDIR /root
@@ -10,7 +10,7 @@ COPY blog /root
 RUN mkdir /app && \
     bundle exec jekyll build --config _config.yml --destination /app
 
-FROM crystallang/crystal:1.6.1-alpine AS crystal
+FROM crystallang/crystal:1.9-alpine AS crystal
 COPY dicer /app
 WORKDIR /app
 RUN shards install
@@ -39,4 +39,3 @@ COPY --from=jekyll /app /app
 ENV PORT 8080
 
 ENTRYPOINT ["/entrypoint"]
-
