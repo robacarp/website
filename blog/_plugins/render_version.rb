@@ -2,7 +2,7 @@ module Jekyll
   class VersionReporter < Generator
     def generate(site)
       filename = 'version.html'
-      return unless Dir.exists? site.config["destination"]
+      return unless Dir.exist? site.config["destination"]
       File.open(File.join(site.config["destination"], filename), 'w') do |f|
         f.write(generate_report(site))
       end
