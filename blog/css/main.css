@@ -1,16 +1,29 @@
 ---
 ---
 
-// System fonts https://systemfontstack.com/
-$sans-serif-fonts: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+@import './syntax_highlighting.css';
+@import './dracula.css' (prefers-color-scheme: dark);
 
-$serif-fonts: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+:root {
+  --sans-serif-fonts: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  --serif-fonts: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --monospace-fonts: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
-$monospace-fonts: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+@media(prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000;
+    --text-color: #fff;
+  }
+}
 
 a {
   text-decoration: none;
   color: #07e;
+
   &:hover {
     text-decoration: underline;
   }
@@ -22,9 +35,10 @@ body {
   padding: 0;
   height: 100%;
   line-height: 1.2em;
-  background: #fff;
+  background: var(--bg-color);
+  color: var(--text-color);
 
-  font-family: $sans-serif-fonts;
+  font-family: var(--sans-serif-fonts);
 }
 
 blockquote {
@@ -33,7 +47,7 @@ blockquote {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: $serif-fonts;
+  font-family: var(--serif-fonts);
 }
 
 hr {
@@ -96,14 +110,14 @@ table {
 
 #header {
   font-size: 3em;
-  font-family: $serif-fonts;
+  font-family: var(--serif-fonts);
   line-height: 1em;
   text-align: center;
   padding: 8px;
 
   a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
     display: block;
   }
 }
@@ -122,6 +136,4 @@ table {
   margin: 0 auto;
   max-width: 1280px;
 }
-
-@import './syntax_highlighting';
 

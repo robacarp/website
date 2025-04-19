@@ -1,5 +1,9 @@
-// ported to scss and updated for robacarp.com from
-// https://raw.githubusercontent.com/jwarby/pygments-css/master/native.css
+---
+---
+
+/* ported to scss and updated for robacarp.com from
+ * https://raw.githubusercontent.com/jwarby/pygments-css/master/native.css
+ */
 
 .highlight {
   pre {
